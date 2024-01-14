@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		WebsocketStream | 
+	 
+	Ceex
+	</title>
+	
+	<!-- keywords,description -->
+	
+	
+
+	<!-- favicon -->
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+
+	
+	
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">Ceex</a>
+
+	<ul id="menu">
+    
+
+    
+
+    
+
+    
+  
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="Press Enter to search">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Cloud/">
+                     
+										    Cloud
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Contract/">
+                     
+										    Contract
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Endpoint/">
+                     
+										    Endpoint
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Errors/">
+                     
+										    Errors
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Finance/">
+                     
+										    Finance
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Margin/">
+                     
+										    Margin
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/OptiontsOpen/">
+                     
+										    OptiontsOpen
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/RESTAPI/">
+                     
+										    RESTAPI
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/UserDataStream/">
+                     
+										    UserDataStream
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2024/01/14/WebsocketStream/">
+                     
+										    WebsocketStream
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content" class="content">
+		<h1 id="article-title">
+	WebsocketStream
+</h1>
+
+<!-- meta -->
+<div class="article-meta">
+	
+
+	<span>ceex</span>
+	<span>2024-01-14 15:29:59</span>
+
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+    
+
+    
+		    <span>Tags：</span>
+        
+    
+  </div>
+
+</div>
+
+<!-- content -->
+<div id="article-content">
+	<h1 id="Web-Socket行情接口-2019-08-12"><a href="#Web-Socket行情接口-2019-08-12" class="headerlink" title="Web Socket行情接口 (2019-08-12)"></a>Web Socket行情接口 (2019-08-12)</h1><h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><ul>
+<li>行情基础端点请参见<a href="endpoint.md">这里</a></li>
+<li>直接访问时URL格式为 <strong>&#x2F;openapi&#x2F;quote&#x2F;ws&#x2F;v1</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">名称</th>
+<th align="left">值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">topic</td>
+<td align="left">realtimes, trade, kline_$interval, depth</td>
+</tr>
+<tr>
+<td align="left">event</td>
+<td align="left">sub, cancel, cancel_all</td>
+</tr>
+<tr>
+<td align="left">interval</td>
+<td align="left">1m, 5m, 15m, 30m, 1h, 2h, 6h, 12h, 1d, 1w, 1M</td>
+</tr>
+</tbody></table>
+<p><strong>请求订阅数据样例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;$symbol0, $symbol1&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;$topic&quot;</span>,</span><br><span class="line">  <span class="string">&quot;event&quot;</span>: <span class="string">&quot;sub&quot;</span>,</span><br><span class="line">  <span class="comment">// 可调整的参数</span></span><br><span class="line">    <span class="string">&quot;params&quot;</span>: &#123;</span><br><span class="line">        <span class="comment">// kline返回上限是2000，默认为1</span></span><br><span class="line">        <span class="string">&quot;limit&quot;</span>: <span class="string">&quot;$limit&quot;</span>,</span><br><span class="line">        <span class="comment">// 返回的数据是否是压缩过的，默认为false</span></span><br><span class="line">        <span class="string">&quot;binary&quot;</span>: <span class="string">&quot;false&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">名称</th>
+<th align="left">解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">limit</td>
+<td align="left">规定返回结果的数量</td>
+</tr>
+<tr>
+<td align="left">binary</td>
+<td align="left">规定返回的数据是否是压缩过的。<strong>默认</strong>值是<strong>false</strong>。</td>
+</tr>
+</tbody></table>
+<h2 id="心跳"><a href="#心跳" class="headerlink" title="心跳"></a>心跳</h2><p>每隔一段时间，客户端需要发送ping帧，服务端会回复pong帧，否则服务端会在5分钟内主动断开链接。</p>
+<ul>
+<li><p>请求</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;ping&quot;</span>: <span class="number">1535975085052</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>返回</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;pong&quot;</span>: <span class="number">1535975085052</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="逐笔交易"><a href="#逐笔交易" class="headerlink" title="逐笔交易"></a>逐笔交易</h3><p>逐笔交易推送每一笔成交的信息。成交，或者说交易的定义是仅有一个吃单者与一个挂单者相互交易。</p>
+<p>在成功连接到服务器后，服务器首先会推送一条最近的60条成交。在这条推送之后，每条推送都是实时的成交。</p>
+<p>变量“v”可以理解成一个交易ID。这个变量是全局递增的并且独特的。例如：假设过去5秒有3笔交易发生，分别是ETHUSDT、BTCUSDT、BHTBTC。它们的“v”会为连续的值（112，113，114）。</p>
+<p><strong>请求订阅数据样例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;$symbol0, $symbol1&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;trade&quot;</span>,</span><br><span class="line">  <span class="string">&quot;event&quot;</span>: <span class="string">&quot;sub&quot;</span>,</span><br><span class="line">  <span class="string">&quot;params&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;binary&quot;</span>: <span class="literal">false</span> <span class="comment">// Whether data returned is in binary format</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>返回:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;BTCUSDT&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;trade&quot;</span>,</span><br><span class="line">  <span class="string">&quot;data&quot;</span>: [&#123;</span><br><span class="line">    <span class="string">&quot;v&quot;</span>: <span class="string">&quot;426635153180475392&quot;</span>, <span class="comment">// 参见解释</span></span><br><span class="line">    <span class="string">&quot;t&quot;</span>: <span class="number">1565594873508</span>,  <span class="comment">//时间戳</span></span><br><span class="line">    <span class="string">&quot;p&quot;</span>: <span class="string">&quot;11369&quot;</span>, <span class="comment">// 价格</span></span><br><span class="line">    <span class="string">&quot;q&quot;</span>: <span class="string">&quot;0.01&quot;</span>, <span class="comment">// 数量</span></span><br><span class="line">    <span class="string">&quot;m&quot;</span>: <span class="literal">false</span> <span class="comment">// true = 买, false = 卖</span></span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    <span class="string">&quot;v&quot;</span>: <span class="string">&quot;426635153373413376&quot;</span>,</span><br><span class="line">    <span class="string">&quot;t&quot;</span>: <span class="number">1565594873531</span>,</span><br><span class="line">    <span class="string">&quot;p&quot;</span>: <span class="string">&quot;11369&quot;</span>,</span><br><span class="line">    <span class="string">&quot;q&quot;</span>: <span class="string">&quot;0.0012&quot;</span>,</span><br><span class="line">    <span class="string">&quot;m&quot;</span>: <span class="literal">false</span></span><br><span class="line">  &#125;],</span><br><span class="line">  <span class="string">&quot;f&quot;</span>: <span class="literal">false</span> <span class="comment">// 是不是第一个返回</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Symbol的Ticker"><a href="#Symbol的Ticker" class="headerlink" title="Symbol的Ticker"></a>Symbol的Ticker</h3><p>按Symbol逐秒刷新的24小时完整ticker信息</p>
+<p><strong>请求订阅数据样例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;$symbol0, $symbol1&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;realtimes&quot;</span>,</span><br><span class="line">  <span class="string">&quot;event&quot;</span>: <span class="string">&quot;sub&quot;</span>,</span><br><span class="line">  <span class="string">&quot;params&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;binary&quot;</span>: <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>返回:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;ETHUSDT&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;realtimes&quot;</span>,</span><br><span class="line">  <span class="string">&quot;data&quot;</span>: [&#123;</span><br><span class="line">    <span class="string">&quot;t&quot;</span>: <span class="string">&quot;1565592599015&quot;</span>, <span class="comment">//时间戳</span></span><br><span class="line">    <span class="string">&quot;s&quot;</span>: <span class="string">&quot;ETHUSDT&quot;</span>, <span class="comment">//symbol</span></span><br><span class="line">    <span class="string">&quot;c&quot;</span>: <span class="string">&quot;212.63&quot;</span>, <span class="comment">//收盘价</span></span><br><span class="line">    <span class="string">&quot;h&quot;</span>: <span class="string">&quot;216.96&quot;</span>, <span class="comment">//最高价</span></span><br><span class="line">    <span class="string">&quot;l&quot;</span>: <span class="string">&quot;206.78&quot;</span>, <span class="comment">//最低价</span></span><br><span class="line">    <span class="string">&quot;o&quot;</span>: <span class="string">&quot;210.23&quot;</span>, <span class="comment">//开盘价</span></span><br><span class="line">    <span class="string">&quot;v&quot;</span>: <span class="string">&quot;73013.575&quot;</span>, <span class="comment">//交易量</span></span><br><span class="line">    <span class="string">&quot;qv&quot;</span>: <span class="string">&quot;15726612.498168&quot;</span>, <span class="comment">//交易额</span></span><br><span class="line">    &#125;],</span><br><span class="line">  <span class="string">&quot;f&quot;</span>: <span class="literal">false</span> <span class="comment">// 是否为第一个返回</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="K线-蜡烛图"><a href="#K线-蜡烛图" class="headerlink" title="K线&#x2F;蜡烛图"></a>K线&#x2F;蜡烛图</h3><p>K线stream逐秒推送所请求的K线种类(最新一根K线)的更新</p>
+<p><strong>K线&#x2F;蜡烛图间隔:</strong></p>
+<p>订阅Kline需要提供间隔参数，最短为分钟线，最长为月线。支持以下间隔:</p>
+<p>m -&gt; 分钟; h -&gt; 小时; d -&gt; 天; w -&gt; 周; M -&gt; 月</p>
+<ul>
+<li>1m</li>
+<li>5m</li>
+<li>15m</li>
+<li>30m</li>
+<li>1h</li>
+<li>2h</li>
+<li>4h</li>
+<li>6h</li>
+<li>12h</li>
+<li>1d</li>
+<li>1w</li>
+<li>1M</li>
+</ul>
+<p><strong>请求订阅数据样例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;$symbol0, $symbol1&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;kline_&quot;</span>+$间隔,</span><br><span class="line">  <span class="string">&quot;event&quot;</span>: <span class="string">&quot;sub&quot;</span>,</span><br><span class="line">  <span class="string">&quot;params&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;binary&quot;</span>: <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>返回:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;BTCUSDT&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;kline&quot;</span>,</span><br><span class="line">  <span class="string">&quot;params&quot;</span>: &#123;<span class="string">&quot;klineType&quot;</span>: <span class="string">&quot;15m&quot;</span>&#125;,</span><br><span class="line">  <span class="string">&quot;data&quot;</span>: [&#123;</span><br><span class="line">    <span class="string">&quot;t&quot;</span>: <span class="number">1565595900000</span>, <span class="comment">//k线开始时间</span></span><br><span class="line">    <span class="string">&quot;s&quot;</span>: <span class="string">&quot;BTCUSDT&quot;</span>, <span class="comment">// symbol</span></span><br><span class="line">    <span class="string">&quot;c&quot;</span>: <span class="string">&quot;11436.14&quot;</span>, <span class="comment">//收盘价</span></span><br><span class="line">    <span class="string">&quot;h&quot;</span>: <span class="string">&quot;11437&quot;</span>, <span class="comment">//最高价</span></span><br><span class="line">    <span class="string">&quot;l&quot;</span>: <span class="string">&quot;11381.89&quot;</span>, <span class="comment">//最低价</span></span><br><span class="line">    <span class="string">&quot;o&quot;</span>: <span class="string">&quot;11381.89&quot;</span>, <span class="comment">//开盘价</span></span><br><span class="line">    <span class="string">&quot;v&quot;</span>: <span class="string">&quot;16.3306&quot;</span> <span class="comment">//交易量</span></span><br><span class="line">  &#125;],</span><br><span class="line">  <span class="string">&quot;f&quot;</span>: <span class="literal">true</span> <span class="comment">// 是否为第一个返回</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="订单簿深度信息"><a href="#订单簿深度信息" class="headerlink" title="订单簿深度信息"></a>订单簿深度信息</h3><p>Symbol的深度信息。</p>
+<p>这里是订单簿快照推送的详细信息：</p>
+<ul>
+<li>订单簿快照频率：每300ms, 如果book变了的话。</li>
+<li>订单簿快照频率深度：bids 和 asks各300</li>
+<li>订单簿版本变更触发事件：<ul>
+<li>订单进入订单簿</li>
+<li>订单离开订单簿</li>
+<li>订单数量变更</li>
+<li>订单已完成</li>
+</ul>
+</li>
+</ul>
+<h4 id="有限档深度信息"><a href="#有限档深度信息" class="headerlink" title="有限档深度信息"></a>有限档深度信息</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;$symbol0, $symbol1&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;depth&quot;</span>,</span><br><span class="line">  <span class="string">&quot;event&quot;</span>: <span class="string">&quot;sub&quot;</span>,</span><br><span class="line">  <span class="string">&quot;params&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;binary&quot;</span>: <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>返回:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;BTCUSDT&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;depth&quot;</span>,</span><br><span class="line">  <span class="string">&quot;data&quot;</span>: [&#123;</span><br><span class="line">    <span class="string">&quot;s&quot;</span>: <span class="string">&quot;BTCUSDT&quot;</span>, <span class="comment">//Symbol</span></span><br><span class="line">    <span class="string">&quot;t&quot;</span>: <span class="number">1565600357643</span>, <span class="comment">//时间戳</span></span><br><span class="line">    <span class="string">&quot;v&quot;</span>: <span class="string">&quot;112801745_18&quot;</span>, <span class="comment">//见上面解释</span></span><br><span class="line">    <span class="string">&quot;b&quot;</span>: [ <span class="comment">//Bids</span></span><br><span class="line">      [<span class="string">&quot;11371.49&quot;</span>, <span class="string">&quot;0.0014&quot;</span>], <span class="comment">//[价格, 数量]</span></span><br><span class="line">      [<span class="string">&quot;11371.12&quot;</span>, <span class="string">&quot;0.2&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11369.97&quot;</span>, <span class="string">&quot;0.3523&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11369.96&quot;</span>, <span class="string">&quot;0.5&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11369.95&quot;</span>, <span class="string">&quot;0.0934&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11369.94&quot;</span>, <span class="string">&quot;1.6809&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11369.6&quot;</span>, <span class="string">&quot;0.0047&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11369.17&quot;</span>, <span class="string">&quot;0.3&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11369.16&quot;</span>, <span class="string">&quot;0.2&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11369.04&quot;</span>, <span class="string">&quot;1.3203&quot;</span>],</span><br><span class="line">    <span class="string">&quot;a&quot;</span>: [<span class="comment">//Asks</span></span><br><span class="line">      [<span class="string">&quot;11375.41&quot;</span>, <span class="string">&quot;0.0053&quot;</span>], <span class="comment">//[价格, 数量]</span></span><br><span class="line">      [<span class="string">&quot;11375.42&quot;</span>, <span class="string">&quot;0.0043&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11375.48&quot;</span>, <span class="string">&quot;0.0052&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11375.58&quot;</span>, <span class="string">&quot;0.0541&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11375.7&quot;</span>, <span class="string">&quot;0.0386&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11375.71&quot;</span>, <span class="string">&quot;2&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11377&quot;</span>, <span class="string">&quot;2.0691&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11377.01&quot;</span>, <span class="string">&quot;0.0167&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11377.12&quot;</span>, <span class="string">&quot;1.5&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11377.61&quot;</span>, <span class="string">&quot;0.3&quot;</span>]</span><br><span class="line">    ]</span><br><span class="line">  &#125;],</span><br><span class="line">  <span class="string">&quot;f&quot;</span>: <span class="literal">true</span><span class="comment">//是否为第一个返回</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="增量深度信息"><a href="#增量深度信息" class="headerlink" title="增量深度信息"></a>增量深度信息</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;$symbol0, $symbol1&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;diffDepth&quot;</span>,</span><br><span class="line">  <span class="string">&quot;event&quot;</span>: <span class="string">&quot;sub&quot;</span>,</span><br><span class="line">  <span class="string">&quot;params&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;binary&quot;</span>: <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>每秒推送订单簿的变化部分（如果有）。</p>
+<p>在增量深度信息中，数量不一定等于对应价格的数量。如果数量&#x3D;0，这说明在上一条推送中的这个价格已经没有了。如果数量&gt;0，这时的数量为更新后的这个价格所对应的数量</p>
+<p>假设我们收到的返回数据中有这样一条：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">&quot;0.00181860&quot;</span>, <span class="string">&quot;155.92000000&quot;</span>]<span class="comment">// 价格，数量</span></span><br></pre></td></tr></table></figure>
+
+<p>如果下一条返回数据中有：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">&quot;0.00181860&quot;</span>, <span class="string">&quot;12.3&quot;</span>]</span><br></pre></td></tr></table></figure>
+<p>这说明这个价格对应的数量有变更，已经更新变更的数量</p>
+<p>如果下一条返回数据中有：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">&quot;0.00181860&quot;</span>, <span class="string">&quot;0&quot;</span>]</span><br></pre></td></tr></table></figure>
+<p>这说明这个价格对应的数量已经消失，将会在客户端中删除。</p>
+<p><strong>Payload:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;BTCUSDT&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;diffDepth&quot;</span>,</span><br><span class="line">  <span class="string">&quot;data&quot;</span>: [&#123;</span><br><span class="line">    <span class="string">&quot;e&quot;</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;t&quot;</span>: <span class="number">1565687625534</span>,</span><br><span class="line">    <span class="string">&quot;v&quot;</span>: <span class="string">&quot;115277986_18&quot;</span>,</span><br><span class="line">    <span class="string">&quot;b&quot;</span>: [</span><br><span class="line">      [<span class="string">&quot;11316.78&quot;</span>, <span class="string">&quot;0.078&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11313.16&quot;</span>, <span class="string">&quot;0.0052&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11312.12&quot;</span>, <span class="string">&quot;0&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11309.75&quot;</span>, <span class="string">&quot;0.0067&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11309.58&quot;</span>, <span class="string">&quot;0&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11306.14&quot;</span>, <span class="string">&quot;0.0073&quot;</span>]</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;a&quot;</span>: [</span><br><span class="line">      [<span class="string">&quot;11318.96&quot;</span>, <span class="string">&quot;0.0041&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11318.99&quot;</span>, <span class="string">&quot;0.0017&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11319.12&quot;</span>, <span class="string">&quot;0.0017&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11319.22&quot;</span>, <span class="string">&quot;0.4516&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11319.23&quot;</span>, <span class="string">&quot;0.0934&quot;</span>],</span><br><span class="line">      [<span class="string">&quot;11319.24&quot;</span>, <span class="string">&quot;3.0665&quot;</span>]</span><br><span class="line">    ]</span><br><span class="line">  &#125;],</span><br><span class="line">  <span class="string">&quot;f&quot;</span>: <span class="literal">false</span> <span class="comment">//是否为第一个返回值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="指数数据"><a href="#指数数据" class="headerlink" title="指数数据"></a>指数数据</h3><p>期权和期货指数数据。</p>
+<p><strong>请求订阅数据样例:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;$symbol0, $symbol1&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;index&quot;</span>,</span><br><span class="line">  <span class="string">&quot;event&quot;</span>: <span class="string">&quot;sub&quot;</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>返回:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;HTUSDT&quot;</span>,</span><br><span class="line">  <span class="string">&quot;topic&quot;</span>: <span class="string">&quot;index&quot;</span>,</span><br><span class="line">  <span class="string">&quot;data&quot;</span>: [&#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;HTUSDT&quot;</span>, <span class="comment">//symbol</span></span><br><span class="line">    <span class="string">&quot;index&quot;</span>: <span class="string">&quot;5.0941&quot;</span>, <span class="comment">//当前指数价</span></span><br><span class="line">    <span class="string">&quot;edp&quot;</span>: <span class="string">&quot;5.08799333&quot;</span>, <span class="comment">//预计交割价，见期权rest文档</span></span><br><span class="line">    <span class="string">&quot;formula&quot;</span>: <span class="string">&quot;(5.0941[HUOBI])/1&quot;</span> <span class="comment">//来源</span></span><br><span class="line">  &#125;],</span><br><span class="line">  <span class="string">&quot;f&quot;</span>: <span class="literal">true</span> <span class="comment">//是否为第一个返回</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p><strong>错误码:</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">INVALID_REQUEST(<span class="string">&quot;-10000&quot;</span>, <span class="string">&quot;Invalid request!&quot;</span>)</span><br><span class="line">JSON_FORMAT_ERROR(<span class="string">&quot;-10001&quot;</span>, <span class="string">&quot;Invalid JSON!&quot;</span>)</span><br><span class="line">INVALID_EVENT(<span class="string">&quot;-10002&quot;</span>, <span class="string">&quot;Invalid event&quot;</span>)</span><br><span class="line">REQUIRED_EVENT(<span class="string">&quot;-10003&quot;</span>, <span class="string">&quot;Event required!&quot;</span>)</span><br><span class="line">INVALID_TOPIC(<span class="string">&quot;-10004&quot;</span>, <span class="string">&quot;Invalid topic!&quot;</span>)</span><br><span class="line">REQUIRED_TOPIC(<span class="string">&quot;-10005&quot;</span>, <span class="string">&quot;Topic required!&quot;</span>)</span><br><span class="line">PARAM_EMPTY(<span class="string">&quot;-10007&quot;</span>, <span class="string">&quot;Params required!&quot;</span>)</span><br><span class="line">PERIOD_EMPTY(<span class="string">&quot;-10008&quot;</span>, <span class="string">&quot;Period required!&quot;</span>)</span><br><span class="line">PERIOD_ERROR(<span class="string">&quot;-10009&quot;</span>, <span class="string">&quot;Invalid period!&quot;</span>)</span><br><span class="line">SYMBOLS_ERROR(<span class="string">&quot;-100010&quot;</span>, <span class="string">&quot;Invalid Symbols!&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2024/01/14/UserDataStream/">
+                UserDataStream
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©<span id="footerYear-start"></span>-<span id="footerYear-end"></span>
+
+	
+	    <a href="/">ceex</a>
+	
+	
+	
+	<br>
+	Powered by <a href="//hexo.io" target="_blank">ceex</a>
+	</p>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById('footerYear-start').innerHTML = new Date().getFullYear() + '';
+</script>
+
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>

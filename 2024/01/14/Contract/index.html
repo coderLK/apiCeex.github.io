@@ -1,0 +1,2614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		Contract | 
+	 
+	Ceex
+	</title>
+	
+	<!-- keywords,description -->
+	
+	
+
+	<!-- favicon -->
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+
+	
+	
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">Ceex</a>
+
+	<ul id="menu">
+    
+
+    
+
+    
+
+    
+  
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="Press Enter to search">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Cloud/">
+                     
+										    Cloud
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2024/01/14/Contract/">
+                     
+										    Contract
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Endpoint/">
+                     
+										    Endpoint
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Errors/">
+                     
+										    Errors
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Finance/">
+                     
+										    Finance
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Margin/">
+                     
+										    Margin
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/OptiontsOpen/">
+                     
+										    OptiontsOpen
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/RESTAPI/">
+                     
+										    RESTAPI
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/UserDataStream/">
+                     
+										    UserDataStream
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/WebsocketStream/">
+                     
+										    WebsocketStream
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content" class="content">
+		<h1 id="article-title">
+	Contract
+</h1>
+
+<!-- meta -->
+<div class="article-meta">
+	
+
+	<span>ceex</span>
+	<span>2024-01-14 15:23:34</span>
+
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+    
+
+    
+		    <span>Tags：</span>
+        
+    
+  </div>
+
+</div>
+
+<!-- content -->
+<div id="article-content">
+	<h1 id="Broker-API-URL"><a href="#Broker-API-URL" class="headerlink" title="Broker API URL"></a>Broker API URL</h1><p>Broker Open API的地址请见<a href="endpoint.md">这里</a></p>
+<h1 id="Broker-合约公共端点"><a href="#Broker-合约公共端点" class="headerlink" title="Broker 合约公共端点"></a>Broker 合约公共端点</h1><h2 id="brokerInfo"><a href="#brokerInfo" class="headerlink" title="brokerInfo"></a><code>brokerInfo</code></h2><p>获取当前broker的交易规则和合约symbol的信息（精度单位等信息），包括合约的风险限额和乘数等信息。</p>
+<h3 id="Request-Weight"><a href="#Request-Weight" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>0</p>
+<h3 id="Request-Url"><a href="#Request-Url" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/brokerInfo</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters："><a href="#Parameters：" class="headerlink" title="Parameters："></a><strong>Parameters：</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>type</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>交易类型，支持的类型现为<code>token</code>（币币）、<code>options</code>（期权）、<code>contracts</code>（合约）。如果没有发送此参数，所有交易类型的symbol信息都会被返回。</td>
+</tr>
+</tbody></table>
+<h3 id="Response"><a href="#Response" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>timezone</code></td>
+<td>string</td>
+<td><code>UTC</code></td>
+<td>时间戳的时区。</td>
+</tr>
+<tr>
+<td><code>serverTime</code></td>
+<td>long</td>
+<td><code>1554887652929</code></td>
+<td>返回现在的服务器时间戳（毫秒级）</td>
+</tr>
+</tbody></table>
+<p>在<code>rateLimits</code>信息组里:<br>下单api的请求限制将会被展示。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>rateLimitType</code></td>
+<td>string</td>
+<td><code>ORDERS</code></td>
+<td>速度限制类型</td>
+</tr>
+<tr>
+<td><code>interval</code></td>
+<td>string</td>
+<td><code>SECOND</code></td>
+<td>速度限制区间</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>string</td>
+<td><code>1500</code></td>
+<td>速度限制区间价值</td>
+</tr>
+</tbody></table>
+<p>在<code>contracts</code>信息组里:<br>所有当前券商正在交易的合约的信息将会被返回：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>BTC-PERP-REV</code></td>
+<td>合约名称</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>string</td>
+<td><code>TRADING</code></td>
+<td>合约状态</td>
+</tr>
+<tr>
+<td><code>baseAsset</code></td>
+<td>string</td>
+<td><code>BTC-PERP-REV</code></td>
+<td>基础资产。对于合约来说，合约本身就是基础资产。</td>
+</tr>
+<tr>
+<td><code>baseAssetPrecision</code></td>
+<td>float</td>
+<td><code>0.001</code></td>
+<td>基础资产（合约数量）的精度</td>
+</tr>
+<tr>
+<td><code>quoteAsset</code></td>
+<td>string</td>
+<td><code>USDT</code></td>
+<td>定价资产。对于合约来说，这个是合约是以什么来结算的。</td>
+</tr>
+<tr>
+<td><code>quoteAssetPrecision</code></td>
+<td>float</td>
+<td><code>0.001</code></td>
+<td>定价资产（合约价格）的精度。</td>
+</tr>
+<tr>
+<td><code>inverse</code></td>
+<td>bool</td>
+<td><code>true</code></td>
+<td>合约是否为反向合约（true&#x3D;是反向合约，false&#x3D;是正向合约）。</td>
+</tr>
+<tr>
+<td><code>index</code></td>
+<td>string</td>
+<td><code>BTCUSDT</code></td>
+<td>标的指数的名称。标的指数实时价格可在<code>index</code>端点访问得到。比如<code>BTC-PERP-REV</code>使用<code>BTCUSDT</code>为标的指数，那么可以在<code>index</code>端点寻找<code>BTCUSDT</code>的实时价格。</td>
+</tr>
+<tr>
+<td><code>contractMultiplier</code></td>
+<td>string</td>
+<td><code>true</code></td>
+<td>合约的乘数。</td>
+</tr>
+<tr>
+<td><code>icebergAllowed</code></td>
+<td>string</td>
+<td><code>false</code></td>
+<td>是否支持冰山订单。</td>
+</tr>
+</tbody></table>
+<p>在 <code>contracts</code>的<code>filters</code>信息组里:</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>filterType</code></td>
+<td>string</td>
+<td><code>PRICE_FILTER</code></td>
+<td>过滤器类型。</td>
+</tr>
+<tr>
+<td><code>minPrice</code></td>
+<td>float</td>
+<td><code>0.001</code></td>
+<td>允许的最小价格。</td>
+</tr>
+<tr>
+<td><code>maxPrice</code></td>
+<td>float</td>
+<td><code>100000.00000000</code></td>
+<td>允许的最大价格。</td>
+</tr>
+<tr>
+<td><code>tickSize</code></td>
+<td>float</td>
+<td><code>0.001</code></td>
+<td>合约价格的精度。</td>
+</tr>
+<tr>
+<td><code>minQty</code></td>
+<td>float</td>
+<td><code>0.01</code></td>
+<td>允许的最小数量。</td>
+</tr>
+<tr>
+<td><code>maxQty</code></td>
+<td>float</td>
+<td><code>100000.00000000</code></td>
+<td>允许的最大数量。</td>
+</tr>
+<tr>
+<td><code>stepSize</code></td>
+<td>float</td>
+<td><code>0.001</code></td>
+<td>合约数量的精度。</td>
+</tr>
+<tr>
+<td><code>minNotional</code></td>
+<td>float</td>
+<td><code>1</code></td>
+<td>最小交易额限制(数量 * 价格)</td>
+</tr>
+</tbody></table>
+<p>在<code>riskLimits</code>信息组里:</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>quantity</code></td>
+<td>float</td>
+<td><code>100</code></td>
+<td>仓位小于此数且大于前一个档位的<code>quantity</code>的需要参照以下要求。</td>
+</tr>
+<tr>
+<td><code>initialMargin</code></td>
+<td>float</td>
+<td><code>0.1</code></td>
+<td>初始保证金率。</td>
+</tr>
+<tr>
+<td><code>maintMargin</code></td>
+<td>float</td>
+<td><code>0.03</code></td>
+<td>最小维持保证金率。</td>
+</tr>
+</tbody></table>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;timezone&quot;</span>:<span class="string">&quot;UTC&quot;</span>,</span><br><span class="line">  <span class="string">&quot;serverTime&quot;</span>:<span class="string">&quot;1570701444309&quot;</span>,</span><br><span class="line">  <span class="string">&quot;brokerFilters&quot;</span>:[],</span><br><span class="line">  <span class="string">&quot;rateLimits&quot;</span>:[</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="string">&quot;rateLimitType&quot;</span>:<span class="string">&quot;ORDERS&quot;</span>,</span><br><span class="line">      <span class="string">&quot;interval&quot;</span>:<span class="string">&quot;SECOND&quot;</span>,</span><br><span class="line">      <span class="string">&quot;limit&quot;</span>:<span class="number">20</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;<span class="string">&quot;rateLimitType&quot;</span>:<span class="string">&quot;ORDERS&quot;</span>,</span><br><span class="line">    <span class="string">&quot;interval&quot;</span>:<span class="string">&quot;DAY&quot;</span>,</span><br><span class="line">    <span class="string">&quot;limit&quot;</span>:<span class="number">350000</span></span><br><span class="line">  &#125;,&#123;</span><br><span class="line">    <span class="string">&quot;rateLimitType&quot;</span>:<span class="string">&quot;REQUEST_WEIGHT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;interval&quot;</span>:<span class="string">&quot;MINUTE&quot;</span>,</span><br><span class="line">    <span class="string">&quot;limit&quot;</span>:<span class="number">1500</span></span><br><span class="line">  &#125;],</span><br><span class="line">  <span class="string">&quot;contracts&quot;</span>:[</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="string">&quot;filters&quot;</span>:[</span><br><span class="line">        &#123;<span class="string">&quot;minPrice&quot;</span>:<span class="string">&quot;0.01&quot;</span>,</span><br><span class="line">        <span class="string">&quot;maxPrice&quot;</span>:<span class="string">&quot;100000.00000000&quot;</span>,</span><br><span class="line">        <span class="string">&quot;tickSize&quot;</span>:<span class="string">&quot;0.01&quot;</span>,</span><br><span class="line">        <span class="string">&quot;filterType&quot;</span>:<span class="string">&quot;PRICE_FILTER&quot;</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">&quot;minQty&quot;</span>:<span class="string">&quot;1&quot;</span>,</span><br><span class="line">        <span class="string">&quot;maxQty&quot;</span>:<span class="string">&quot;100000.00000000&quot;</span>,</span><br><span class="line">        <span class="string">&quot;stepSize&quot;</span>:<span class="string">&quot;1&quot;</span>,</span><br><span class="line">        <span class="string">&quot;filterType&quot;</span>:<span class="string">&quot;LOT_SIZE&quot;</span></span><br><span class="line">      &#125;,&#123;</span><br><span class="line">        <span class="string">&quot;minNotional&quot;</span>:<span class="string">&quot;0.000001&quot;</span>,</span><br><span class="line">        <span class="string">&quot;filterType&quot;</span>:<span class="string">&quot;MIN_NOTIONAL&quot;</span></span><br><span class="line">      &#125;],</span><br><span class="line">      <span class="string">&quot;exchangeId&quot;</span>:<span class="string">&quot;301&quot;</span>,</span><br><span class="line">      <span class="string">&quot;symbol&quot;</span>:<span class="string">&quot;BTC-PERP-REV&quot;</span>,</span><br><span class="line">      <span class="string">&quot;symbolName&quot;</span>:<span class="string">&quot;BTC-PERP-REV&quot;</span>,</span><br><span class="line">      <span class="string">&quot;status&quot;</span>:<span class="string">&quot;TRADING&quot;</span>,</span><br><span class="line">      <span class="string">&quot;baseAsset&quot;</span>:<span class="string">&quot;BTC-PERP-REV&quot;</span>,</span><br><span class="line">      <span class="string">&quot;baseAssetPrecision&quot;</span>:<span class="string">&quot;1&quot;</span>,</span><br><span class="line">      <span class="string">&quot;quoteAsset&quot;</span>:<span class="string">&quot;USDT&quot;</span>,</span><br><span class="line">      <span class="string">&quot;quoteAssetPrecision&quot;</span>:<span class="string">&quot;0.01&quot;</span>,</span><br><span class="line">      <span class="string">&quot;icebergAllowed&quot;</span>:<span class="literal">false</span>,</span><br><span class="line">      <span class="string">&quot;inverse&quot;</span>:<span class="literal">true</span>,</span><br><span class="line">      <span class="string">&quot;index&quot;</span>:<span class="string">&quot;BTCUSDT&quot;</span>,</span><br><span class="line">      <span class="string">&quot;marginToken&quot;</span>:<span class="string">&quot;TBTC&quot;</span>,</span><br><span class="line">      <span class="string">&quot;marginPrecision&quot;</span>:<span class="string">&quot;0.00000001&quot;</span>,</span><br><span class="line">      <span class="string">&quot;contractMultiplier&quot;</span>:<span class="string">&quot;1.0&quot;</span>,</span><br><span class="line">      <span class="string">&quot;riskLimits&quot;</span>:[</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="string">&quot;riskLimitId&quot;</span>:<span class="string">&quot;200000001&quot;</span>,</span><br><span class="line">          <span class="string">&quot;quantity&quot;</span>:<span class="string">&quot;1000000.0&quot;</span>,</span><br><span class="line">          <span class="string">&quot;initialMargin&quot;</span>:<span class="string">&quot;0.01&quot;</span>,</span><br><span class="line">          <span class="string">&quot;maintMargin&quot;</span>:<span class="string">&quot;0.005&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="string">&quot;riskLimitId&quot;</span>:<span class="string">&quot;200000002&quot;</span>,</span><br><span class="line">          <span class="string">&quot;quantity&quot;</span>:<span class="string">&quot;2000000.0&quot;</span>,</span><br><span class="line">          <span class="string">&quot;initialMargin&quot;</span>:<span class="string">&quot;0.02&quot;</span>,</span><br><span class="line">          <span class="string">&quot;maintMargin&quot;</span>:<span class="string">&quot;0.01&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="string">&quot;riskLimitId&quot;</span>:<span class="string">&quot;200000003&quot;</span>,</span><br><span class="line">          <span class="string">&quot;quantity&quot;</span>:<span class="string">&quot;3000000.0&quot;</span>,</span><br><span class="line">          <span class="string">&quot;initialMargin&quot;</span>:<span class="string">&quot;0.03&quot;</span>,</span><br><span class="line">          <span class="string">&quot;maintMargin&quot;</span>:<span class="string">&quot;0.015&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="string">&quot;riskLimitId&quot;</span>:<span class="string">&quot;200000004&quot;</span>,</span><br><span class="line">          <span class="string">&quot;quantity&quot;</span>:<span class="string">&quot;4000000.0&quot;</span>,</span><br><span class="line">          <span class="string">&quot;initialMargin&quot;</span>:<span class="string">&quot;0.04&quot;</span>,</span><br><span class="line">          <span class="string">&quot;maintMargin&quot;</span>:<span class="string">&quot;0.02&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<!-- ## `insurance` **(PENDING)**
+获取当前保险基金信息。
+
+### **Request Weight:**
+0
+
+### **Request Url:**
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/contract/v1/insurance</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters：-1"><a href="#Parameters：-1" class="headerlink" title="Parameters："></a><strong>Parameters：</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>Input specific symbol to return the corresponding records. If not entered, records for all symbols will be returned.</td>
+</tr>
+<tr>
+<td><code>fromId</code></td>
+<td>long</td>
+<td><code>NO</code></td>
+<td></td>
+<td>pagination,	return record which id &lt; fromId</td>
+</tr>
+<tr>
+<td><code>toId</code></td>
+<td>long</td>
+<td><code>NO</code></td>
+<td></td>
+<td>pagination, return record which id &gt; toId. If toId is given, toId cannot be 0.</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td>20</td>
+<td>Number of entries returned.</td>
+</tr>
+</tbody></table>
+<h3 id="Response-1"><a href="#Response-1" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>id</code></td>
+<td>long</td>
+<td><code>1552272184833</code></td>
+<td>The ID of the record.</td>
+</tr>
+<tr>
+<td><code>timestamp</code></td>
+<td>long</td>
+<td><code>155227218483</code></td>
+<td>current server timestamp.</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>float</td>
+<td><code>23.23</code></td>
+<td>Balance of the insurance fund.</td>
+</tr>
+<tr>
+<td><code>unit</code></td>
+<td>string</td>
+<td><code>BTC</code></td>
+<td>Unit of the balance..</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;BTC&quot;</span>:[</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="string">&quot;id&quot;</span>: <span class="number">1552272184833</span>,</span><br><span class="line">      <span class="string">&quot;timestamp&quot;</span>: <span class="number">155227218483</span>,</span><br><span class="line">      <span class="string">&quot;value&quot;</span>: <span class="number">23.23</span>,</span><br><span class="line">      <span class="string">&quot;unit&quot;</span>: <span class="string">&quot;BTC&quot;</span></span><br><span class="line">    &#125;,...</span><br><span class="line">  ],...</span><br><span class="line">&#125;</span><br><span class="line">​<span class="string">``</span><span class="string">` --&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">## `</span>index<span class="string">`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">标的指数价格</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### **Request Weight:**</span></span><br><span class="line"><span class="string">0</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### **Request Url:**</span></span><br><span class="line"><span class="string">​`</span><span class="string">``</span>bash</span><br><span class="line"><span class="variable constant_">GET</span> /openapi/quote/v1/contract/index</span><br></pre></td></tr></table></figure>
+<h3 id="Parameters：-2"><a href="#Parameters：-2" class="headerlink" title="Parameters："></a><strong>Parameters：</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>symbol</td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>标的指数名称。如果这个没有发送，所有标的指数的价格都会被返回。</td>
+</tr>
+</tbody></table>
+<h3 id="Response-2"><a href="#Response-2" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>index</code></td>
+<td>float</td>
+<td><code>8342.73</code></td>
+<td>标的指数的价格。</td>
+</tr>
+<tr>
+<td><code>EDP</code></td>
+<td>float</td>
+<td><code>8432.32</code></td>
+<td>标的指数的EDP(预估交割价，过去10分钟指数价格的平均值）。</td>
+</tr>
+</tbody></table>
+<h3 id="Example-1"><a href="#Example-1" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;index&quot;</span>:&#123;</span><br><span class="line">    <span class="string">&quot;BTCUSDT&quot;</span>:<span class="string">&quot;8243.21666667&quot;</span>,</span><br><span class="line">    <span class="string">&quot;OKBUSDT&quot;</span>:<span class="string">&quot;1.482&quot;</span>,</span><br><span class="line">    <span class="string">&quot;BNBUSDT&quot;</span>:<span class="string">&quot;31.2658&quot;</span>,</span><br><span class="line">    <span class="string">&quot;HTUSDT&quot;</span>:<span class="string">&quot;3.1209&quot;</span>,...</span><br><span class="line">    &#125;,</span><br><span class="line">  <span class="string">&quot;edp&quot;</span>:&#123;</span><br><span class="line">    <span class="string">&quot;BTCUSDT&quot;</span>:<span class="string">&quot;8258.98505556&quot;</span>,</span><br><span class="line">    <span class="string">&quot;OKBUSDT&quot;</span>:<span class="string">&quot;1.48578333&quot;</span>,</span><br><span class="line">    <span class="string">&quot;BNBUSDT&quot;</span>:<span class="string">&quot;31.48741917&quot;</span>,</span><br><span class="line">    <span class="string">&quot;HTUSDT&quot;</span>:<span class="string">&quot;3.14308&quot;</span>,...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="fundingRate"><a href="#fundingRate" class="headerlink" title="fundingRate"></a><code>fundingRate</code></h2><p>获取当前资金费率 (<em>历史资金费率正在建设</em>)</p>
+<h3 id="Request-Weight-1"><a href="#Request-Weight-1" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>0</p>
+<h3 id="Request-Url-1"><a href="#Request-Url-1" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/contract/v1/fundingRate</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters：-3"><a href="#Parameters：-3" class="headerlink" title="Parameters："></a><strong>Parameters：</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>合约名称。如果没有发送该参数，所有合约的资金费率都会被返回。</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td><code>current</code></td>
+<td>获取<code>current</code>（当前）或者<code>past</code>（历史）的资金费率。</td>
+</tr>
+<tr>
+<td><code>from</code></td>
+<td>long</td>
+<td><code>NO</code></td>
+<td></td>
+<td>开始时间戳。</td>
+</tr>
+<tr>
+<td><code>to</code></td>
+<td>long</td>
+<td><code>NO</code></td>
+<td></td>
+<td>结束时间戳。</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td><code>20</code></td>
+<td>返回条数。</td>
+</tr>
+</tbody></table>
+<h3 id="Response-3"><a href="#Response-3" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>BTC-PERP-REV</code></td>
+<td>合约名称。</td>
+</tr>
+<tr>
+<td><code>intervalStart</code></td>
+<td>long</td>
+<td><code>1554710400000</code></td>
+<td>本次结算开始时间。</td>
+</tr>
+<tr>
+<td><code>intervalEnd</code></td>
+<td>long</td>
+<td><code>1554710400000</code></td>
+<td>本次结算结束时间。</td>
+</tr>
+<tr>
+<td><code>rate</code></td>
+<td>float</td>
+<td><code>0.00321</code></td>
+<td>该次结算资金费率。</td>
+</tr>
+</tbody></table>
+<h3 id="Example-2"><a href="#Example-2" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&#x27;symbol&#x27;</span>: <span class="string">&#x27;BTC-PERP-REV&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;intervalStart&#x27;</span>: <span class="string">&#x27;1570708800000&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;intervalEnd&#x27;</span>: <span class="string">&#x27;1570737600000&#x27;</span>,</span><br><span class="line">  &#125;,...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h2 id="depth"><a href="#depth" class="headerlink" title="depth"></a><code>depth</code></h2><p>获取当前订单簿的数据。</p>
+<h3 id="Request-Weight-2"><a href="#Request-Weight-2" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>根据数量会不一样，请求数量越多，重量越大:</p>
+<table>
+<thead>
+<tr>
+<th>数量</th>
+<th>请求重量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5, 10, 20, 50, 100</td>
+<td>1</td>
+</tr>
+<tr>
+<td>500</td>
+<td>5</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>10</td>
+</tr>
+</tbody></table>
+<h3 id="Request-Url-2"><a href="#Request-Url-2" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/quote/v1/contract/depth</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters"><a href="#Parameters" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>用来获取订单簿的合约名称。</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td><code>100</code> (max &#x3D; 100)</td>
+<td>返回<code>bids</code>和<code>asks</code>的数量</td>
+</tr>
+</tbody></table>
+<h3 id="Response-4"><a href="#Response-4" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>time</code></td>
+<td>long</td>
+<td><code>1550829103981</code></td>
+<td>当前时间（Unix Timestamp，毫秒ms）</td>
+</tr>
+<tr>
+<td><code>bids</code></td>
+<td>list</td>
+<td>(如下)</td>
+<td>所有bid的价格和数量信息，最优bid价格由上到下排列。</td>
+</tr>
+<tr>
+<td><code>asks</code></td>
+<td>list</td>
+<td>(如下)</td>
+<td>所有ask的价格和数量信息，最优ask价格由上到下排列。</td>
+</tr>
+</tbody></table>
+<p><code>bids</code>和<code>asks</code>所对应的信息组代表了订单簿的所有价格以及价格对应数量的信息，由最优价格从上到下排列。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&#39;&#39;</code></td>
+<td>float</td>
+<td><code>123.10</code></td>
+<td>价格</td>
+</tr>
+<tr>
+<td><code>&#39;&#39;</code></td>
+<td>float</td>
+<td><code>300</code></td>
+<td>当前价格对应的数量</td>
+</tr>
+</tbody></table>
+<h3 id="Example-3"><a href="#Example-3" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;time&quot;</span>: <span class="number">1555049455783</span>,</span><br><span class="line">  <span class="string">&quot;bids&quot;</span>: [</span><br><span class="line">   [<span class="string">&quot;78.82&quot;</span>, <span class="string">&quot;0.526&quot;</span>],<span class="comment">//[价格, 数量]</span></span><br><span class="line">   [<span class="string">&quot;77.24&quot;</span>, <span class="string">&quot;1.22&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;76.65&quot;</span>, <span class="string">&quot;1.043&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;76.58&quot;</span>, <span class="string">&quot;1.34&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;75.67&quot;</span>, <span class="string">&quot;1.52&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;75.12&quot;</span>, <span class="string">&quot;0.635&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;75.02&quot;</span>, <span class="string">&quot;0.72&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;75.01&quot;</span>, <span class="string">&quot;0.672&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;73.73&quot;</span>, <span class="string">&quot;1.282&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;73.58&quot;</span>, <span class="string">&quot;1.116&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;73.45&quot;</span>, <span class="string">&quot;0.471&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;73.44&quot;</span>, <span class="string">&quot;0.483&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;72.32&quot;</span>, <span class="string">&quot;0.383&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;72.26&quot;</span>, <span class="string">&quot;1.283&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;72.11&quot;</span>, <span class="string">&quot;0.703&quot;</span>],</span><br><span class="line">   [<span class="string">&quot;70.61&quot;</span>, <span class="string">&quot;0.454&quot;</span>]],</span><br><span class="line">   <span class="string">&quot;asks&quot;</span>: [</span><br><span class="line">     [<span class="string">&quot;122.96&quot;</span>, <span class="string">&quot;0.381&quot;</span>],<span class="comment">//[价格, 数量]</span></span><br><span class="line">     [<span class="string">&quot;144.46&quot;</span>, <span class="string">&quot;1&quot;</span>],</span><br><span class="line">     [<span class="string">&quot;155.55&quot;</span>, <span class="string">&quot;0.065&quot;</span>],</span><br><span class="line">     [<span class="string">&quot;160.16&quot;</span>, <span class="string">&quot;0.052&quot;</span>],</span><br><span class="line">     [<span class="string">&quot;200&quot;</span>, <span class="string">&quot;0.775&quot;</span>],</span><br><span class="line">     [<span class="string">&quot;249&quot;</span>, <span class="string">&quot;0.17&quot;</span>],</span><br><span class="line">     [<span class="string">&quot;250&quot;</span>, <span class="string">&quot;1&quot;</span>],</span><br><span class="line">     [<span class="string">&quot;300&quot;</span>, <span class="string">&quot;1&quot;</span>],</span><br><span class="line">     [<span class="string">&quot;400&quot;</span>, <span class="string">&quot;1&quot;</span>],</span><br><span class="line">     [<span class="string">&quot;499&quot;</span>, <span class="string">&quot;1&quot;</span>]]</span><br><span class="line">   &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="trades"><a href="#trades" class="headerlink" title="trades"></a><code>trades</code></h2><p>获取某个合约最近成交订单的信息。</p>
+<h3 id="Request-Weight-3"><a href="#Request-Weight-3" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-URL"><a href="#Request-URL" class="headerlink" title="Request URL:"></a><strong>Request URL:</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/quote/v1/contract/trades</span><br></pre></td></tr></table></figure>
+<h3 id="Parameters：-4"><a href="#Parameters：-4" class="headerlink" title="Parameters："></a><strong>Parameters：</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>合约名称</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td><code>NO</code> (最大值为60)</td>
+<td><code>60</code></td>
+<td>返回成交订单的数量</td>
+</tr>
+</tbody></table>
+<h3 id="Response-5"><a href="#Response-5" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>price</code></td>
+<td>float</td>
+<td><code>0.055</code></td>
+<td>交易价格</td>
+</tr>
+<tr>
+<td><code>time</code></td>
+<td>long</td>
+<td><code>1537797044116</code></td>
+<td>当前Unix时间戳，毫秒(ms)</td>
+</tr>
+<tr>
+<td><code>qty</code></td>
+<td>float</td>
+<td><code>5</code></td>
+<td>数量（张数）</td>
+</tr>
+<tr>
+<td><code>isBuyerMaker</code></td>
+<td>string</td>
+<td><code>true</code></td>
+<td>卖方还是买方。<code>true</code>&#x3D;卖方，<code>false</code>&#x3D;买方</td>
+</tr>
+</tbody></table>
+<h3 id="Example-4"><a href="#Example-4" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;price&quot;</span>: <span class="string">&quot;1.21&quot;</span>,</span><br><span class="line">    <span class="string">&quot;time&quot;</span>: <span class="number">1555034474064</span>,</span><br><span class="line">    <span class="string">&quot;qty&quot;</span>: <span class="string">&quot;0.725&quot;</span>,</span><br><span class="line">    <span class="string">&quot;isBuyerMaker&quot;</span>: <span class="title class_">False</span></span><br><span class="line">  &#125;,...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h2 id="klines"><a href="#klines" class="headerlink" title="klines"></a><code>klines</code></h2><p>获取某个合约的K线信息（高，低，开，收，交易量…)</p>
+<h3 id="Request-Weight-4"><a href="#Request-Weight-4" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-URL-1"><a href="#Request-URL-1" class="headerlink" title="Request URL:"></a><strong>Request URL:</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/quote/v1/contract/klines</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters：-5"><a href="#Parameters：-5" class="headerlink" title="Parameters："></a><strong>Parameters：</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>合约名称</td>
+</tr>
+<tr>
+<td><code>interval</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>K线图区间。可识别发送的值为：  <code>1m</code>,<code>5m</code>,<code>15m</code>,<code>30m</code>,<code>1h</code>,<code>1d</code>,<code>1w</code>,<code>1M</code>（<code>m</code>&#x3D;分钟，<code>h</code>&#x3D;小时,<code>d</code>&#x3D;天，<code>w</code>&#x3D;星期，<code>M</code>&#x3D;月）</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td><code>1000</code></td>
+<td>返回值的数量，最大值为1000</td>
+</tr>
+<tr>
+<td><code>to</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td></td>
+<td>最后一个数据点的时间戳</td>
+</tr>
+</tbody></table>
+<h3 id="Response-6"><a href="#Response-6" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&#39;&#39;</code></td>
+<td>long</td>
+<td><code>1538728740000</code></td>
+<td>开始时间戳，毫秒（ms）</td>
+</tr>
+<tr>
+<td><code>&#39;&#39;</code></td>
+<td>float</td>
+<td><code>36.00000&#39;</code></td>
+<td>开盘价</td>
+</tr>
+<tr>
+<td><code>&#39;&#39;</code></td>
+<td>float</td>
+<td><code>36.00000</code></td>
+<td>最高价</td>
+</tr>
+<tr>
+<td><code>&#39;&#39;</code></td>
+<td>float</td>
+<td><code>36.00000</code></td>
+<td>最低价</td>
+</tr>
+<tr>
+<td><code>&#39;&#39;</code></td>
+<td>float</td>
+<td><code>36.00000</code></td>
+<td>收盘价</td>
+</tr>
+<tr>
+<td><code>&#39;&#39;</code></td>
+<td>float</td>
+<td><code>148976.11427815</code></td>
+<td>合约交易金额</td>
+</tr>
+<tr>
+<td><code>&#39;&#39;</code></td>
+<td>long</td>
+<td><code>1538728740000</code></td>
+<td>停止时间戳，毫秒（ms）</td>
+</tr>
+<tr>
+<td><code>&#39;&#39;</code></td>
+<td>float</td>
+<td><code>2434.19055334</code></td>
+<td>交易数量（张数）</td>
+</tr>
+<tr>
+<td><code>&#39;&#39;</code></td>
+<td>integer</td>
+<td><code>308</code></td>
+<td>已成交数量（张数）</td>
+</tr>
+<tr>
+<td><code>&#39;&#39;</code></td>
+<td>float</td>
+<td><code>1756.87402397</code></td>
+<td>买方购买金额</td>
+</tr>
+<tr>
+<td><code>&#39;&#39;</code></td>
+<td>float</td>
+<td><code>28.46694368</code></td>
+<td>买方购买数量（张数）</td>
+</tr>
+</tbody></table>
+<h3 id="Example-5"><a href="#Example-5" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  [</span><br><span class="line">    <span class="number">1538728740000</span>, <span class="comment">//&#x27;开盘时间&#x27;</span></span><br><span class="line">    <span class="string">&#x27;36.000000000000000000&#x27;</span>, <span class="comment">//&#x27;开盘价&#x27;</span></span><br><span class="line">    <span class="string">&#x27;36.000000000000000000&#x27;</span>, <span class="comment">//&#x27;最高价&#x27;</span></span><br><span class="line">    <span class="string">&#x27;36.000000000000000000&#x27;</span>, <span class="comment">//&#x27;最低价&#x27;:</span></span><br><span class="line">    <span class="string">&#x27;36.000000000000000000&#x27;</span>, <span class="comment">//&#x27;收盘价&#x27;</span></span><br><span class="line">    <span class="string">&#x27;148976.11427815&#x27;</span>,  <span class="comment">// 合约交易金额</span></span><br><span class="line">    <span class="number">1499644799999</span>,      <span class="comment">// 收盘时间</span></span><br><span class="line">    <span class="string">&#x27;2434.19055334&#x27;</span>,    <span class="comment">// 交易数量（张数）</span></span><br><span class="line">    <span class="number">308</span>,                <span class="comment">// 已成交数量（张数）</span></span><br><span class="line">    <span class="string">&#x27;1756.87402397&#x27;</span>,    <span class="comment">// 买方购买金额</span></span><br><span class="line">    <span class="string">&#x27;28.46694368&#x27;</span>       <span class="comment">// 买方购买数量（张数）</span></span><br><span class="line">  ],...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p><code>base asset</code> 代表买方收到了该数量的合约</p>
+<p><code>quote asset</code> 代表该数量的token用来获得合约</p>
+<h2 id="Contracts"><a href="#Contracts" class="headerlink" title="Contracts"></a>Contracts</h2><p>列出所有合约币对详细信息</p>
+<h3 id="Request-Weight-5"><a href="#Request-Weight-5" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-3"><a href="#Request-Url-3" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/contracts</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters-1"><a href="#Parameters-1" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><p>无</p>
+<h3 id="Response-7"><a href="#Response-7" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>:<span class="string">&quot;BTC-PERP-REV&quot;</span>,</span><br><span class="line">    <span class="string">&quot;symbolName&quot;</span>:<span class="string">&quot;BTC-PERP-REV&quot;</span>,</span><br><span class="line">    <span class="string">&quot;baseToken&quot;</span>:<span class="string">&quot;BTC-PERP-REV&quot;</span>,</span><br><span class="line">    <span class="string">&quot;quoteToken&quot;</span>:<span class="string">&quot;TBTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;lastPrice&quot;</span>:<span class="string">&quot;11682.8&quot;</span>,</span><br><span class="line">    <span class="string">&quot;baseVolume&quot;</span>:<span class="string">&quot;13621303&quot;</span>,</span><br><span class="line">    <span class="string">&quot;quoteVolume&quot;</span>:<span class="string">&quot;1094.487444013737088362&quot;</span>,</span><br><span class="line">    <span class="string">&quot;bid&quot;</span>:<span class="string">&quot;11682&quot;</span>,</span><br><span class="line">    <span class="string">&quot;ask&quot;</span>:<span class="string">&quot;11683.3&quot;</span>,</span><br><span class="line">    <span class="string">&quot;high&quot;</span>:<span class="string">&quot;11730.1&quot;</span>,</span><br><span class="line">    <span class="string">&quot;low&quot;</span>:<span class="string">&quot;11567.1&quot;</span>,</span><br><span class="line">    <span class="string">&quot;productType&quot;</span>:<span class="string">&quot;futures&quot;</span>,</span><br><span class="line">    <span class="string">&quot;openInterest&quot;</span>:<span class="string">&quot;23797354&quot;</span>,</span><br><span class="line">    <span class="string">&quot;indexPrice&quot;</span>:<span class="string">&quot;11679.5433333333333333&quot;</span>,</span><br><span class="line">    <span class="string">&quot;index&quot;</span>:<span class="string">&quot;BTCUSDT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;indexBaseToken&quot;</span>:<span class="string">&quot;USD&quot;</span>,</span><br><span class="line">    <span class="string">&quot;startTs&quot;</span>:<span class="string">&quot;1598789083&quot;</span>,</span><br><span class="line">    <span class="string">&quot;endTs&quot;</span>:<span class="string">&quot;1598875483&quot;</span>,</span><br><span class="line">    <span class="string">&quot;fundingRate&quot;</span>:<span class="string">&quot;0.000038494841395324&quot;</span>,</span><br><span class="line">    <span class="string">&quot;nextFundingRate&quot;</span>:<span class="string">&quot;0.000088260431150408&quot;</span>,</span><br><span class="line">    <span class="string">&quot;nextFundingRateTs&quot;</span>:<span class="number">1598904000</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>:<span class="string">&quot;BTC-SWAP&quot;</span>,</span><br><span class="line">    <span class="string">&quot;symbolName&quot;</span>:<span class="string">&quot;BTC-SWAP&quot;</span>,</span><br><span class="line">    <span class="string">&quot;baseToken&quot;</span>:<span class="string">&quot;BTC-SWAP&quot;</span>,</span><br><span class="line">    <span class="string">&quot;quoteToken&quot;</span>:<span class="string">&quot;BTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;lastPrice&quot;</span>:<span class="string">&quot;11682.2&quot;</span>,</span><br><span class="line">    <span class="string">&quot;baseVolume&quot;</span>:<span class="string">&quot;27337579&quot;</span>,</span><br><span class="line">    <span class="string">&quot;quoteVolume&quot;</span>:<span class="string">&quot;2348.305049590008405635&quot;</span>,</span><br><span class="line">    <span class="string">&quot;bid&quot;</span>:<span class="string">&quot;11681.4&quot;</span>,</span><br><span class="line">    <span class="string">&quot;ask&quot;</span>:<span class="string">&quot;11683.7&quot;</span>,</span><br><span class="line">    <span class="string">&quot;high&quot;</span>:<span class="string">&quot;11730.6&quot;</span>,</span><br><span class="line">    <span class="string">&quot;low&quot;</span>:<span class="string">&quot;11567.4&quot;</span>,</span><br><span class="line">    <span class="string">&quot;productType&quot;</span>:<span class="string">&quot;futures&quot;</span>,</span><br><span class="line">    <span class="string">&quot;openInterest&quot;</span>:<span class="string">&quot;3289364&quot;</span>,</span><br><span class="line">    <span class="string">&quot;indexPrice&quot;</span>:<span class="string">&quot;11679.5433333333333333&quot;</span>,</span><br><span class="line">    <span class="string">&quot;index&quot;</span>:<span class="string">&quot;BTCUSDT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;indexBaseToken&quot;</span>:<span class="string">&quot;USD&quot;</span>,</span><br><span class="line">    <span class="string">&quot;startTs&quot;</span>:<span class="string">&quot;1598789092&quot;</span>,</span><br><span class="line">    <span class="string">&quot;endTs&quot;</span>:<span class="string">&quot;1598875492&quot;</span>,</span><br><span class="line">    <span class="string">&quot;fundingRate&quot;</span>:<span class="string">&quot;0.000084351317877269&quot;</span>,</span><br><span class="line">    <span class="string">&quot;nextFundingRate&quot;</span>:<span class="string">&quot;0.000084285978912247&quot;</span>,</span><br><span class="line">    <span class="string">&quot;nextFundingRateTs&quot;</span>:<span class="number">1598904000</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Private-Endpoints"><a href="#Private-Endpoints" class="headerlink" title="Private Endpoints"></a>Private Endpoints</h1><h2 id="order"><a href="#order" class="headerlink" title="order"></a><code>order</code></h2><p>合约下单，这个端点需要签名访问。</p>
+<h3 id="Request-Weight-6"><a href="#Request-Weight-6" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-URL-2"><a href="#Request-URL-2" class="headerlink" title="Request URL:"></a><strong>Request URL:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST /openapi/contract/v1/order</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters：-6"><a href="#Parameters：-6" class="headerlink" title="Parameters："></a><strong>Parameters：</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>合约名称。</td>
+</tr>
+<tr>
+<td><code>side</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>下单方向，方向类型为<code>BUY_OPEN</code>、<code>SELL_OPEN</code>、<code>BUY_CLOSE</code>、<code>SELL_CLOSE</code>。</td>
+</tr>
+<tr>
+<td><code>orderType</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>订单类型，支持订单类型为 <code>LIMIT</code>和<code>STOP</code>。</td>
+</tr>
+<tr>
+<td><code>quantity</code></td>
+<td>float</td>
+<td><code>YES</code></td>
+<td></td>
+<td>订单的合约数量。</td>
+</tr>
+<tr>
+<td><code>leverage</code></td>
+<td>float</td>
+<td><code>YES</code>.（*_CLOSE平仓单<strong>不强制</strong>）</td>
+<td></td>
+<td>订单的杠杆。</td>
+</tr>
+<tr>
+<td><code>price</code></td>
+<td>float</td>
+<td><code>NO</code>. (<code>LIMIT</code>&amp;<code>INPUT</code>)订单 <strong>强制需要</strong></td>
+<td></td>
+<td>订单价格。</td>
+</tr>
+<tr>
+<td><code>priceType</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td><code>INPUT</code></td>
+<td>价格类型，支持的价格类型为<code>INPUT</code>、<code>OPPONENT</code>、<code>QUEUE</code>、<code>OVER</code>、<code>MARKET</code>。</td>
+</tr>
+<tr>
+<td><code>triggerPrice</code></td>
+<td>float</td>
+<td><code>NO</code>. <code>STOP</code> 订单 <strong>强制需要</strong></td>
+<td></td>
+<td>计划委托的触发价格。</td>
+</tr>
+<tr>
+<td><code>timeInForce</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td><code>GTC</code></td>
+<td><code>LIMIT</code>订单的时间指令（Time in Force），目前支持的类型为<code>GTC</code>、<code>FOK</code>、<code>IOC</code>、<code>LIMIT_MAKER</code>。</td>
+</tr>
+<tr>
+<td><code>clientOrderId</code></td>
+<td>string&#x2F;long</td>
+<td><code>YES</code></td>
+<td></td>
+<td>订单的ID，用户自己定义。</td>
+</tr>
+</tbody></table>
+<p><strong>注意：</strong> 对于 <strong>市价订单</strong>, 你需要设置<code>orderType</code>为 <strong><code>LIMIT</code></strong> <strong>并且设置</strong> <code>priceType</code> 为 <strong><code>MARKET</code></strong>.</p>
+<p>你可以在<code>brokerInfo</code>端点获取合约价格，数量的精度配置信息。</p>
+<p>注意：如果你的余额没有达到需要保证金的要求（初始保证金+开仓手续费+平仓手续费），将会有”<em>insufficient balance</em>“（余额不足）的错误返回。</p>
+<p>对于 <em>价格类型</em> 和 <em>订单类型</em> 的详细解释，请参见文末。</p>
+<h3 id="Response-8"><a href="#Response-8" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>time</code></td>
+<td>long</td>
+<td><code>1570759718825</code></td>
+<td>订单生成时的时间戳</td>
+</tr>
+<tr>
+<td><code>updateTime</code></td>
+<td>long</td>
+<td><code>1551062936784</code></td>
+<td>订单上次更新的时间戳</td>
+</tr>
+<tr>
+<td><code>orderId</code></td>
+<td>integer</td>
+<td><code>469961015902208000</code></td>
+<td>订单ID</td>
+</tr>
+<tr>
+<td><code>clientOrderId</code></td>
+<td>string</td>
+<td><code>213443</code></td>
+<td>用户定义的订单ID</td>
+</tr>
+<tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>BTC-PERP-REV</code></td>
+<td>合约名称</td>
+</tr>
+<tr>
+<td><code>price</code></td>
+<td>float</td>
+<td><code>8200</code></td>
+<td>订单价格</td>
+</tr>
+<tr>
+<td><code>leverage</code></td>
+<td>float</td>
+<td><code>4</code></td>
+<td>订单杠杆</td>
+</tr>
+<tr>
+<td><code>origQty</code></td>
+<td>float</td>
+<td><code>1.01</code></td>
+<td>订单数量</td>
+</tr>
+<tr>
+<td><code>executedQty</code></td>
+<td>float</td>
+<td><code>1.01</code></td>
+<td>订单已执行数量</td>
+</tr>
+<tr>
+<td><code>avgPrice</code></td>
+<td>float</td>
+<td><code>4754.24</code></td>
+<td>平均交易价格</td>
+</tr>
+<tr>
+<td><code>marginLocked</code></td>
+<td>float</td>
+<td><code>200</code></td>
+<td>该订单锁定的保证金。这包括实际需要的保证金外加开仓和平仓所需的费用。</td>
+</tr>
+<tr>
+<td><code>orderType</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td>订单类型（<code>LIMIT</code>和<code>STOP</code>）</td>
+</tr>
+<tr>
+<td><code>priceType</code></td>
+<td>string</td>
+<td><code>INPUT</code></td>
+<td>价格类型（<code>INPUT</code>、<code>OPPONENT</code>、<code>QUEUE</code>、<code>OVER</code>、<code>MARKET</code>）</td>
+</tr>
+<tr>
+<td><code>side</code></td>
+<td>string</td>
+<td><code>BUY</code></td>
+<td>订单方向（<code>BUY_OPEN</code>、<code>SELL_OPEN</code>、<code>BUY_CLOSE</code>、<code>SELL_CLOSE</code>）</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>string</td>
+<td><code>NEW</code></td>
+<td>订单状态（<code>NEW</code>、<code>PARTIALLY_FILLED</code>、<code>FILLED</code>、<code>CANCELED</code>、<code>REJECTED</code>）</td>
+</tr>
+<tr>
+<td><code>timeInForce</code></td>
+<td>string</td>
+<td><code>GTC</code></td>
+<td>时效单（Time in Force)类型(<code>GTC</code>、<code>FOK</code>、<code>IOC</code>、<code>LIMIT_MAKER</code>)</td>
+</tr>
+<tr>
+<td><code>fees</code></td>
+<td></td>
+<td></td>
+<td>订单的手续费</td>
+</tr>
+</tbody></table>
+<h3 id="Example-6"><a href="#Example-6" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&#x27;time&#x27;</span>: <span class="string">&#x27;1570759718825&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;updateTime&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;orderId&#x27;</span>: <span class="string">&#x27;469961015902208000&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;clientOrderId&#x27;</span>: <span class="string">&#x27;6423344174&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;symbol&#x27;</span>: <span class="string">&#x27;BTC-PERP-REV&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;price&#x27;</span>: <span class="string">&#x27;8200&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;leverage&#x27;</span>: <span class="string">&#x27;12.08&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;origQty&#x27;</span>: <span class="string">&#x27;5&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;executedQty&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;avgPrice&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;marginLocked&#x27;</span>: <span class="string">&#x27;0.00005047&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;orderType&#x27;</span>: <span class="string">&#x27;LIMIT&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;side&#x27;</span>: <span class="string">&#x27;BUY_OPEN&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;fees&#x27;</span>: [],</span><br><span class="line">  <span class="string">&#x27;timeInForce&#x27;</span>: <span class="string">&#x27;GTC&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;status&#x27;</span>: <span class="string">&#x27;NEW&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;priceType&#x27;</span>: <span class="string">&#x27;INPUT&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="cancel"><a href="#cancel" class="headerlink" title="cancel"></a><code>cancel</code></h2><p>取消某个订单，需要发送<code>orderId</code>或者<code>clientOrderId</code>其中之一。这个API端点需要你的请求签名。</p>
+<h3 id="Request-Weight-7"><a href="#Request-Weight-7" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-4"><a href="#Request-Url-4" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE /openapi/contract/v1/order/cancel</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameter"><a href="#Parameter" class="headerlink" title="Parameter:"></a><strong>Parameter:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>orderId</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td></td>
+<td>订单的ID</td>
+</tr>
+<tr>
+<td><code>clientOrderId</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>用户定义的订单ID</td>
+</tr>
+<tr>
+<td><code>orderType</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>订单类型（<code>LIMIT</code>和<code>STOP</code>）</td>
+</tr>
+<tr>
+<td><code>fastCancel</code></td>
+<td>int</td>
+<td><code>NO</code></td>
+<td>默认0(同步撤单)，1异步撤单</td>
+<td></td>
+</tr>
+<tr>
+<td><code>symbolId</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td>币对ID</td>
+<td></td>
+</tr>
+<tr>
+<td><code>securityType</code></td>
+<td>int</td>
+<td><code>NO</code></td>
+<td>默认3 1币币 3合约</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>注意：</strong><code> orderId</code> 或者 <code>clientOrderId</code> <strong>必须发送其中之一</strong></p>
+<h3 id="Response-9"><a href="#Response-9" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>time</code></td>
+<td>long</td>
+<td><code>1570759718825</code></td>
+<td>订单生成时的时间戳</td>
+</tr>
+<tr>
+<td><code>updateTime</code></td>
+<td>long</td>
+<td><code>1551062936784</code></td>
+<td>订单上次更新的时间戳</td>
+</tr>
+<tr>
+<td><code>orderId</code></td>
+<td>integer</td>
+<td><code>469961015902208000</code></td>
+<td>订单ID</td>
+</tr>
+<tr>
+<td><code>clientOrderId</code></td>
+<td>string</td>
+<td><code>213443</code></td>
+<td>用户定义的订单ID</td>
+</tr>
+<tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>BTC-PERP-REV</code></td>
+<td>合约名称</td>
+</tr>
+<tr>
+<td><code>price</code></td>
+<td>float</td>
+<td><code>8200</code></td>
+<td>订单价格</td>
+</tr>
+<tr>
+<td><code>leverage</code></td>
+<td>float</td>
+<td><code>4</code></td>
+<td>订单杠杆</td>
+</tr>
+<tr>
+<td><code>origQty</code></td>
+<td>float</td>
+<td><code>1.01</code></td>
+<td>订单数量</td>
+</tr>
+<tr>
+<td><code>executedQty</code></td>
+<td>float</td>
+<td><code>1.01</code></td>
+<td>订单已执行数量</td>
+</tr>
+<tr>
+<td><code>avgPrice</code></td>
+<td>float</td>
+<td><code>4754.24</code></td>
+<td>平均交易价格</td>
+</tr>
+<tr>
+<td><code>marginLocked</code></td>
+<td>float</td>
+<td><code>200</code></td>
+<td>该订单锁定的保证金。这包括实际需要的保证金外加开仓和平仓所需的费用。</td>
+</tr>
+<tr>
+<td><code>orderType</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td>订单类型（<code>LIMIT</code>和<code>STOP</code>）</td>
+</tr>
+<tr>
+<td><code>priceType</code></td>
+<td>string</td>
+<td><code>INPUT</code></td>
+<td>价格类型（<code>INPUT</code>、<code>OPPONENT</code>、<code>QUEUE</code>、<code>OVER</code>、<code>MARKET</code>）</td>
+</tr>
+<tr>
+<td><code>side</code></td>
+<td>string</td>
+<td><code>BUY</code></td>
+<td>订单方向（<code>BUY_OPEN</code>、<code>SELL_OPEN</code>、<code>BUY_CLOSE</code>、<code>SELL_CLOSE</code>）</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>string</td>
+<td><code>NEW</code></td>
+<td>订单状态（<code>NEW</code>、<code>PARTIALLY_FILLED</code>、<code>FILLED</code>、<code>CANCELED</code>、<code>REJECTED</code>）。该端点返回的订单状态都是<code>CANCELED</code></td>
+</tr>
+<tr>
+<td><code>timeInForce</code></td>
+<td>string</td>
+<td><code>GTC</code></td>
+<td>时效单（Time in Force)类型(<code>GTC</code>、<code>FOK</code>、<code>IOC</code>、<code>LIMIT_MAKER</code>)</td>
+</tr>
+<tr>
+<td><code>fees</code></td>
+<td></td>
+<td></td>
+<td>订单的手续费</td>
+</tr>
+</tbody></table>
+<p>在<code>fees</code>信息组里:</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>feeToken</code></td>
+<td>string</td>
+<td><code>USDT</code></td>
+<td>手续费计价类型</td>
+</tr>
+<tr>
+<td><code>fee</code></td>
+<td>float</td>
+<td><code>0</code></td>
+<td>实际手续费</td>
+</tr>
+</tbody></table>
+<h3 id="Example-7"><a href="#Example-7" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&#x27;time&#x27;</span>: <span class="string">&#x27;1570759718825&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;updateTime&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;orderId&#x27;</span>: <span class="string">&#x27;469961015902208000&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;clientOrderId&#x27;</span>: <span class="string">&#x27;6423344174&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;symbol&#x27;</span>: <span class="string">&#x27;BTC-PERP-REV&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;price&#x27;</span>: <span class="string">&#x27;8200&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;leverage&#x27;</span>: <span class="string">&#x27;12.08&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;origQty&#x27;</span>: <span class="string">&#x27;5&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;executedQty&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;avgPrice&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;marginLocked&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;orderType&#x27;</span>: <span class="string">&#x27;LIMIT&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;side&#x27;</span>: <span class="string">&#x27;BUY_OPEN&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;fees&#x27;</span>: [],</span><br><span class="line">  <span class="string">&#x27;timeInForce&#x27;</span>: <span class="string">&#x27;GTC&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;status&#x27;</span>: <span class="string">&#x27;CANCELED&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;priceType&#x27;</span>: <span class="string">&#x27;INPUT&#x27;</span> <span class="comment">//status will always be `CANCELED` for cancel request</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">异步返回结果</span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&#x27;isCancelled&#x27;</span>:<span class="literal">true</span>  <span class="comment">//订单是否还在book上存在，如果本来就不在book上 返回true。所以除非连接match 超时，其他情况返回均为true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="batchCancel"><a href="#batchCancel" class="headerlink" title="batchCancel"></a><code>batchCancel</code></h3><p>批量撤销订单(<strong>正在建设中: 计划委托的批量撤单</strong>)</p>
+<h3 id="Request-Weight-8"><a href="#Request-Weight-8" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-5"><a href="#Request-Url-5" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE /openapi/contract/v1/order/batchCancel</span><br></pre></td></tr></table></figure>
+<h3 id="Parameter-1"><a href="#Parameter-1" class="headerlink" title="Parameter:"></a><strong>Parameter:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string&#x2F;list</td>
+<td><code>NO</code></td>
+<td></td>
+<td>合约名称（或者用<code>,</code>分割的合约名称的list）</td>
+</tr>
+</tbody></table>
+<h3 id="Response-10"><a href="#Response-10" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>message</code></td>
+<td>string</td>
+<td><code>success</code></td>
+<td>撤单请求的返回消息</td>
+</tr>
+<tr>
+<td><code>timestamp</code></td>
+<td>long</td>
+<td><code>1541161088303</code></td>
+<td>返回时的时间戳</td>
+</tr>
+</tbody></table>
+<h3 id="Example-8"><a href="#Example-8" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&#x27;message&#x27;</span>:<span class="string">&#x27;success&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;timestamp&#x27;</span>:<span class="number">1541161088303</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="openOrders"><a href="#openOrders" class="headerlink" title="openOrders"></a><code>openOrders</code></h3><p>未完成委托，这个API端点需要请求签名。</p>
+<h3 id="Request-Weight-9"><a href="#Request-Weight-9" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-6"><a href="#Request-Url-6" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/contract/v1/openOrders</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters-2"><a href="#Parameters-2" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>合约名称。如果没有在请求里发送，所有合约的未完成委托都会被返回。</td>
+</tr>
+<tr>
+<td><code>orderId</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td></td>
+<td>订单ID</td>
+</tr>
+<tr>
+<td><code>orderType</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>订单类型（<code>LIMIT</code>、<code>STOP</code>）</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td><code>20</code></td>
+<td>返回值的长度。</td>
+</tr>
+</tbody></table>
+<p>如果发送了<code>orderId</code>，会返回所有&lt; <code>orderId</code>的订单。如果没有则会返回最新的未完成订单。</p>
+<h3 id="Response-11"><a href="#Response-11" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>time</code></td>
+<td>long</td>
+<td><code>1570759718825</code></td>
+<td>订单生成时的时间戳</td>
+</tr>
+<tr>
+<td><code>updateTime</code></td>
+<td>long</td>
+<td><code>1551062936784</code></td>
+<td>订单上次更新的时间戳</td>
+</tr>
+<tr>
+<td><code>orderId</code></td>
+<td>integer</td>
+<td><code>469961015902208000</code></td>
+<td>订单ID</td>
+</tr>
+<tr>
+<td><code>clientOrderId</code></td>
+<td>string</td>
+<td><code>213443</code></td>
+<td>用户定义的订单ID</td>
+</tr>
+<tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>BTC-PERP-REV</code></td>
+<td>合约名称</td>
+</tr>
+<tr>
+<td><code>price</code></td>
+<td>float</td>
+<td><code>8200</code></td>
+<td>订单价格</td>
+</tr>
+<tr>
+<td><code>leverage</code></td>
+<td>float</td>
+<td><code>4</code></td>
+<td>订单杠杆</td>
+</tr>
+<tr>
+<td><code>origQty</code></td>
+<td>float</td>
+<td><code>1.01</code></td>
+<td>订单数量</td>
+</tr>
+<tr>
+<td><code>executedQty</code></td>
+<td>float</td>
+<td><code>1.01</code></td>
+<td>订单已执行数量</td>
+</tr>
+<tr>
+<td><code>avgPrice</code></td>
+<td>float</td>
+<td><code>4754.24</code></td>
+<td>平均交易价格</td>
+</tr>
+<tr>
+<td><code>marginLocked</code></td>
+<td>float</td>
+<td><code>200</code></td>
+<td>该订单锁定的保证金。这包括实际需要的保证金外加开仓和平仓所需的费用。</td>
+</tr>
+<tr>
+<td><code>orderType</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td>订单类型（<code>LIMIT</code>和<code>STOP</code>）</td>
+</tr>
+<tr>
+<td><code>priceType</code></td>
+<td>string</td>
+<td><code>INPUT</code></td>
+<td>价格类型（<code>INPUT</code>、<code>OPPONENT</code>、<code>QUEUE</code>、<code>OVER</code>、<code>MARKET</code>）</td>
+</tr>
+<tr>
+<td><code>side</code></td>
+<td>string</td>
+<td><code>BUY</code></td>
+<td>订单方向（<code>BUY_OPEN</code>、<code>SELL_OPEN</code>、<code>BUY_CLOSE</code>、<code>SELL_CLOSE</code>）</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>string</td>
+<td><code>NEW</code></td>
+<td>订单状态（<code>NEW</code>、<code>PARTIALLY_FILLED</code>、<code>FILLED</code>、<code>CANCELED</code>、<code>REJECTED</code>）</td>
+</tr>
+<tr>
+<td><code>timeInForce</code></td>
+<td>string</td>
+<td><code>GTC</code></td>
+<td>时效单（Time in Force)类型(<code>GTC</code>、<code>FOK</code>、<code>IOC</code>、<code>LIMIT_MAKER</code>)</td>
+</tr>
+<tr>
+<td><code>fees</code></td>
+<td></td>
+<td></td>
+<td>订单的手续费</td>
+</tr>
+</tbody></table>
+<p>在<code>fees</code>信息组里:</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>feeToken</code></td>
+<td>string</td>
+<td><code>USDT</code></td>
+<td>手续费计价类型</td>
+</tr>
+<tr>
+<td><code>fee</code></td>
+<td>float</td>
+<td><code>0</code></td>
+<td>实际手续费</td>
+</tr>
+</tbody></table>
+<h3 id="Example-9"><a href="#Example-9" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&#x27;time&#x27;</span>: <span class="string">&#x27;1570760254539&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;updateTime&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;orderId&#x27;</span>: <span class="string">&#x27;469965509788581888&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;clientOrderId&#x27;</span>: <span class="string">&#x27;1570760253946&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;symbol&#x27;</span>: <span class="string">&#x27;BTC-PERP-REV&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;price&#x27;</span>: <span class="string">&#x27;8502.34&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;leverage&#x27;</span>: <span class="string">&#x27;20&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;origQty&#x27;</span>: <span class="string">&#x27;222&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;executedQty&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;avgPrice&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;marginLocked&#x27;</span>: <span class="string">&#x27;0.00130552&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;orderType&#x27;</span>: <span class="string">&#x27;LIMIT&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;side&#x27;</span>: <span class="string">&#x27;BUY_OPEN&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;fees&#x27;</span>: [],</span><br><span class="line">    <span class="string">&#x27;timeInForce&#x27;</span>: <span class="string">&#x27;GTC&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;status&#x27;</span>: <span class="string">&#x27;NEW&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;priceType&#x27;</span>: <span class="string">&#x27;INPUT&#x27;</span></span><br><span class="line">  &#125;,...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h2 id="historyOrders"><a href="#historyOrders" class="headerlink" title="historyOrders"></a><code>historyOrders</code></h2><p>Retrieves history of orders that have been partially or fully filled or canceled. This API endpoint requires your request to be signed.</p>
+<h3 id="Request-Weight-10"><a href="#Request-Weight-10" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-7"><a href="#Request-Url-7" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/contract/v1/historyOrders</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters-3"><a href="#Parameters-3" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>Symbol to return open orders for. If not sent, orders of all contracts will be returned.</td>
+</tr>
+<tr>
+<td><code>orderId</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td></td>
+<td>Order ID</td>
+</tr>
+<tr>
+<td><code>orderType</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>The order type, possible types: <code>LIMIT</code>, <code>STOP</code></td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td><code>20</code></td>
+<td>Number of entries to return.</td>
+</tr>
+</tbody></table>
+<p>If <code>orderId</code> is set, it will get orders &lt; that <code>orderId</code>. Otherwise most recent orders are returned.</p>
+<h3 id="Response-12"><a href="#Response-12" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>time</code></td>
+<td>long</td>
+<td><code>1570759718825</code></td>
+<td>订单生成时的时间戳</td>
+</tr>
+<tr>
+<td><code>updateTime</code></td>
+<td>long</td>
+<td><code>1551062936784</code></td>
+<td>订单上次更新的时间戳</td>
+</tr>
+<tr>
+<td><code>orderId</code></td>
+<td>integer</td>
+<td><code>469961015902208000</code></td>
+<td>订单ID</td>
+</tr>
+<tr>
+<td><code>clientOrderId</code></td>
+<td>string</td>
+<td><code>213443</code></td>
+<td>用户定义的订单ID</td>
+</tr>
+<tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>BTC-PERP-REV</code></td>
+<td>合约名称</td>
+</tr>
+<tr>
+<td><code>price</code></td>
+<td>float</td>
+<td><code>8200</code></td>
+<td>订单价格</td>
+</tr>
+<tr>
+<td><code>leverage</code></td>
+<td>float</td>
+<td><code>4</code></td>
+<td>订单杠杆</td>
+</tr>
+<tr>
+<td><code>origQty</code></td>
+<td>float</td>
+<td><code>1.01</code></td>
+<td>订单数量</td>
+</tr>
+<tr>
+<td><code>executedQty</code></td>
+<td>float</td>
+<td><code>1.01</code></td>
+<td>订单已执行数量</td>
+</tr>
+<tr>
+<td><code>avgPrice</code></td>
+<td>float</td>
+<td><code>4754.24</code></td>
+<td>平均交易价格</td>
+</tr>
+<tr>
+<td><code>marginLocked</code></td>
+<td>float</td>
+<td><code>200</code></td>
+<td>该订单锁定的保证金。这包括实际需要的保证金外加开仓和平仓所需的费用。</td>
+</tr>
+<tr>
+<td><code>orderType</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td>订单类型（<code>LIMIT</code>和<code>STOP</code>）</td>
+</tr>
+<tr>
+<td><code>priceType</code></td>
+<td>string</td>
+<td><code>INPUT</code></td>
+<td>价格类型（<code>INPUT</code>、<code>OPPONENT</code>、<code>QUEUE</code>、<code>OVER</code>、<code>MARKET</code>）</td>
+</tr>
+<tr>
+<td><code>side</code></td>
+<td>string</td>
+<td><code>BUY</code></td>
+<td>订单方向（<code>BUY_OPEN</code>、<code>SELL_OPEN</code>、<code>BUY_CLOSE</code>、<code>SELL_CLOSE</code>）</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>string</td>
+<td><code>NEW</code></td>
+<td>订单状态（<code>NEW</code>、<code>PARTIALLY_FILLED</code>、<code>FILLED</code>、<code>CANCELED</code>、<code>REJECTED</code>）</td>
+</tr>
+<tr>
+<td><code>timeInForce</code></td>
+<td>string</td>
+<td><code>GTC</code></td>
+<td>时效单（Time in Force)类型(<code>GTC</code>、<code>FOK</code>、<code>IOC</code>、<code>LIMIT_MAKER</code>)</td>
+</tr>
+<tr>
+<td><code>fees</code></td>
+<td></td>
+<td></td>
+<td>订单的手续费</td>
+</tr>
+</tbody></table>
+<p>在<code>fees</code>信息组里:</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>feeToken</code></td>
+<td>string</td>
+<td><code>USDT</code></td>
+<td>手续费计价类型</td>
+</tr>
+<tr>
+<td><code>fee</code></td>
+<td>float</td>
+<td><code>0</code></td>
+<td>实际手续费</td>
+</tr>
+</tbody></table>
+<h3 id="Example-10"><a href="#Example-10" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&#x27;time&#x27;</span>: <span class="string">&#x27;1570759718825&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;updateTime&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;orderId&#x27;</span>: <span class="string">&#x27;469961015902208000&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;clientOrderId&#x27;</span>: <span class="string">&#x27;6423344174&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;symbol&#x27;</span>: <span class="string">&#x27;BTC-PERP-REV&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;price&#x27;</span>: <span class="string">&#x27;8200&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;leverage&#x27;</span>: <span class="string">&#x27;12.08&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;origQty&#x27;</span>: <span class="string">&#x27;5&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;executedQty&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;avgPrice&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;marginLocked&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;orderType&#x27;</span>: <span class="string">&#x27;LIMIT&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;side&#x27;</span>: <span class="string">&#x27;BUY_OPEN&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;fees&#x27;</span>: [],</span><br><span class="line">    <span class="string">&#x27;timeInForce&#x27;</span>: <span class="string">&#x27;GTC&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;status&#x27;</span>: <span class="string">&#x27;CANCELED&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;priceType&#x27;</span>: <span class="string">&#x27;INPUT&#x27;</span></span><br><span class="line">  &#125;,...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h2 id="getOrder"><a href="#getOrder" class="headerlink" title="getOrder"></a><code>getOrder</code></h2><p>获取某个订单的详细信息</p>
+<h3 id="Request-Weight-11"><a href="#Request-Weight-11" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-8"><a href="#Request-Url-8" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/contract/v1/getOrder</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters-4"><a href="#Parameters-4" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>orderId</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td></td>
+<td>订单ID</td>
+</tr>
+<tr>
+<td><code>clientOrderId</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>用户定义的订单ID</td>
+</tr>
+<tr>
+<td><code>orderType</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>订单类型（<code>LIMIT</code>和<code>STOP</code>）</td>
+</tr>
+</tbody></table>
+<p><strong>注意：</strong><code> orderId</code> 或者 <code>clientOrderId</code> <strong>必须发送其中之一</strong></p>
+<h3 id="Response-13"><a href="#Response-13" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>time</code></td>
+<td>long</td>
+<td><code>1570759718825</code></td>
+<td>订单生成时的时间戳</td>
+</tr>
+<tr>
+<td><code>updateTime</code></td>
+<td>long</td>
+<td><code>1551062936784</code></td>
+<td>订单上次更新的时间戳</td>
+</tr>
+<tr>
+<td><code>orderId</code></td>
+<td>integer</td>
+<td><code>469961015902208000</code></td>
+<td>订单ID</td>
+</tr>
+<tr>
+<td><code>clientOrderId</code></td>
+<td>string</td>
+<td><code>213443</code></td>
+<td>用户定义的订单ID</td>
+</tr>
+<tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>BTC-PERP-REV</code></td>
+<td>合约名称</td>
+</tr>
+<tr>
+<td><code>price</code></td>
+<td>float</td>
+<td><code>8200</code></td>
+<td>订单价格</td>
+</tr>
+<tr>
+<td><code>leverage</code></td>
+<td>float</td>
+<td><code>4</code></td>
+<td>订单杠杆</td>
+</tr>
+<tr>
+<td><code>origQty</code></td>
+<td>float</td>
+<td><code>1.01</code></td>
+<td>订单数量</td>
+</tr>
+<tr>
+<td><code>executedQty</code></td>
+<td>float</td>
+<td><code>1.01</code></td>
+<td>订单已执行数量</td>
+</tr>
+<tr>
+<td><code>avgPrice</code></td>
+<td>float</td>
+<td><code>4754.24</code></td>
+<td>平均交易价格</td>
+</tr>
+<tr>
+<td><code>marginLocked</code></td>
+<td>float</td>
+<td><code>200</code></td>
+<td>该订单锁定的保证金。这包括实际需要的保证金外加开仓和平仓所需的费用。</td>
+</tr>
+<tr>
+<td><code>orderType</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td>订单类型（<code>LIMIT</code>和<code>STOP</code>）</td>
+</tr>
+<tr>
+<td><code>priceType</code></td>
+<td>string</td>
+<td><code>INPUT</code></td>
+<td>价格类型（<code>INPUT</code>、<code>OPPONENT</code>、<code>QUEUE</code>、<code>OVER</code>、<code>MARKET</code>）</td>
+</tr>
+<tr>
+<td><code>side</code></td>
+<td>string</td>
+<td><code>BUY</code></td>
+<td>订单方向（<code>BUY_OPEN</code>、<code>SELL_OPEN</code>、<code>BUY_CLOSE</code>、<code>SELL_CLOSE</code>）</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>string</td>
+<td><code>NEW</code></td>
+<td>订单状态（<code>NEW</code>、<code>PARTIALLY_FILLED</code>、<code>FILLED</code>、<code>CANCELED</code>、<code>REJECTED</code>）</td>
+</tr>
+<tr>
+<td><code>timeInForce</code></td>
+<td>string</td>
+<td><code>GTC</code></td>
+<td>时效单（Time in Force)类型(<code>GTC</code>、<code>FOK</code>、<code>IOC</code>、<code>LIMIT_MAKER</code>)</td>
+</tr>
+<tr>
+<td><code>fees</code></td>
+<td></td>
+<td></td>
+<td>订单的手续费</td>
+</tr>
+</tbody></table>
+<p>在<code>fees</code>信息组里:</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>feeToken</code></td>
+<td>string</td>
+<td><code>USDT</code></td>
+<td>手续费计价类型</td>
+</tr>
+<tr>
+<td><code>fee</code></td>
+<td>float</td>
+<td><code>0</code></td>
+<td>实际手续费</td>
+</tr>
+</tbody></table>
+<h3 id="Example-11"><a href="#Example-11" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&#x27;time&#x27;</span>: <span class="string">&#x27;1570760254539&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;updateTime&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;orderId&#x27;</span>: <span class="string">&#x27;469965509788581888&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;clientOrderId&#x27;</span>: <span class="string">&#x27;1570760253946&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;symbol&#x27;</span>: <span class="string">&#x27;BTC-PERP-REV&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;price&#x27;</span>: <span class="string">&#x27;8502.34&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;leverage&#x27;</span>: <span class="string">&#x27;20&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;origQty&#x27;</span>: <span class="string">&#x27;222&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;executedQty&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;avgPrice&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;marginLocked&#x27;</span>: <span class="string">&#x27;0.00130552&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;orderType&#x27;</span>: <span class="string">&#x27;LIMIT&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;side&#x27;</span>: <span class="string">&#x27;BUY_OPEN&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;fees&#x27;</span>: [],</span><br><span class="line">  <span class="string">&#x27;timeInForce&#x27;</span>: <span class="string">&#x27;GTC&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;status&#x27;</span>: <span class="string">&#x27;NEW&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;priceType&#x27;</span>: <span class="string">&#x27;INPUT&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="myTrades"><a href="#myTrades" class="headerlink" title="myTrades"></a><code>myTrades</code></h2><p>返回账户的成交历史，这个API端点需要请求签名。</p>
+<h3 id="Request-Weight-12"><a href="#Request-Weight-12" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-9"><a href="#Request-Url-9" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/contract/v1/myTrades</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters-5"><a href="#Parameters-5" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>合约名称。如果没有发送，所有合约的成交历史都会被返回。</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td><code>20</code></td>
+<td>返回限制(最大值为1000)</td>
+</tr>
+<tr>
+<td><code>fromId</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td></td>
+<td>从TradeId开始（用来查询成交订单）</td>
+</tr>
+<tr>
+<td><code>toId</code></td>
+<td>integer</td>
+<td><code>NO</code></td>
+<td></td>
+<td>到TradeId结束（用来查询成交订单）</td>
+</tr>
+</tbody></table>
+<h3 id="Response-14"><a href="#Response-14" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>time</code></td>
+<td>long</td>
+<td><code>1551062936784</code></td>
+<td>订单生成是的时间戳</td>
+</tr>
+<tr>
+<td><code>tradeId</code></td>
+<td>long</td>
+<td><code>49366</code></td>
+<td>成交ID</td>
+</tr>
+<tr>
+<td><code>orderId</code></td>
+<td>long</td>
+<td><code>630491436</code></td>
+<td>订单ID</td>
+</tr>
+<tr>
+<td><code>matchOrderId</code></td>
+<td>long</td>
+<td><code>630491432</code></td>
+<td>成交对手订单ID</td>
+</tr>
+<tr>
+<td><code>symbolId</code></td>
+<td>string</td>
+<td><code>BTC-PERP-REV</code></td>
+<td>合约名称</td>
+</tr>
+<tr>
+<td><code>price</code></td>
+<td>float</td>
+<td><code>4765.29</code></td>
+<td>成交价格</td>
+</tr>
+<tr>
+<td><code>quantity</code></td>
+<td>float</td>
+<td><code>1.01</code></td>
+<td>成交数量</td>
+</tr>
+<tr>
+<td><code>feeTokenId</code></td>
+<td>string</td>
+<td><code>USDT</code></td>
+<td>手续费类型（Token名称）</td>
+</tr>
+<tr>
+<td><code>fee</code></td>
+<td></td>
+<td></td>
+<td>实际手续费</td>
+</tr>
+<tr>
+<td><code>side</code></td>
+<td>string</td>
+<td><code>BUY</code></td>
+<td>订单方向（<code>BUY_OPEN</code>、<code>SELL_OPEN</code>、<code>BUY_CLOSE</code>、<code>SELL_CLOSE</code>）</td>
+</tr>
+<tr>
+<td><code>orderType</code></td>
+<td>string</td>
+<td><code>LIMIT</code></td>
+<td>订单类型（<code>LIMIT</code>、<code>MARKET</code>)</td>
+</tr>
+<tr>
+<td><code>pnl</code></td>
+<td>float</td>
+<td><code>100.1</code></td>
+<td>成交盈亏</td>
+</tr>
+</tbody></table>
+<h3 id="Example-12"><a href="#Example-12" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&#x27;time&#x27;</span>: <span class="string">&#x27;1570760582848&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;tradeId&#x27;</span>: <span class="string">&#x27;469968263995080704&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;orderId&#x27;</span>: <span class="string">&#x27;469968263793737728&#x27;</span>,</span><br><span class="line">    <span class="string">&quot;matchOrderId&quot;</span>: <span class="number">436002617267469062</span>,</span><br><span class="line">    <span class="string">&#x27;accountId&#x27;</span>: <span class="string">&#x27;456552319339779840&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;symbolId&#x27;</span>: <span class="string">&#x27;BTC-PERP-REV&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;price&#x27;</span>: <span class="string">&#x27;8531.17&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;quantity&#x27;</span>: <span class="string">&#x27;100&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;feeTokenId&#x27;</span>: <span class="string">&#x27;TBTC&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;fee&#x27;</span>: <span class="string">&#x27;0.00000586&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;type&#x27;</span>: <span class="string">&#x27;LIMIT&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;side&#x27;</span>: <span class="string">&#x27;BUY_OPEN&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;pnl&#x27;</span>: <span class="string">&#x27;100.1&#x27;</span></span><br><span class="line">  &#125;,...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h2 id="positions"><a href="#positions" class="headerlink" title="positions"></a><code>positions</code></h2><p>返回现在的仓位信息，这个API需要请求签名。</p>
+<h3 id="Request-Weight-13"><a href="#Request-Weight-13" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-10"><a href="#Request-Url-10" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/contract/v1/positions</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters-6"><a href="#Parameters-6" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>合约名称。如果没有发送，所有的合约仓位信息都会被返回。</td>
+</tr>
+<tr>
+<td><code>side</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>仓位方向，<code>LONG</code>（多仓）或者<code>SHORT</code>（空仓）。如果没有发送，两个方向的仓位信息都会被返回。</td>
+</tr>
+</tbody></table>
+<h3 id="Response-15"><a href="#Response-15" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>BTC-PERP-REV</code></td>
+<td>合约名称</td>
+</tr>
+<tr>
+<td><code>side</code></td>
+<td>string</td>
+<td><code>LONG</code></td>
+<td>仓位方向（<code>LONG</code>、<code>SHORT</code>）</td>
+</tr>
+<tr>
+<td><code>avgPrice</code></td>
+<td>float</td>
+<td><code>100</code></td>
+<td>平均开仓价格</td>
+</tr>
+<tr>
+<td><code>position</code></td>
+<td>float</td>
+<td><code>20</code></td>
+<td>开仓数量（张）</td>
+</tr>
+<tr>
+<td><code>available</code></td>
+<td>float</td>
+<td><code>15</code></td>
+<td>可平仓数量（张）</td>
+</tr>
+<tr>
+<td><code>leverage</code></td>
+<td>float</td>
+<td><code>5</code></td>
+<td>仓位现在杠杆</td>
+</tr>
+<tr>
+<td><code>lastPrice</code></td>
+<td>float</td>
+<td><code>100</code></td>
+<td>合约最新市场成交价</td>
+</tr>
+<tr>
+<td><code>positionValue</code></td>
+<td>float</td>
+<td><code>2000</code></td>
+<td>仓位价值</td>
+</tr>
+<tr>
+<td><code>flp</code></td>
+<td>float</td>
+<td><code>80</code></td>
+<td>强制平仓价格</td>
+</tr>
+<tr>
+<td><code>margin</code></td>
+<td>float</td>
+<td><code>20</code></td>
+<td>仓位保证金</td>
+</tr>
+<tr>
+<td><code>marginRate</code></td>
+<td>float</td>
+<td><code>0.2</code></td>
+<td>当前仓位的保证金率</td>
+</tr>
+<tr>
+<td><code>unrealizedPnL</code></td>
+<td>float</td>
+<td><code>0.0</code></td>
+<td>当前仓位的未实现盈亏</td>
+</tr>
+<tr>
+<td><code>profitRate</code></td>
+<td>float</td>
+<td><code>0.0000333</code></td>
+<td>当前仓位的盈利率</td>
+</tr>
+<tr>
+<td><code>realizedPnL</code></td>
+<td>float</td>
+<td><code>6.8</code></td>
+<td>当前 <strong>合约</strong> 的已实现盈亏</td>
+</tr>
+</tbody></table>
+<h3 id="Example-13"><a href="#Example-13" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&#x27;symbol&#x27;</span>: <span class="string">&#x27;BTC-PERP-REV&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;side&#x27;</span>: <span class="string">&#x27;LONG&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;avgPrice&#x27;</span>: <span class="string">&#x27;8183.11&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;position&#x27;</span>: <span class="string">&#x27;1100&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;available&#x27;</span>: <span class="string">&#x27;1100&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;leverage&#x27;</span>: <span class="string">&#x27;6&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;lastPrice&#x27;</span>: <span class="string">&#x27;8572.53&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;positionValue&#x27;</span>: <span class="string">&#x27;0.12833346&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;flp&#x27;</span>: <span class="string">&#x27;7523.65&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;margin&#x27;</span>: <span class="string">&#x27;0.01251335&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;marginRate&#x27;</span>: <span class="string">&#x27;0.14&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;unrealizedPnL&#x27;</span>: <span class="string">&#x27;0.00608975&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;profitRate&#x27;</span>: <span class="string">&#x27;0.0000333&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;realizedPnL&#x27;</span>: <span class="string">&#x27;-0.00006721&#x27;</span></span><br><span class="line">  &#125;,...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h2 id="account"><a href="#account" class="headerlink" title="account"></a><code>account</code></h2><p>返回合约账户余额，这个端点需要请求签名。</p>
+<h3 id="Request-Weight-14"><a href="#Request-Weight-14" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-11"><a href="#Request-Url-11" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET  /openapi/contract/v1/account</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters-7"><a href="#Parameters-7" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><p>None</p>
+<h3 id="Response-16"><a href="#Response-16" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>total</code></td>
+<td>float</td>
+<td><code>131.06671401</code></td>
+<td>总余额</td>
+</tr>
+<tr>
+<td><code>availableMargin</code></td>
+<td>float</td>
+<td><code>131.0545541</code></td>
+<td>可用保证金</td>
+</tr>
+<tr>
+<td><code>positionMargin</code></td>
+<td>float</td>
+<td><code>0.01215991</code></td>
+<td>仓位保证金</td>
+</tr>
+<tr>
+<td><code>orderMargin</code></td>
+<td>float</td>
+<td><code>0</code></td>
+<td>委托保证金（下单锁定）</td>
+</tr>
+</tbody></table>
+<h3 id="Example-14"><a href="#Example-14" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;TBTC&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;total&quot;</span>:<span class="string">&quot;131.06671401&quot;</span>,</span><br><span class="line">    <span class="string">&quot;availableMargin&quot;</span>:<span class="string">&quot;131.0545541&quot;</span>,</span><br><span class="line">    <span class="string">&quot;positionMargin&quot;</span>:<span class="string">&quot;0.01215991&quot;</span>,</span><br><span class="line">    <span class="string">&quot;orderMargin&quot;</span>:<span class="string">&quot;0&quot;</span></span><br><span class="line">  &#125;,...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="modifyMargin"><a href="#modifyMargin" class="headerlink" title="modifyMargin"></a><code>modifyMargin</code></h2><p>更改某个合约仓位的保证金，这个端点需要请求签名。</p>
+<h3 id="Request-Weight-15"><a href="#Request-Weight-15" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-12"><a href="#Request-Url-12" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST  /openapi/contract/v1/modifyMargin</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters-8"><a href="#Parameters-8" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>合约名称。</td>
+</tr>
+<tr>
+<td><code>side</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>仓位方向，<code>LONG</code>（多仓）或者<code>SHORT</code>（空仓）。</td>
+</tr>
+<tr>
+<td><code>amount</code></td>
+<td>float</td>
+<td><code>YES</code></td>
+<td></td>
+<td>增加（正值）或者减少（负值）保证金的数量。请注意这个数量指的是合约标的定价资产（即合约结算的标的）。</td>
+</tr>
+</tbody></table>
+<h3 id="Response-17"><a href="#Response-17" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>symbol</code></td>
+<td>string</td>
+<td><code>BTC-PERP-REV</code></td>
+<td>合约名称</td>
+</tr>
+<tr>
+<td><code>margin</code></td>
+<td>float</td>
+<td><code>12.3</code></td>
+<td>更新后的仓位保证金</td>
+</tr>
+<tr>
+<td><code>timestamp</code></td>
+<td>long</td>
+<td><code>1541161088303</code></td>
+<td>更新时间戳</td>
+</tr>
+</tbody></table>
+<h3 id="Example-15"><a href="#Example-15" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&#x27;symbol&#x27;</span>:<span class="string">&#x27;BTC-PERP-REV&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;margin&#x27;</span>: <span class="number">15</span>,</span><br><span class="line">  <span class="string">&#x27;timestamp&#x27;</span>: <span class="number">1541161088303</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="withdraw"><a href="#withdraw" class="headerlink" title="withdraw"></a><code>withdraw</code></h2><p>按提币地址进行提币操作。</p>
+<h3 id="Request-Weight-16"><a href="#Request-Weight-16" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-13"><a href="#Request-Url-13" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST  /openapi/account/v1/withdraw</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters-9"><a href="#Parameters-9" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>clientOrderId</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>客户端发起提币请求ID。</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>提币地址。</td>
+</tr>
+<tr>
+<td><code>addressExt</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>EOS tag。</td>
+</tr>
+<tr>
+<td><code>tokenId</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>tokenId。</td>
+</tr>
+<tr>
+<td><code>withdrawQuantity</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>提币数量。</td>
+</tr>
+<tr>
+<td><code>isQuick</code></td>
+<td>boolean</td>
+<td><code>YES</code></td>
+<td></td>
+<td>true 加速提币 false 正常提币 矿工费不同</td>
+</tr>
+</tbody></table>
+<h3 id="Response-18"><a href="#Response-18" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>success</code></td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td><code>needBrokerAudit</code></td>
+<td>boolean</td>
+<td>true</td>
+<td>是否需要券商审核</td>
+</tr>
+<tr>
+<td><code>orderId</code></td>
+<td>long</td>
+<td><code>423885103582776064</code></td>
+<td>提币成功订单id</td>
+</tr>
+</tbody></table>
+<h3 id="Example-16"><a href="#Example-16" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;status&quot;</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;data&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;success&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="string">&quot;needBrokerAudit&quot;</span>: <span class="literal">false</span>, <span class="comment">// 是否需要券商审核</span></span><br><span class="line">        <span class="string">&quot;orderId&quot;</span>: <span class="string">&quot;423885103582776064&quot;</span> <span class="comment">// 提币成功订单id</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="withdrawDetail"><a href="#withdrawDetail" class="headerlink" title="withdrawDetail"></a><code>withdrawDetail</code></h2><p>按提币地址进行提币操作。</p>
+<h3 id="Request-Weight-17"><a href="#Request-Weight-17" class="headerlink" title="Request Weight:"></a><strong>Request Weight:</strong></h3><p>1</p>
+<h3 id="Request-Url-14"><a href="#Request-Url-14" class="headerlink" title="Request Url:"></a><strong>Request Url:</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST  /openapi/account/v1/withdraw</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters-10"><a href="#Parameters-10" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>clientOrderId</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>客户端发起提币请求ID。</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>提币地址。</td>
+</tr>
+<tr>
+<td><code>addressExt</code></td>
+<td>string</td>
+<td><code>NO</code></td>
+<td></td>
+<td>EOS tag。</td>
+</tr>
+<tr>
+<td><code>tokenId</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>tokenId。</td>
+</tr>
+<tr>
+<td><code>withdrawQuantity</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>提币数量。</td>
+</tr>
+<tr>
+<td><code>isQuick</code></td>
+<td>boolean</td>
+<td><code>YES</code></td>
+<td></td>
+<td>true 加速提币 false 正常提币 矿工费不同</td>
+</tr>
+</tbody></table>
+<h3 id="Response-19"><a href="#Response-19" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>例子</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>success</code></td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td><code>needBrokerAudit</code></td>
+<td>boolean</td>
+<td>true</td>
+<td>是否需要券商审核</td>
+</tr>
+<tr>
+<td><code>orderId</code></td>
+<td>long</td>
+<td><code>423885103582776064</code></td>
+<td>提币成功订单id</td>
+</tr>
+</tbody></table>
+<h3 id="Example-17"><a href="#Example-17" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;status&quot;</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;data&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;success&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="string">&quot;needBrokerAudit&quot;</span>: <span class="literal">false</span>, <span class="comment">// 是否需要券商审核</span></span><br><span class="line">        <span class="string">&quot;orderId&quot;</span>: <span class="string">&quot;423885103582776064&quot;</span> <span class="comment">// 提币成功订单id</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<!-- ## `transfer` **(PENDING)**
+
+This endpoint is used to transfer funds across different accounts. This endpoint requires
+you to be signed.
+
+### **Request Weight:**
+1
+
+### **Request Url:**
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST  /openapi/v1/transfer</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parameters-11"><a href="#Parameters-11" class="headerlink" title="Parameters:"></a><strong>Parameters:</strong></h3><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>from</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>Transfer from which account.</td>
+</tr>
+<tr>
+<td><code>to</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>Transfer to which account.</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>string</td>
+<td><code>YES</code></td>
+<td></td>
+<td>The intended currency to transfer. (<code>USDT</code>, <code>BTC</code>, etc.)</td>
+</tr>
+<tr>
+<td><code>amount</code></td>
+<td>float</td>
+<td><code>YES</code></td>
+<td></td>
+<td>Amount of currency to transfer.</td>
+</tr>
+</tbody></table>
+<p>Currently supports transferring assets across <code>wallet</code>, <code>option</code>, and <code>contract</code> accounts.</p>
+<h3 id="Response-20"><a href="#Response-20" class="headerlink" title="Response:"></a><strong>Response:</strong></h3><p>A confirmation message will be returned.</p>
+<h3 id="Example-18"><a href="#Example-18" class="headerlink" title="Example:"></a><strong>Example:</strong></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&#x27;message&#x27;</span>: <span class="string">&#x27;success&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;timestamp&#x27;</span>: <span class="number">1541161088303</span></span><br><span class="line">&#125;</span><br><span class="line">​<span class="string">``</span><span class="string">` --&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">## 关键参数解释说明:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### `</span>side<span class="string">`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">交易的方向</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">BUY_OPEN</span><span class="string">`: 开多仓</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">SELL_CLOSE</span><span class="string">`: 平多仓</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">SELL_OPEN</span><span class="string">`: 开空仓</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">BUY_CLOSE</span><span class="string">`: 平空仓</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### `</span>priceType<span class="string">`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">价格类型</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">INPUT</span><span class="string">`: 系统将会用你输入的价格来撮合订单。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">OPPONENT</span><span class="string">`: 订单会以对手盘最优价格撮合。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">假设你开多10张合约，盘口最佳买价为10最佳卖价为11，你将会下10张价格为11的合约订单。如果盘口数量不足成交10张，剩下的将留在盘口。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">QUEUE</span><span class="string">`: 订单会以相同方向的最优价格撮合。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">假设你开多10张合约，盘口最佳买价为10最佳卖价为11，你将会下10张价格为10的合约订单。假设盘口原来有5张10的买单，加上你下的单现在一共有15张10的买单。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">OVER</span><span class="string">`: 订单会以对手盘的最优价格 + 超价（浮动）撮合</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">假设你开多10张合约，盘口最佳买价为10最佳卖价为11（超价现在为3），你将会下10张（11+3=）14的买单。如果盘口数量不足成交10张，剩下的将留在盘口。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">MARKET</span><span class="string">`: 订单会以 最新成交价 * (1 ± 5%) 撮合</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">假设你开多10张合约，最新成交价为10，你将会下10张（10*1.05=)10.5的买单。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### `</span>timeInForce<span class="string">`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">时效单类型。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">GTC</span><span class="string">`: 一直有效直到撤销。订单会一直有效除非撤销。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">IOC</span><span class="string">`: 马上成交或者撤销。订单会在一个最佳可成交价执行尽量多的交易量, 此订单可能被部份执行,剩余的部份将会自动撤销。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">FOK</span><span class="string">`: 全部成交或者撤销。订单要么在一个最佳可成交价上全部成交，要么就会直接撤销。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">LIMIT_MAKER</span><span class="string">`: 如果订单会马上成交，订单会被撤销。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">### `</span>orderType<span class="string">`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">订单类型</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">LIMIT</span><span class="string">`: 订单会以一个给定（或者更好）的价格成交</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="variable constant_">STOP</span><span class="string">`: 一旦价格到达`</span>triggerPrice<span class="string">`（触发价），订单会被触发</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2024/01/14/Endpoint/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  Endpoint
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2024/01/14/Cloud/">
+                Cloud
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©<span id="footerYear-start"></span>-<span id="footerYear-end"></span>
+
+	
+	    <a href="/">ceex</a>
+	
+	
+	
+	<br>
+	Powered by <a href="//hexo.io" target="_blank">ceex</a>
+	</p>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById('footerYear-start').innerHTML = new Date().getFullYear() + '';
+</script>
+
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>

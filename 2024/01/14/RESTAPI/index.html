@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		REST API CN | 
+	 
+	Ceex
+	</title>
+	
+	<!-- keywords,description -->
+	
+	
+
+	<!-- favicon -->
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+
+	
+	
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">Ceex</a>
+
+	<ul id="menu">
+    
+
+    
+
+    
+
+    
+  
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="Press Enter to search">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Cloud/">
+                     
+										    Cloud
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Contract/">
+                     
+										    Contract
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Endpoint/">
+                     
+										    Endpoint
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Errors/">
+                     
+										    Errors
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Finance/">
+                     
+										    Finance
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Margin/">
+                     
+										    Margin
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/OptiontsOpen/">
+                     
+										    OptiontsOpen
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2024/01/14/RESTAPI/">
+                     
+										    RESTAPI
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/UserDataStream/">
+                     
+										    UserDataStream
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/WebsocketStream/">
+                     
+										    WebsocketStream
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content" class="content">
+		<h1 id="article-title">
+	REST API CN
+</h1>
+
+<!-- meta -->
+<div class="article-meta">
+	
+
+	<span>ceex</span>
+	<span>2024-01-14 15:28:25</span>
+
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+    
+
+    
+		    <span>Tags：</span>
+        
+    
+  </div>
+
+</div>
+
+<!-- content -->
+<div id="article-content">
+	<h1 id="公有Broker-Rest-API-2021-02-01"><a href="#公有Broker-Rest-API-2021-02-01" class="headerlink" title="公有Broker Rest API (2021-02-01)"></a>公有Broker Rest API (2021-02-01)</h1><h2 id="通用API信息"><a href="#通用API信息" class="headerlink" title="通用API信息"></a>通用API信息</h2><ul>
+<li>所有的端点都会返回一个JSON object或者array.</li>
+<li>数据返回的是一个 <strong>升序</strong>。更早的在前，更新的在后。</li>
+<li>所有的时间&#x2F;时间戳有关的变量都是milliseconds（毫秒级）。</li>
+<li>HTTP <code>4XX</code> 返回错误码是指请求内容有误，这个问题是在请求发起者这边。</li>
+<li>HTTP <code>429</code> 返回错误码是指请求次数上限被打破。</li>
+<li>HTTP <code>418</code> 返回错误码是指IP在收到<code>429</code>错误码后还继续发送请求被自动封禁。</li>
+<li>HTTP <code>5XX</code> 返回错误码是内部系统错误；这说明这个问题是在券商这边。在对待这个错误时，<strong>千万</strong> 不要把它当成一个失败的任务，因为执行状态 <strong>未知</strong>，有可能是成功也有可能是失败。</li>
+<li>任何端点都可能返回ERROR（错误）； 错误的返回payload如下</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;code&quot;</span>: -<span class="number">1121</span>,</span><br><span class="line">  <span class="string">&quot;msg&quot;</span>: <span class="string">&quot;Invalid symbol.&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>详细的错误码和错误信息在请见错误码文件。</li>
+<li>对于<code>GET</code>端点，必须发送参数为<code>query string</code>（查询字串）。</li>
+<li>对于<code>POST</code>, <code>PUT</code>, 和 <code>DELETE</code> 端点，必需要发送参数为<code>query string</code>（查询字串）或者发送参数在<code>request body</code>（请求主体）并设置content type（内容类型）为<code>application/x-www-form-urlencoded</code>。可以同时在<code>query string</code>或者<code>request body</code>里混合发送参数如果有需要的话。</li>
+<li>参数可以以任意顺序发送。</li>
+<li>如果有参数同时在<code>query string</code> 和 <code>request body</code>里存在，只有<code>query string</code>的参数会被使用。</li>
+</ul>
+<h3 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h3><ul>
+<li>在 <code>/openapi/v1/brokerInfo</code>的<code>rateLimits</code> array里存在当前broker的<code>REQUEST_WEIGHT</code>和<code>ORDER</code>频率限制。</li>
+<li>如果任一频率限额被超过，<code>429</code> 会被返回。</li>
+<li>每条线路有一个<code>weight</code>特性，这个决定了这个请求占用多少容量（比如<code>weight</code>&#x3D;2说明这个请求占用两个请求的量）。返回数据多的端点或者在多个symbol执行任务的端点可能有更高的<code>weight</code>。</li>
+<li>当<code>429</code>被返回后，你有义务停止发送请求。</li>
+<li><strong>多次反复违反频率限制和&#x2F;或者没有在收到429后停止发送请求的用户将会被收到封禁IP（错误码418）</strong></li>
+<li>IP封禁会被跟踪和 <strong>调整封禁时长</strong>（对于反复违反规定的用户，时间从 <strong>2分钟到3天不等</strong>）</li>
+</ul>
+<h3 id="端点安全类型"><a href="#端点安全类型" class="headerlink" title="端点安全类型"></a>端点安全类型</h3><ul>
+<li>每个端点有一个安全类型，这决定了你会怎么跟其交互。</li>
+<li>API-key要以<code>X-BH-APIKEY</code>的名字传到REST API header里面。</li>
+<li>API-keys和secret-keys <strong>要区分大小写</strong>。</li>
+<li>默认情况下，API-keys可以访问所有的安全节点。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>安全类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NONE</td>
+<td>端点可以自由访问。</td>
+</tr>
+<tr>
+<td>TRADE</td>
+<td>端点需要发送有效的API-Key和签名。</td>
+</tr>
+<tr>
+<td>USER_DATA</td>
+<td>端点需要发送有效的API-Key和签名。</td>
+</tr>
+<tr>
+<td>USER_STREAM</td>
+<td>端点需要发送有效的API-Key。</td>
+</tr>
+<tr>
+<td>MARKET_DATA</td>
+<td>端点需要发送有效的API-Key。</td>
+</tr>
+</tbody></table>
+<ul>
+<li><code>TRADE</code> 和 <code>USER_DATA</code> 端点是 <code>SIGNED</code>（需要签名）的端点。</li>
+</ul>
+<h3 id="SIGNED（有签名的）-TRADE和USER-DATA-端点安全"><a href="#SIGNED（有签名的）-TRADE和USER-DATA-端点安全" class="headerlink" title="SIGNED（有签名的）(TRADE和USER_DATA) 端点安全"></a>SIGNED（有签名的）(TRADE和USER_DATA) 端点安全</h3><ul>
+<li><code>SIGNED</code>（需要签名）的端点需要发送一个参数，<code>signature</code>，在<code>query string</code> 或者 <code>request body</code>里。</li>
+<li>端点用<code>HMAC SHA256</code>签名。<code>HMAC SHA256 signature</code>是一个对key进行<code>HMAC SHA256</code>加密的结果。用你的<code>secretKey</code>作为key和<code>totalParams</code>作为value来完成这一加密过程。</li>
+<li><code>signature</code>  <strong>不区分大小写</strong>。</li>
+<li><code>totalParams</code> 是指 <code>query string</code>串联<code>request body</code>。</li>
+</ul>
+<h3 id="时效安全"><a href="#时效安全" class="headerlink" title="时效安全"></a>时效安全</h3><ul>
+<li><p>一个<code>SIGNED</code>(有签名)的端点还需要发送一个参数，<code>timestamp</code>，这是当请求发起时的毫秒级时间戳。</p>
+</li>
+<li><p>一个额外的参数（非强制性）, <code>recvWindow</code>, 可以说明这个请求在多少毫秒内是有效的。如果<code>recvWindow</code>没有被发送，<strong>默认值是5000</strong>。</p>
+</li>
+<li><p>在当前，只有创建订单的时候才会用到<code>recvWindow</code>。</p>
+</li>
+<li><p>该参数的逻辑如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (timestamp &lt; (serverTime + <span class="number">1000</span>) &amp;&amp; (serverTime - timestamp) &lt;= recvWindow) &#123;</span><br><span class="line">  <span class="comment">// process request</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="comment">// reject request</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p><strong>严谨的交易和时效紧紧相关</strong> 网络有时会不稳定或者不可靠，这会导致请求发送服务器的时间不一致。<br>有了<code>recvWindow</code>，你可以说明在多少毫秒内请求是有效的，否则就会被服务器拒绝。</p>
+<p><strong>建议使用一个相对小的recvWindow（5000或以下）！</strong></p>
+<h3 id="SIGNED（签名）-的例子（对于POST-openapi-v1-order）"><a href="#SIGNED（签名）-的例子（对于POST-openapi-v1-order）" class="headerlink" title="SIGNED（签名） 的例子（对于POST &#x2F;openapi&#x2F;v1&#x2F;order）"></a>SIGNED（签名） 的例子（对于POST &#x2F;openapi&#x2F;v1&#x2F;order）</h3><p>这里有一个详细的用Linux<code>echo</code>, <code>openssl</code>, 和 <code>curl</code>举例来展示如何发送一个有效的签名payload。</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>apiKey</td>
+<td>tAQfOrPIZAhym0qHISRt8EFvxPemdBm5j5WMlkm3Ke9aFp0EGWC2CGM8GHV4kCYW</td>
+</tr>
+<tr>
+<td>secretKey</td>
+<td>lH3ELTNiFxCQTmi9pPcWWikhsjO04Yoqw3euoHUuOLC3GYBW64ZqzQsiOEHXQS76</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>参数值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>symbol</td>
+<td>ETHBTC</td>
+</tr>
+<tr>
+<td>side</td>
+<td>BUY</td>
+</tr>
+<tr>
+<td>type</td>
+<td>LIMIT</td>
+</tr>
+<tr>
+<td>timeInForce</td>
+<td>GTC</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>1</td>
+</tr>
+<tr>
+<td>price</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>recvWindow</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>1538323200000</td>
+</tr>
+</tbody></table>
+<h4 id="例子-1-在queryString里"><a href="#例子-1-在queryString里" class="headerlink" title="例子 1: 在queryString里"></a>例子 1: 在<code>queryString</code>里</h4><ul>
+<li><strong>queryString:</strong> symbol&#x3D;ETHBTC&amp;side&#x3D;BUY&amp;type&#x3D;LIMIT&amp;timeInForce&#x3D;GTC&amp;quantity&#x3D;1&amp;price&#x3D;0.1&amp;recvWindow&#x3D;5000&amp;timestamp&#x3D;1538323200000</li>
+<li><strong>HMAC SHA256 signature:</strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">[linux]$ </span><span class="language-bash"><span class="built_in">echo</span> -n <span class="string">&quot;symbol=ETHBTC&amp;side=BUY&amp;type=LIMIT&amp;timeInForce=GTC&amp;quantity=1&amp;price=0.1&amp;recvWindow=5000&amp;timestamp=1538323200000&quot;</span> | openssl dgst -sha256 -hmac <span class="string">&quot;lH3ELTNiFxCQTmi9pPcWWikhsjO04Yoqw3euoHUuOLC3GYBW64ZqzQsiOEHXQS76&quot;</span></span></span><br><span class="line">(stdin)= 5f2750ad7589d1d40757a55342e621a44037dad23b5128cc70e18ec1d1c3f4c6</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>curl command:</strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(HMAC SHA256)</span><br><span class="line"><span class="meta prompt_">[linux]$ </span><span class="language-bash">curl -H <span class="string">&quot;X-BH-APIKEY: tAQfOrPIZAhym0qHISRt8EFvxPemdBm5j5WMlkm3Ke9aFp0EGWC2CGM8GHV4kCYW&quot;</span> -X POST <span class="string">&#x27;https://$HOST/openapi/v1/order?symbol=ETHBTC&amp;side=BUY&amp;type=LIMIT&amp;timeInForce=GTC&amp;quantity=1&amp;price=0.1&amp;recvWindow=5000&amp;timestamp=1538323200000&amp;signature=5f2750ad7589d1d40757a55342e621a44037dad23b5128cc70e18ec1d1c3f4c6&#x27;</span></span></span><br></pre></td></tr></table></figure>
+
+<h4 id="例子-2-在request-body里"><a href="#例子-2-在request-body里" class="headerlink" title="例子 2:  在request body里"></a>例子 2:  在<code>request body</code>里</h4><ul>
+<li><strong>requestBody:</strong> symbol&#x3D;ETHBTC&amp;side&#x3D;BUY&amp;type&#x3D;LIMIT&amp;timeInForce&#x3D;GTC&amp;quantity&#x3D;1&amp;price&#x3D;0.1&amp;recvWindow&#x3D;5000&amp;timestamp&#x3D;1538323200000</li>
+<li><strong>HMAC SHA256 signature:</strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">[linux]$ </span><span class="language-bash"><span class="built_in">echo</span> -n <span class="string">&quot;symbol=ETHBTC&amp;side=BUY&amp;type=LIMIT&amp;timeInForce=GTC&amp;quantity=1&amp;price=0.1&amp;recvWindow=5000&amp;timestamp=1538323200000&quot;</span> | openssl dgst -sha256 -hmac <span class="string">&quot;lH3ELTNiFxCQTmi9pPcWWikhsjO04Yoqw3euoHUuOLC3GYBW64ZqzQsiOEHXQS76&quot;</span></span></span><br><span class="line">(stdin)= 5f2750ad7589d1d40757a55342e621a44037dad23b5128cc70e18ec1d1c3f4c6</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>curl command:</strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(HMAC SHA256)</span><br><span class="line"><span class="meta prompt_">[linux]$ </span><span class="language-bash">curl -H <span class="string">&quot;X-BH-APIKEY: tAQfOrPIZAhym0qHISRt8EFvxPemdBm5j5WMlkm3Ke9aFp0EGWC2CGM8GHV4kCYW&quot;</span> -X POST <span class="string">&#x27;https://$HOST/openapi/v1/order&#x27;</span> -d <span class="string">&#x27;symbol=ETHBTC&amp;side=BUY&amp;type=LIMIT&amp;timeInForce=GTC&amp;quantity=1&amp;price=0.1&amp;recvWindow=5000&amp;timestamp=1538323200000&amp;signature=5f2750ad7589d1d40757a55342e621a44037dad23b5128cc70e18ec1d1c3f4c6&#x27;</span></span></span><br></pre></td></tr></table></figure>
+
+<h4 id="例子-3-queryString和request-body混合在一起"><a href="#例子-3-queryString和request-body混合在一起" class="headerlink" title="例子 3: queryString和request body混合在一起"></a>例子 3: <code>queryString</code>和<code>request body</code>混合在一起</h4><ul>
+<li><strong>queryString:</strong> symbol&#x3D;ETHBTC&amp;side&#x3D;BUY&amp;type&#x3D;LIMIT&amp;timeInForce&#x3D;GTC</li>
+<li><strong>requestBody:</strong> quantity&#x3D;1&amp;price&#x3D;0.1&amp;recvWindow&#x3D;5000&amp;timestamp&#x3D;1538323200000</li>
+<li><strong>HMAC SHA256 signature:</strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">[linux]$ </span><span class="language-bash"><span class="built_in">echo</span> -n <span class="string">&quot;symbol=ETHBTC&amp;side=BUY&amp;type=LIMIT&amp;timeInForce=GTCquantity=1&amp;price=0.1&amp;recvWindow=5000&amp;timestamp=1538323200000&quot;</span> | openssl dgst -sha256 -hmac <span class="string">&quot;lH3ELTNiFxCQTmi9pPcWWikhsjO04Yoqw3euoHUuOLC3GYBW64ZqzQsiOEHXQS76&quot;</span></span></span><br><span class="line">(stdin)= 885c9e3dd89ccd13408b25e6d54c2330703759d7494bea6dd5a3d1fd16ba3afa</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>curl command:</strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(HMAC SHA256)</span><br><span class="line"><span class="meta prompt_">[linux]$ </span><span class="language-bash">curl -H <span class="string">&quot;X-BH-APIKEY: tAQfOrPIZAhym0qHISRt8EFvxPemdBm5j5WMlkm3Ke9aFp0EGWC2CGM8GHV4kCYW&quot;</span> -X POST <span class="string">&#x27;https://$HOST/openapi/v1/order?symbol=ETHBTC&amp;side=BUY&amp;type=LIMIT&amp;timeInForce=GTC&#x27;</span> -d <span class="string">&#x27;quantity=1&amp;price=0.1&amp;recvWindow=5000&amp;timestamp=1538323200000&amp;signature=885c9e3dd89ccd13408b25e6d54c2330703759d7494bea6dd5a3d1fd16ba3afa&#x27;</span></span></span><br></pre></td></tr></table></figure>
+
+<p><em><strong>注意在例子3里有一点不一样，”GTC”和”quantity&#x3D;1”之间没有&amp;。</strong></em></p>
+<h2 id="公共-API-端点"><a href="#公共-API-端点" class="headerlink" title="公共 API 端点"></a>公共 API 端点</h2><h3 id="术语解释"><a href="#术语解释" class="headerlink" title="术语解释"></a>术语解释</h3><ul>
+<li><p><code>base asset</code> 指的是symbol的<code>quantity</code>（即数量）。</p>
+</li>
+<li><p><code>quote asset</code> 指的是symbol的<code>price</code>（即价格）。</p>
+</li>
+</ul>
+<h3 id="ENUM-定义"><a href="#ENUM-定义" class="headerlink" title="ENUM 定义"></a>ENUM 定义</h3><p><strong>Symbol 状态:</strong></p>
+<ul>
+<li>TRADING - 交易中</li>
+<li>HALT - 终止</li>
+<li>BREAK - 断开</li>
+</ul>
+<p><strong>Symbol 类型:</strong></p>
+<ul>
+<li>SPOT - 现货</li>
+</ul>
+<p><strong>资产类型:</strong></p>
+<ul>
+<li>CASH - 现金</li>
+<li>MARGIN - 保证金</li>
+</ul>
+<p><strong>订单状态:</strong></p>
+<ul>
+<li>NEW - 新订单，暂无成交</li>
+<li>PARTIALLY_FILLED - 部分成交</li>
+<li>FILLED - 完全成交</li>
+<li>CANCELED - 已取消</li>
+<li>PENDING_CANCEL - 等待取消</li>
+<li>REJECTED - 被拒绝</li>
+</ul>
+<p><strong>订单类型:</strong></p>
+<ul>
+<li>LIMIT - 限价单</li>
+<li>MARKET - 市价单</li>
+<li>LIMIT_MAKER - maker限价单</li>
+<li>STOP_LOSS (unavailable now)  - 暂无</li>
+<li>STOP_LOSS_LIMIT (unavailable now) - 暂无</li>
+<li>TAKE_PROFIT (unavailable now) - 暂无</li>
+<li>TAKE_PROFIT_LIMIT (unavailable now) - 暂无</li>
+<li>MARKET_OF_PAYOUT (unavailable now) - 暂无</li>
+</ul>
+<p><strong>订单方向:</strong></p>
+<ul>
+<li>BUY - 买单</li>
+<li>SELL - 卖单</li>
+</ul>
+<p><strong>订单时效类型:</strong></p>
+<ul>
+<li>GTC</li>
+<li>IOC</li>
+<li>FOK</li>
+</ul>
+<p><strong>k线&#x2F;烛线图区间:</strong></p>
+<p>  m -&gt; 分钟; h -&gt; 小时; d -&gt; 天; w -&gt; 周; M -&gt; 月</p>
+<ul>
+<li>1m</li>
+<li>3m</li>
+<li>5m</li>
+<li>15m</li>
+<li>30m</li>
+<li>1h</li>
+<li>2h</li>
+<li>4h</li>
+<li>6h</li>
+<li>8h</li>
+<li>12h</li>
+<li>1d</li>
+<li>3d</li>
+<li>1w</li>
+<li>1M</li>
+</ul>
+<p><strong>频率限制类型 (rateLimitType)</strong></p>
+<ul>
+<li>REQUESTS_WEIGHT</li>
+<li>ORDERS</li>
+</ul>
+<p><strong>频率限制区间</strong></p>
+<ul>
+<li>SECOND</li>
+<li>MINUTE</li>
+<li>DAY</li>
+</ul>
+<h3 id="通用端点"><a href="#通用端点" class="headerlink" title="通用端点"></a>通用端点</h3><h4 id="测试连接"><a href="#测试连接" class="headerlink" title="测试连接"></a>测试连接</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/ping</span><br></pre></td></tr></table></figure>
+
+<p>测试REST API的连接。</p>
+<p><strong>Weight:</strong><br>0</p>
+<p><strong>Parameters:</strong><br>NONE</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="服务器时间"><a href="#服务器时间" class="headerlink" title="服务器时间"></a>服务器时间</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/time</span><br></pre></td></tr></table></figure>
+
+<p>测试连接并获取当前服务器的时间。</p>
+<p><strong>Weight:</strong><br>0</p>
+<p><strong>Parameters:</strong><br>NONE</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;serverTime&quot;</span>: <span class="number">1538323200000</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Broker信息"><a href="#Broker信息" class="headerlink" title="Broker信息"></a>Broker信息</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/brokerInfo</span><br></pre></td></tr></table></figure>
+
+<p>当前broker交易规则和symbol信息</p>
+<p><strong>Weight:</strong><br>0</p>
+<p><strong>Parameters:</strong><br>NONE</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;timezone&quot;</span><span class="punctuation">:</span> <span class="string">&quot;UTC&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;serverTime&quot;</span><span class="punctuation">:</span> <span class="number">1538323200000</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;rateLimits&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;rateLimitType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;REQUESTS_WEIGHT&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;interval&quot;</span><span class="punctuation">:</span> <span class="string">&quot;MINUTE&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;limit&quot;</span><span class="punctuation">:</span> <span class="number">1500</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;rateLimitType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ORDERS&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;interval&quot;</span><span class="punctuation">:</span> <span class="string">&quot;SECOND&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;limit&quot;</span><span class="punctuation">:</span> <span class="number">20</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;rateLimitType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ORDERS&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;interval&quot;</span><span class="punctuation">:</span> <span class="string">&quot;DAY&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;limit&quot;</span><span class="punctuation">:</span> <span class="number">350000</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;brokerFilters&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;symbols&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;symbol&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ETHBTC&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span> <span class="string">&quot;TRADING&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;baseAsset&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ETH&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;baseAssetPrecision&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.001&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;quoteAsset&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BTC&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;quotePrecision&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.01&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;icebergAllowed&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;filters&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;filterType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;PRICE_FILTER&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;minPrice&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.00000100&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;maxPrice&quot;</span><span class="punctuation">:</span> <span class="string">&quot;100000.00000000&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;tickSize&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.00000100&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;filterType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;LOT_SIZE&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;minQty&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.00100000&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;maxQty&quot;</span><span class="punctuation">:</span> <span class="string">&quot;100000.00000000&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;stepSize&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.00100000&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;filterType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;MIN_NOTIONAL&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;minNotional&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.00100000&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">      <span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;contracts&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;filters&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;minPrice&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;maxPrice&quot;</span><span class="punctuation">:</span> <span class="string">&quot;100000.00000000&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;tickSize&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;filterType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;PRICE_FILTER&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;minQty&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;maxQty&quot;</span><span class="punctuation">:</span> <span class="string">&quot;100000.00000000&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;stepSize&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;filterType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;LOT_SIZE&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;minNotional&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.000001&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;filterType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;MIN_NOTIONAL&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;exchangeId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;301&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;symbol&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BTC-PERP-REV&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;symbolName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BTC-PERP-REVBITCOIN TEST&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span> <span class="string">&quot;TRADING&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;baseAsset&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BTC-PERP-REV&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;baseAssetPrecision&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;quoteAsset&quot;</span><span class="punctuation">:</span> <span class="string">&quot;USDT&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;quoteAssetPrecision&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;icebergAllowed&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;inverse&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;index&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BTCUSDT&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;marginToken&quot;</span><span class="punctuation">:</span> <span class="string">&quot;TBTC&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;marginPrecision&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.00000001&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;contractMultiplier&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;underlying&quot;</span><span class="punctuation">:</span> <span class="string">&quot;TBTC&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;riskLimits&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;riskLimitId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;200000001&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;quantity&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1000000.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;initialMargin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.01&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;maintMargin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.005&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;riskLimitId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;200000002&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;quantity&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2000000.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;initialMargin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.02&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;maintMargin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.01&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;riskLimitId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;200000003&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;quantity&quot;</span><span class="punctuation">:</span> <span class="string">&quot;3000000.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;initialMargin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.03&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;maintMargin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.015&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;riskLimitId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;200000004&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;quantity&quot;</span><span class="punctuation">:</span> <span class="string">&quot;4000000.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;initialMargin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.04&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;maintMargin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.02&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">      <span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;tokens&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;orgId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;6002&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;tokenId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BTC&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;tokenName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BTC&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;tokenFullName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Bitcoin&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;allowWithdraw&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;allowDeposit&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;chainTypes&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;chainType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BTC&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;allowDeposit&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;allowWithdraw&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;chainType&quot;</span><span class="punctuation">:</span> <span class="string">&quot;HECO&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;allowDeposit&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;allowWithdraw&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">      <span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="市场数据端点"><a href="#市场数据端点" class="headerlink" title="市场数据端点"></a>市场数据端点</h3><h4 id="订单簿"><a href="#订单簿" class="headerlink" title="订单簿"></a>订单簿</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/quote/v1/depth</span><br></pre></td></tr></table></figure>
+
+<p><strong>Weight:</strong></p>
+<p>根据limit不同：</p>
+<table>
+<thead>
+<tr>
+<th>Limit</th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5, 10, 20, 50, 100</td>
+<td>1</td>
+</tr>
+<tr>
+<td>500</td>
+<td>5</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>10</td>
+</tr>
+</tbody></table>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>symbol</td>
+<td>STRING</td>
+<td>YES</td>
+<td></td>
+</tr>
+<tr>
+<td>limit</td>
+<td>INT</td>
+<td>NO</td>
+<td>默认 100; 最大 100.</td>
+</tr>
+</tbody></table>
+<p><strong>注意:</strong> 如果设置limit&#x3D;0会返回很多数据。</p>
+<p><strong>Response:</strong></p>
+<p>[价格, 数量]</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;bids&quot;</span>: [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">&quot;3.90000000&quot;</span>,   <span class="comment">// 价格</span></span><br><span class="line">      <span class="string">&quot;431.00000000&quot;</span>  <span class="comment">// 数量</span></span><br><span class="line">    ],</span><br><span class="line">    [</span><br><span class="line">      <span class="string">&quot;4.00000000&quot;</span>,</span><br><span class="line">      <span class="string">&quot;431.00000000&quot;</span></span><br><span class="line">    ]</span><br><span class="line">  ],</span><br><span class="line">  <span class="string">&quot;asks&quot;</span>: [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">&quot;4.00000200&quot;</span>,  <span class="comment">// 价格</span></span><br><span class="line">      <span class="string">&quot;12.00000000&quot;</span>  <span class="comment">// 数量</span></span><br><span class="line">    ],</span><br><span class="line">    [</span><br><span class="line">      <span class="string">&quot;5.10000000&quot;</span>,</span><br><span class="line">      <span class="string">&quot;28.00000000&quot;</span></span><br><span class="line">    ]</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="最近成交"><a href="#最近成交" class="headerlink" title="最近成交"></a>最近成交</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/quote/v1/trades</span><br></pre></td></tr></table></figure>
+
+<p>获取当前最新成交（最多60）</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>symbol</td>
+<td>STRING</td>
+<td>YES</td>
+<td></td>
+</tr>
+<tr>
+<td>limit</td>
+<td>INT</td>
+<td>NO</td>
+<td>Default 60; max 60.</td>
+</tr>
+</tbody></table>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;price&quot;</span>: <span class="string">&quot;4.00000100&quot;</span>,</span><br><span class="line">    <span class="string">&quot;qty&quot;</span>: <span class="string">&quot;12.00000000&quot;</span>,</span><br><span class="line">    <span class="string">&quot;time&quot;</span>: <span class="number">1499865549590</span>,</span><br><span class="line">    <span class="string">&quot;isBuyerMaker&quot;</span>: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h4 id="k线-烛线图数据"><a href="#k线-烛线图数据" class="headerlink" title="k线&#x2F;烛线图数据"></a>k线&#x2F;烛线图数据</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/quote/v1/klines</span><br></pre></td></tr></table></figure>
+
+<p>symbol的k线&#x2F;烛线图数据<br>K线会根据开盘时间而辨别。</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>symbol</td>
+<td>STRING</td>
+<td>YES</td>
+<td></td>
+</tr>
+<tr>
+<td>interval</td>
+<td>ENUM</td>
+<td>YES</td>
+<td></td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>limit</td>
+<td>INT</td>
+<td>NO</td>
+<td>默认500; 最大1000.</td>
+</tr>
+</tbody></table>
+<ul>
+<li>如果startTime和endTime没有发送，只有最新的K线会被返回。</li>
+</ul>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  [</span><br><span class="line">    <span class="number">1499040000000</span>,      <span class="comment">// 开盘时间</span></span><br><span class="line">    <span class="string">&quot;0.01634790&quot;</span>,       <span class="comment">// 开盘价</span></span><br><span class="line">    <span class="string">&quot;0.80000000&quot;</span>,       <span class="comment">// 最高价</span></span><br><span class="line">    <span class="string">&quot;0.01575800&quot;</span>,       <span class="comment">// 最低价</span></span><br><span class="line">    <span class="string">&quot;0.01577100&quot;</span>,       <span class="comment">// 收盘价</span></span><br><span class="line">    <span class="string">&quot;148976.11427815&quot;</span>,  <span class="comment">// 交易量</span></span><br><span class="line">    <span class="number">1499644799999</span>,      <span class="comment">// 收盘时间</span></span><br><span class="line">    <span class="string">&quot;2434.19055334&quot;</span>,    <span class="comment">// Quote asset数量</span></span><br><span class="line">    <span class="number">308</span>,                <span class="comment">// 交易次数</span></span><br><span class="line">    <span class="string">&quot;1756.87402397&quot;</span>,    <span class="comment">// Taker buy base asset数量</span></span><br><span class="line">    <span class="string">&quot;28.46694368&quot;</span>       <span class="comment">// Taker buy quote asset数量</span></span><br><span class="line">  ]</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h4 id="24小时ticker价格变化数据"><a href="#24小时ticker价格变化数据" class="headerlink" title="24小时ticker价格变化数据"></a>24小时ticker价格变化数据</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/quote/v1/ticker/24hr</span><br></pre></td></tr></table></figure>
+
+<p>24小时价格变化数据。<strong>注意</strong> 如果没有发送symbol，会返回很多数据。</p>
+<p><strong>Weight:</strong></p>
+<p>如果只有一个symbol，1; 如果symbol没有被发送，<strong>40</strong>。</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>symbol</td>
+<td>STRING</td>
+<td>NO</td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li>如果symbol没有被发送，所有symbol的数据都会被返回。</li>
+</ul>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;time&quot;</span>: <span class="number">1538725500422</span>,</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;ETHBTC&quot;</span>,</span><br><span class="line">  <span class="string">&quot;bestBidPrice&quot;</span>: <span class="string">&quot;4.00000200&quot;</span>,</span><br><span class="line">  <span class="string">&quot;bestAskPrice&quot;</span>: <span class="string">&quot;4.00000200&quot;</span>,</span><br><span class="line">  <span class="string">&quot;lastPrice&quot;</span>: <span class="string">&quot;4.00000200&quot;</span>,</span><br><span class="line">  <span class="string">&quot;openPrice&quot;</span>: <span class="string">&quot;99.00000000&quot;</span>,</span><br><span class="line">  <span class="string">&quot;highPrice&quot;</span>: <span class="string">&quot;100.00000000&quot;</span>,</span><br><span class="line">  <span class="string">&quot;lowPrice&quot;</span>: <span class="string">&quot;0.10000000&quot;</span>,</span><br><span class="line">  <span class="string">&quot;volume&quot;</span>: <span class="string">&quot;8913.30000000&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>OR</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;time&quot;</span>: <span class="number">1538725500422</span>,</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;ETHBTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;lastPrice&quot;</span>: <span class="string">&quot;4.00000200&quot;</span>,</span><br><span class="line">    <span class="string">&quot;openPrice&quot;</span>: <span class="string">&quot;99.00000000&quot;</span>,</span><br><span class="line">    <span class="string">&quot;highPrice&quot;</span>: <span class="string">&quot;100.00000000&quot;</span>,</span><br><span class="line">    <span class="string">&quot;lowPrice&quot;</span>: <span class="string">&quot;0.10000000&quot;</span>,</span><br><span class="line">    <span class="string">&quot;volume&quot;</span>: <span class="string">&quot;8913.30000000&quot;</span></span><br><span class="line"> &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h4 id="Symbol价格"><a href="#Symbol价格" class="headerlink" title="Symbol价格"></a>Symbol价格</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/quote/v1/ticker/price</span><br></pre></td></tr></table></figure>
+
+<p>单个或多个symbol的最新价。</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>symbol</td>
+<td>STRING</td>
+<td>NO</td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li>如果symbol没有发送，所有symbol的最新价都会被返回。</li>
+</ul>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;price&quot;</span>: <span class="string">&quot;4.00000200&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>OR</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;LTCBTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;price&quot;</span>: <span class="string">&quot;4.00000200&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;ETHBTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;price&quot;</span>: <span class="string">&quot;0.07946600&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h4 id="Symbol最佳订单簿价格"><a href="#Symbol最佳订单簿价格" class="headerlink" title="Symbol最佳订单簿价格"></a>Symbol最佳订单簿价格</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/quote/v1/ticker/bookTicker</span><br></pre></td></tr></table></figure>
+
+<p>单个或者多个symbol的最佳买单卖单价格。</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>symbol</td>
+<td>STRING</td>
+<td>NO</td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li>如果symbol没有被发送，所有symbol的最佳订单簿价格都会被返回。</li>
+</ul>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;LTCBTC&quot;</span>,</span><br><span class="line">  <span class="string">&quot;bidPrice&quot;</span>: <span class="string">&quot;4.00000000&quot;</span>,</span><br><span class="line">  <span class="string">&quot;bidQty&quot;</span>: <span class="string">&quot;431.00000000&quot;</span>,</span><br><span class="line">  <span class="string">&quot;askPrice&quot;</span>: <span class="string">&quot;4.00000200&quot;</span>,</span><br><span class="line">  <span class="string">&quot;askQty&quot;</span>: <span class="string">&quot;9.00000000&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>OR</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;LTCBTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;bidPrice&quot;</span>: <span class="string">&quot;4.00000000&quot;</span>,</span><br><span class="line">    <span class="string">&quot;bidQty&quot;</span>: <span class="string">&quot;431.00000000&quot;</span>,</span><br><span class="line">    <span class="string">&quot;askPrice&quot;</span>: <span class="string">&quot;4.00000200&quot;</span>,</span><br><span class="line">    <span class="string">&quot;askQty&quot;</span>: <span class="string">&quot;9.00000000&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;ETHBTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;bidPrice&quot;</span>: <span class="string">&quot;0.07946700&quot;</span>,</span><br><span class="line">    <span class="string">&quot;bidQty&quot;</span>: <span class="string">&quot;9.00000000&quot;</span>,</span><br><span class="line">    <span class="string">&quot;askPrice&quot;</span>: <span class="string">&quot;100000.00000000&quot;</span>,</span><br><span class="line">    <span class="string">&quot;askQty&quot;</span>: <span class="string">&quot;1000.00000000&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h4 id="现货币对"><a href="#现货币对" class="headerlink" title="现货币对"></a>现货币对</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/pairs</span><br></pre></td></tr></table></figure>
+
+<p>列出所有现货的币对列表，包括baseToken和quoteToken</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<p>无</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;LTCBTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;quoteToken&quot;</span>: <span class="string">&quot;LTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;baseToken&quot;</span>: <span class="string">&quot;BTC&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;BTCUSDT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;quoteToken&quot;</span>: <span class="string">&quot;BTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;baseToken&quot;</span>: <span class="string">&quot;USDT&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h3 id="账户端点"><a href="#账户端点" class="headerlink" title="账户端点"></a>账户端点</h3><h4 id="创建新订单-TRADE"><a href="#创建新订单-TRADE" class="headerlink" title="创建新订单  (TRADE)"></a>创建新订单  (TRADE)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST /openapi/v1/order  (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+
+<p>发送一个新的订单</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>symbol</td>
+<td>STRING</td>
+<td>YES</td>
+<td></td>
+</tr>
+<tr>
+<td>assetType</td>
+<td>STRING</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>side</td>
+<td>ENUM</td>
+<td>YES</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>ENUM</td>
+<td>YES</td>
+<td></td>
+</tr>
+<tr>
+<td>timeInForce</td>
+<td>ENUM</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>DECIMAL</td>
+<td>YES</td>
+<td></td>
+</tr>
+<tr>
+<td>price</td>
+<td>DECIMAL</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>newClientOrderId</td>
+<td>STRING</td>
+<td>NO</td>
+<td>一个自己给订单定义的ID，如果没有发送会自动生成。</td>
+</tr>
+<tr>
+<td>stopPrice</td>
+<td>DECIMAL</td>
+<td>NO</td>
+<td>与 <code>STOP_LOSS</code>, <code>STOP_LOSS_LIMIT</code>, <code>TAKE_PROFIT</code>, 和<code>TAKE_PROFIT_LIMIT</code> 订单一起使用. <strong>当前不可用</strong></td>
+</tr>
+<tr>
+<td>icebergQty</td>
+<td>DECIMAL</td>
+<td>NO</td>
+<td>与 <code>LIMIT</code>, <code>STOP_LOSS_LIMIT</code>, 和 <code>TAKE_PROFIT_LIMIT</code> 来创建冰山订单. <strong>当前不可用</strong></td>
+</tr>
+<tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>YES</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>在<code>type</code>上的额外强制参数:</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>额外强制参数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>LIMIT</code></td>
+<td><code>timeInForce</code>, <code>quantity</code>, <code>price</code></td>
+</tr>
+<tr>
+<td><code>MARKET</code></td>
+<td><code>quantity</code></td>
+</tr>
+<tr>
+<td><code>STOP_LOSS</code></td>
+<td><code>quantity</code>, <code>stopPrice</code>  <strong>当前不可用</strong></td>
+</tr>
+<tr>
+<td><code>STOP_LOSS_LIMIT</code></td>
+<td><code>timeInForce</code>, <code>quantity</code>,  <code>price</code>, <code>stopPrice</code> <strong>当前不可用</strong></td>
+</tr>
+<tr>
+<td><code>TAKE_PROFIT</code></td>
+<td><code>quantity</code>, <code>stopPrice</code> <strong>当前不可用</strong></td>
+</tr>
+<tr>
+<td><code>TAKE_PROFIT_LIMIT</code></td>
+<td><code>timeInForce</code>, <code>quantity</code>, <code>price</code>, <code>stopPrice</code> <strong>当前不可用</strong></td>
+</tr>
+<tr>
+<td><code>LIMIT_MAKER</code></td>
+<td><code>quantity</code>, <code>price</code></td>
+</tr>
+</tbody></table>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;orderId&quot;</span>: <span class="number">28</span>,</span><br><span class="line">  <span class="string">&quot;clientOrderId&quot;</span>: <span class="string">&quot;6k9M212T12092&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="测试新订单-TRADE"><a href="#测试新订单-TRADE" class="headerlink" title="测试新订单 (TRADE)"></a>测试新订单 (TRADE)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST /openapi/v1/order/test (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+
+<p>用signature和recvWindow测试生成新订单。<br>创建和验证一个新订单但是不送入撮合引擎。</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<p>和 <code>POST /openapi/v1/order</code>一样。</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="查询订单-USER-DATA"><a href="#查询订单-USER-DATA" class="headerlink" title="查询订单 (USER_DATA)"></a>查询订单 (USER_DATA)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/order (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+
+<p>查询订单状态。</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>orderId</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>origClientOrderId</td>
+<td>STRING</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>YES</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>Notes:</p>
+<ul>
+<li>单一 <code>orderId</code> 或者 <code>origClientOrderId</code> 必须被发送。</li>
+<li>对于某些历史数据 <code>cummulativeQuoteQty</code> 可能会 &lt; 0, 这说明数据当前不可用。</li>
+</ul>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;LTCBTC&quot;</span>,</span><br><span class="line">  <span class="string">&quot;orderId&quot;</span>: <span class="number">1</span>,</span><br><span class="line">  <span class="string">&quot;clientOrderId&quot;</span>: <span class="string">&quot;9t1M2K0Ya092&quot;</span>,</span><br><span class="line">  <span class="string">&quot;price&quot;</span>: <span class="string">&quot;0.1&quot;</span>,</span><br><span class="line">  <span class="string">&quot;origQty&quot;</span>: <span class="string">&quot;1.0&quot;</span>,</span><br><span class="line">  <span class="string">&quot;executedQty&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">  <span class="string">&quot;cummulativeQuoteQty&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">  <span class="string">&quot;status&quot;</span>: <span class="string">&quot;NEW&quot;</span>,</span><br><span class="line">  <span class="string">&quot;timeInForce&quot;</span>: <span class="string">&quot;GTC&quot;</span>,</span><br><span class="line">  <span class="string">&quot;type&quot;</span>: <span class="string">&quot;LIMIT&quot;</span>,</span><br><span class="line">  <span class="string">&quot;side&quot;</span>: <span class="string">&quot;BUY&quot;</span>,</span><br><span class="line">  <span class="string">&quot;stopPrice&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">  <span class="string">&quot;icebergQty&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">  <span class="string">&quot;time&quot;</span>: <span class="number">1499827319559</span>,</span><br><span class="line">  <span class="string">&quot;updateTime&quot;</span>: <span class="number">1499827319559</span>,</span><br><span class="line">  <span class="string">&quot;isWorking&quot;</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="取消订单-TRADE"><a href="#取消订单-TRADE" class="headerlink" title="取消订单 (TRADE)"></a>取消订单 (TRADE)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE /openapi/v1/order  (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+
+<p>取消当前正在交易的订单。</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>orderId</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>clientOrderId</td>
+<td>STRING</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>YES</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>单一 <code>orderId</code> 或者 <code>clientOrderId</code>必须被发送。</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;LTCBTC&quot;</span>,</span><br><span class="line">  <span class="string">&quot;clientOrderId&quot;</span>: <span class="string">&quot;tU721112KM&quot;</span>,</span><br><span class="line">  <span class="string">&quot;orderId&quot;</span>: <span class="number">1</span>,</span><br><span class="line">  <span class="string">&quot;status&quot;</span>: <span class="string">&quot;CANCELED&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="当前订单-USER-DATA"><a href="#当前订单-USER-DATA" class="headerlink" title="当前订单(USER_DATA)"></a>当前订单(USER_DATA)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/openOrders  (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+
+<p>获取当前单个或者多个symbol的当前订单。<strong>注意</strong> 如果没有发送symbol，会返回很多数据。</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>symbol</td>
+<td>String</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>orderId</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>limit</td>
+<td>INT</td>
+<td>NO</td>
+<td>默认 500; 最多 1000.</td>
+</tr>
+<tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>YES</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>如果<code>orderId</code>设定好了，会筛选订单小于<code>orderId</code>的。否则会返回最近的订单信息。</li>
+</ul>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;LTCBTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;orderId&quot;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&quot;clientOrderId&quot;</span>: <span class="string">&quot;t7921223K12&quot;</span>,</span><br><span class="line">    <span class="string">&quot;price&quot;</span>: <span class="string">&quot;0.1&quot;</span>,</span><br><span class="line">    <span class="string">&quot;origQty&quot;</span>: <span class="string">&quot;1.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;executedQty&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;cummulativeQuoteQty&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;status&quot;</span>: <span class="string">&quot;NEW&quot;</span>,</span><br><span class="line">    <span class="string">&quot;timeInForce&quot;</span>: <span class="string">&quot;GTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;type&quot;</span>: <span class="string">&quot;LIMIT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;side&quot;</span>: <span class="string">&quot;BUY&quot;</span>,</span><br><span class="line">    <span class="string">&quot;stopPrice&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;icebergQty&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;time&quot;</span>: <span class="number">1499827319559</span>,</span><br><span class="line">    <span class="string">&quot;updateTime&quot;</span>: <span class="number">1499827319559</span>,</span><br><span class="line">    <span class="string">&quot;isWorking&quot;</span>: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h4 id="历史订单-USER-DATA"><a href="#历史订单-USER-DATA" class="headerlink" title="历史订单 (USER_DATA)"></a>历史订单 (USER_DATA)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/historyOrders (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+<p>获取当前账户的所有订单。亦或是取消的，完全成交的，拒绝的。</p>
+<p><strong>Weight:</strong><br>5</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>symbol</td>
+<td>String</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>orderId</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>limit</td>
+<td>INT</td>
+<td>NO</td>
+<td>Default 500; max 1000.</td>
+</tr>
+<tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>YES</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>如果<code>orderId</code>设定好了，会筛选订单小于<code>orderId</code>的。否则会返回最近的订单信息。</li>
+</ul>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;LTCBTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;orderId&quot;</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="string">&quot;clientOrderId&quot;</span>: <span class="string">&quot;987yjj2Ym&quot;</span>,</span><br><span class="line">    <span class="string">&quot;price&quot;</span>: <span class="string">&quot;0.1&quot;</span>,</span><br><span class="line">    <span class="string">&quot;origQty&quot;</span>: <span class="string">&quot;1.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;executedQty&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;cummulativeQuoteQty&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;status&quot;</span>: <span class="string">&quot;NEW&quot;</span>,</span><br><span class="line">    <span class="string">&quot;timeInForce&quot;</span>: <span class="string">&quot;GTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;type&quot;</span>: <span class="string">&quot;LIMIT&quot;</span>,</span><br><span class="line">    <span class="string">&quot;side&quot;</span>: <span class="string">&quot;BUY&quot;</span>,</span><br><span class="line">    <span class="string">&quot;stopPrice&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;icebergQty&quot;</span>: <span class="string">&quot;0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;time&quot;</span>: <span class="number">1499827319559</span>,</span><br><span class="line">    <span class="string">&quot;updateTime&quot;</span>: <span class="number">1499827319559</span>,</span><br><span class="line">    <span class="string">&quot;isWorking&quot;</span>: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h4 id="账户信息-USER-DATA"><a href="#账户信息-USER-DATA" class="headerlink" title="账户信息 (USER_DATA)"></a>账户信息 (USER_DATA)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/account (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+
+<p>获取当前账户信息</p>
+<p><strong>Weight:</strong><br>5</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>YES</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;canTrade&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">&quot;canWithdraw&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">&quot;canDeposit&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">&quot;updateTime&quot;</span>: <span class="number">123456789</span>,</span><br><span class="line">  <span class="string">&quot;balances&quot;</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="string">&quot;asset&quot;</span>: <span class="string">&quot;BTC&quot;</span>,</span><br><span class="line">      <span class="string">&quot;free&quot;</span>: <span class="string">&quot;4723846.89208129&quot;</span>,</span><br><span class="line">      <span class="string">&quot;locked&quot;</span>: <span class="string">&quot;0.00000000&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="string">&quot;asset&quot;</span>: <span class="string">&quot;LTC&quot;</span>,</span><br><span class="line">      <span class="string">&quot;free&quot;</span>: <span class="string">&quot;4763368.68006011&quot;</span>,</span><br><span class="line">      <span class="string">&quot;locked&quot;</span>: <span class="string">&quot;0.00000000&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="账户交易记录-USER-DATA"><a href="#账户交易记录-USER-DATA" class="headerlink" title="账户交易记录 (USER_DATA)"></a>账户交易记录 (USER_DATA)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/myTrades  (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+
+<p>获取当前账户历史成交记录</p>
+<p><strong>Weight:</strong><br>5</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>startTime</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>fromId</td>
+<td>LONG</td>
+<td>NO</td>
+<td>TradeId to fetch from.</td>
+</tr>
+<tr>
+<td>toId</td>
+<td>LONG</td>
+<td>NO</td>
+<td>TradeId to fetch to.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>INT</td>
+<td>NO</td>
+<td>Default 500; max 1000.</td>
+</tr>
+<tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>YES</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>如果只有<code>fromId</code>，会返回订单号小于<code>fromId</code>的，倒序排列。</li>
+<li>如果只有<code>toId</code>，会返回订单号小于<code>toId</code>的，升序排列。</li>
+<li>如果同时有<code>fromId</code>和<code>toId</code>, 会返回订单号在<code>fromId</code>和<code>toId</code>的，倒序排列。</li>
+<li>如果<code>fromId</code>和<code>toId</code>都没有，会返回最新的成交记录，倒序排列。<br><strong>Response:</strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">&quot;symbol&quot;</span>: <span class="string">&quot;ETHBTC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;id&quot;</span>: <span class="number">28457</span>,</span><br><span class="line">    <span class="string">&quot;orderId&quot;</span>: <span class="number">100234</span>,</span><br><span class="line">    <span class="string">&quot;matchOrderId&quot;</span>: <span class="number">109834</span>,</span><br><span class="line">    <span class="string">&quot;price&quot;</span>: <span class="string">&quot;4.00000100&quot;</span>,</span><br><span class="line">    <span class="string">&quot;qty&quot;</span>: <span class="string">&quot;12.00000000&quot;</span>,</span><br><span class="line">    <span class="string">&quot;commission&quot;</span>: <span class="string">&quot;10.10000000&quot;</span>,</span><br><span class="line">    <span class="string">&quot;commissionAsset&quot;</span>: <span class="string">&quot;ETH&quot;</span>,</span><br><span class="line">    <span class="string">&quot;time&quot;</span>: <span class="number">1499865549590</span>,</span><br><span class="line">    <span class="string">&quot;isBuyer&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;isMaker&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="string">&quot;feeTokenId&quot;</span>: <span class="string">&quot;ETH&quot;</span>,</span><br><span class="line">    <span class="string">&quot;feeAmount&quot;</span>: <span class="string">&quot;0.012&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h4 id="账户存款记录-USER-DATA"><a href="#账户存款记录-USER-DATA" class="headerlink" title="账户存款记录 (USER_DATA)"></a>账户存款记录 (USER_DATA)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/depositOrders  (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+
+<p>获取当前账户的存款记录</p>
+<p><strong>Weight:</strong><br>5</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>token</td>
+<td>STRING</td>
+<td>NO</td>
+<td>默认全部</td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>fromId</td>
+<td>LONG</td>
+<td>NO</td>
+<td>从哪个OrderId起开始抓取。默认抓取最新的存款记录。</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>INT</td>
+<td>NO</td>
+<td>默认 500; 最大 1000.</td>
+</tr>
+<tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>YES</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>如果<code>orderId</code>设定好了，会筛选订单小于<code>orderId</code>的。否则会返回最近的订单信息。</li>
+</ul>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">	<span class="string">&quot;orderId&quot;</span>: <span class="number">100234</span>,</span><br><span class="line">	<span class="string">&quot;token&quot;</span>: <span class="string">&quot;EOS&quot;</span>,</span><br><span class="line">	<span class="string">&quot;address&quot;</span>: <span class="string">&quot;deposit2bh&quot;</span>,</span><br><span class="line">	<span class="string">&quot;addressTag&quot;</span>: <span class="string">&quot;19012584&quot;</span>,</span><br><span class="line">	<span class="string">&quot;fromAddress&quot;</span>: <span class="string">&quot;clarkkent&quot;</span>,</span><br><span class="line">	<span class="string">&quot;fromAddressTag&quot;</span>: <span class="string">&quot;19029901&quot;</span>,</span><br><span class="line">	<span class="string">&quot;time&quot;</span>: <span class="number">1499865549590</span>,</span><br><span class="line">	<span class="string">&quot;quantity&quot;</span>: <span class="string">&quot;1.01&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h4 id="获取某个提币记录-USER-DATA"><a href="#获取某个提币记录-USER-DATA" class="headerlink" title="获取某个提币记录 (USER_DATA)"></a>获取某个提币记录 (USER_DATA)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/withdraw/detail  (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+
+<p>获取当前账户的提币记录</p>
+<p><strong>Weight:</strong><br>2</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>orderId</td>
+<td>LONG</td>
+<td>NO</td>
+<td>orderId和clientOrderId两者必须有一个有值</td>
+</tr>
+<tr>
+<td>clientOrderId</td>
+<td>STRING</td>
+<td>NO</td>
+<td>orderId和clientOrderId两者必须有一个有值</td>
+</tr>
+</tbody></table>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;time&quot;</span>:<span class="string">&quot;1536232111669&quot;</span>,</span><br><span class="line">    <span class="string">&quot;orderId&quot;</span>:<span class="string">&quot;90161227158286336&quot;</span>,</span><br><span class="line">    <span class="string">&quot;accountId&quot;</span>:<span class="string">&quot;517256161325920&quot;</span>,</span><br><span class="line">    <span class="string">&quot;tokenId&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;tokenName&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;address&quot;</span>:<span class="string">&quot;0x815bF1c3cc0f49b8FC66B21A7e48fCb476051209&quot;</span>,</span><br><span class="line">    <span class="string">&quot;addressExt&quot;</span>:<span class="string">&quot;address tag&quot;</span>,</span><br><span class="line">    <span class="string">&quot;quantity&quot;</span>:<span class="string">&quot;14&quot;</span>, <span class="comment">// 提币金额</span></span><br><span class="line">    <span class="string">&quot;arriveQuantity&quot;</span>:<span class="string">&quot;14&quot;</span>, <span class="comment">// 到账金额</span></span><br><span class="line">    <span class="string">&quot;statusCode&quot;</span>:<span class="string">&quot;PROCESSING_STATUS&quot;</span>,</span><br><span class="line">    <span class="string">&quot;status&quot;</span>:<span class="number">3</span>,</span><br><span class="line">    <span class="string">&quot;txid&quot;</span>:<span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;txidUrl&quot;</span>:<span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;walletHandleTime&quot;</span>:<span class="string">&quot;1536232111669&quot;</span>,</span><br><span class="line">    <span class="string">&quot;feeTokenId&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;feeTokenName&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">    <span class="string">&quot;fee&quot;</span>:<span class="string">&quot;0.1&quot;</span>,</span><br><span class="line">    <span class="string">&quot;requiredConfirmNum&quot;</span>:<span class="number">0</span>, <span class="comment">// 要求确认数</span></span><br><span class="line">    <span class="string">&quot;confirmNum&quot;</span>:<span class="number">0</span>, <span class="comment">// 确认数</span></span><br><span class="line">    <span class="string">&quot;kernelId&quot;</span>:<span class="string">&quot;&quot;</span>, <span class="comment">// BEAM 和 GRIN 独有</span></span><br><span class="line">    <span class="string">&quot;isInternalTransfer&quot;</span>: <span class="literal">false</span> <span class="comment">// 是否内部转账</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="根据tokenId获取充币地址信息"><a href="#根据tokenId获取充币地址信息" class="headerlink" title="根据tokenId获取充币地址信息"></a>根据tokenId获取充币地址信息</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/depositAddress  (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+
+<p>获取充币地址信息</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tokenId</td>
+<td>STRING</td>
+<td>是</td>
+<td>tokenId</td>
+</tr>
+<tr>
+<td>chainType</td>
+<td>string</td>
+<td>非必填</td>
+<td>chain type, USDT的chainType分别是OMNI ERC20 TRC20，默认OMNI</td>
+</tr>
+</tbody></table>
+<p><strong>Notes:</strong></p>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;allowDeposit&quot;</span>:<span class="literal">false</span>,<span class="comment">//是否可充值</span></span><br><span class="line">    <span class="string">&quot;address&quot;</span>:<span class="string">&quot;0x815bF1c3cc0f49b8FC66B21A7e48fCb476051209&quot;</span>,<span class="comment">//地址</span></span><br><span class="line">    <span class="string">&quot;addressExt&quot;</span>:<span class="string">&quot;address tag&quot;</span>,</span><br><span class="line">    <span class="string">&quot;minQuantity&quot;</span>:<span class="string">&quot;100&quot;</span>,<span class="comment">//最小金额</span></span><br><span class="line">    <span class="string">&quot;requiredConfirmNum&quot;</span>:<span class="number">1</span>,<span class="comment">//到账确认数</span></span><br><span class="line">    <span class="string">&quot;canWithdrawConfirmNum&quot;</span>:<span class="number">12</span>,<span class="comment">//提币确认数</span></span><br><span class="line">    <span class="string">&quot;tokenType&quot;</span>:<span class="string">&quot;ERC20_TOKEN&quot;</span><span class="comment">//链类型</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="账户提币记录-USER-DATA"><a href="#账户提币记录-USER-DATA" class="headerlink" title="账户提币记录 (USER_DATA)"></a>账户提币记录 (USER_DATA)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /openapi/v1/withdrawalOrders  (HMAC SHA256)</span><br></pre></td></tr></table></figure>
+
+<p>获取当前账户的提币记录</p>
+<p><strong>Weight:</strong><br>5</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>token</td>
+<td>STRING</td>
+<td>NO</td>
+<td>默认全部</td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>fromId</td>
+<td>LONG</td>
+<td>NO</td>
+<td>从哪个OrderId起开始抓取。默认抓取最新的存款记录。</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>INT</td>
+<td>NO</td>
+<td>默认 500; 最大 1000.</td>
+</tr>
+<tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>如果<code>orderId</code>设定好了，会筛选订单小于<code>orderId</code>的。否则会返回最近的订单信息。</li>
+</ul>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&quot;time&quot;</span>:<span class="string">&quot;1536232111669&quot;</span>,</span><br><span class="line">        <span class="string">&quot;orderId&quot;</span>:<span class="string">&quot;90161227158286336&quot;</span>,</span><br><span class="line">        <span class="string">&quot;accountId&quot;</span>:<span class="string">&quot;517256161325920&quot;</span>,</span><br><span class="line">        <span class="string">&quot;tokenId&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">        <span class="string">&quot;tokenName&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">        <span class="string">&quot;address&quot;</span>:<span class="string">&quot;0x815bF1c3cc0f49b8FC66B21A7e48fCb476051209&quot;</span>,</span><br><span class="line">        <span class="string">&quot;addressExt&quot;</span>:<span class="string">&quot;address tag&quot;</span>,</span><br><span class="line">        <span class="string">&quot;quantity&quot;</span>:<span class="string">&quot;14&quot;</span>, <span class="comment">// 提币金额</span></span><br><span class="line">        <span class="string">&quot;arriveQuantity&quot;</span>:<span class="string">&quot;14&quot;</span>, <span class="comment">// 到账金额</span></span><br><span class="line">        <span class="string">&quot;statusCode&quot;</span>:<span class="string">&quot;PROCESSING_STATUS&quot;</span>,</span><br><span class="line">        <span class="string">&quot;status&quot;</span>:<span class="number">3</span>,</span><br><span class="line">        <span class="string">&quot;txid&quot;</span>:<span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;txidUrl&quot;</span>:<span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;walletHandleTime&quot;</span>:<span class="string">&quot;1536232111669&quot;</span>,</span><br><span class="line">        <span class="string">&quot;feeTokenId&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">        <span class="string">&quot;feeTokenName&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">        <span class="string">&quot;fee&quot;</span>:<span class="string">&quot;0.1&quot;</span>,</span><br><span class="line">        <span class="string">&quot;requiredConfirmNum&quot;</span>:<span class="number">0</span>, <span class="comment">// 要求确认数</span></span><br><span class="line">        <span class="string">&quot;confirmNum&quot;</span>:<span class="number">0</span>, <span class="comment">// 确认数</span></span><br><span class="line">        <span class="string">&quot;kernelId&quot;</span>:<span class="string">&quot;&quot;</span>, <span class="comment">// BEAM 和 GRIN 独有</span></span><br><span class="line">        <span class="string">&quot;isInternalTransfer&quot;</span>: <span class="literal">false</span> <span class="comment">// 是否内部转账</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&quot;time&quot;</span>:<span class="string">&quot;1536053746220&quot;</span>,</span><br><span class="line">        <span class="string">&quot;orderId&quot;</span>:<span class="string">&quot;762522731831527&quot;</span>,</span><br><span class="line">        <span class="string">&quot;accountId&quot;</span>:<span class="string">&quot;517256161325920&quot;</span>,</span><br><span class="line">        <span class="string">&quot;tokenId&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">        <span class="string">&quot;tokenName&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">        <span class="string">&quot;address&quot;</span>:<span class="string">&quot;fdfasdfeqfas12323542rgfer54135123&quot;</span>,</span><br><span class="line">        <span class="string">&quot;addressExt&quot;</span>:<span class="string">&quot;EOS tag&quot;</span>,</span><br><span class="line">        <span class="string">&quot;quantity&quot;</span>:<span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;arriveQuantity&quot;</span>:<span class="string">&quot;10&quot;</span>,</span><br><span class="line">        <span class="string">&quot;statusCode&quot;</span>:<span class="string">&quot;BROKER_AUDITING_STATUS&quot;</span>,</span><br><span class="line">        <span class="string">&quot;status&quot;</span>:<span class="string">&quot;2&quot;</span>,</span><br><span class="line">        <span class="string">&quot;txid&quot;</span>:<span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;txidUrl&quot;</span>:<span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;walletHandleTime&quot;</span>:<span class="string">&quot;1536232111669&quot;</span>,</span><br><span class="line">        <span class="string">&quot;feeTokenId&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">        <span class="string">&quot;feeTokenName&quot;</span>:<span class="string">&quot;BHC&quot;</span>,</span><br><span class="line">        <span class="string">&quot;fee&quot;</span>:<span class="string">&quot;0.1&quot;</span>,</span><br><span class="line">        <span class="string">&quot;requiredConfirmNum&quot;</span>:<span class="number">0</span>, <span class="comment">// 要求确认数</span></span><br><span class="line">        <span class="string">&quot;confirmNum&quot;</span>:<span class="number">0</span>, <span class="comment">// 确认数</span></span><br><span class="line">        <span class="string">&quot;kernelId&quot;</span>:<span class="string">&quot;&quot;</span>, <span class="comment">// BEAM 和 GRIN 独有</span></span><br><span class="line">        <span class="string">&quot;isInternalTransfer&quot;</span>: <span class="literal">false</span> <span class="comment">// 是否内部转账</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p><strong>提币状态说明</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">status</th>
+<th align="left">statusCode</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">BROKER_AUDITING_STATUS</td>
+<td align="left">券商审核中</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">BROKER_REJECT_STATUS</td>
+<td align="left">券商审核拒绝</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">AUDITING_STATUS</td>
+<td align="left">平台审核中</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">AUDIT_REJECT_STATUS</td>
+<td align="left">平台审核拒绝</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">PROCESSING_STATUS</td>
+<td align="left">钱包处理中</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">WITHDRAWAL_SUCCESS_STATUS</td>
+<td align="left">提币成功</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">WITHDRAWAL_FAILURE_STATUS</td>
+<td align="left">提币失败</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">BLOCK_MINING_STATUS</td>
+<td align="left">区块打包中</td>
+</tr>
+</tbody></table>
+<h3 id="用户数据流端点"><a href="#用户数据流端点" class="headerlink" title="用户数据流端点"></a>用户数据流端点</h3><p>详细的用户信息流说明在另一个文档中。</p>
+<h4 id="开始用户信息流-USER-STREAM"><a href="#开始用户信息流-USER-STREAM" class="headerlink" title="开始用户信息流 (USER_STREAM)"></a>开始用户信息流 (USER_STREAM)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST /openapi/v1/userDataStream</span><br></pre></td></tr></table></figure>
+
+<p>开始一个新的用户信息流。如果keepalive指令没有发送，信息流将将会在60分钟后关闭。</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>YES</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;listenKey&quot;</span>: <span class="string">&quot;1A9LWJjuMwKWYP4QQPw34GRm8gz3x5AephXSuqcDef1RnzoBVhEeGE963CoS1Sgj&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Keepalive用户信息流-USER-STREAM"><a href="#Keepalive用户信息流-USER-STREAM" class="headerlink" title="Keepalive用户信息流 (USER_STREAM)"></a>Keepalive用户信息流 (USER_STREAM)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PUT /openapi/v1/userDataStream</span><br></pre></td></tr></table></figure>
+
+<p>维持用户信息流来防止断开连接。用户信息流会在60分钟后自动中断，所以建议30分钟发送一次ping请求。</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>listenKey</td>
+<td>STRING</td>
+<td>YES</td>
+<td></td>
+</tr>
+<tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>YES</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="关闭用户信息流-USER-STREAM"><a href="#关闭用户信息流-USER-STREAM" class="headerlink" title="关闭用户信息流 (USER_STREAM)"></a>关闭用户信息流 (USER_STREAM)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE /openapi/v1/userDataStream</span><br></pre></td></tr></table></figure>
+
+<p>关闭用户信息流</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>listenKey</td>
+<td>STRING</td>
+<td>YES</td>
+<td></td>
+</tr>
+<tr>
+<td>recvWindow</td>
+<td>LONG</td>
+<td>NO</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>LONG</td>
+<td>YES</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="子账户列表-SUB-ACCOUNT-LIST"><a href="#子账户列表-SUB-ACCOUNT-LIST" class="headerlink" title="子账户列表(SUB_ACCOUNT_LIST)"></a>子账户列表(SUB_ACCOUNT_LIST)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST /openapi/v1/subAccount/query</span><br></pre></td></tr></table></figure>
+
+<p>查询子账户列表</p>
+<p><strong>Parameters:</strong></p>
+<p>无</p>
+<p><strong>Weight:</strong><br>5</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&quot;accountId&quot;</span>: <span class="string">&quot;122216245228131&quot;</span>,</span><br><span class="line">        <span class="string">&quot;accountName&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;accountType&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">&quot;accountIndex&quot;</span>: <span class="number">0</span> <span class="comment">// 账户index 0 默认账户 &gt;0, 创建的子账户</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&quot;accountId&quot;</span>: <span class="string">&quot;482694560475091200&quot;</span>,</span><br><span class="line">        <span class="string">&quot;accountName&quot;</span>: <span class="string">&quot;createSubAccountByCurl&quot;</span>, <span class="comment">// 子账户名称</span></span><br><span class="line">        <span class="string">&quot;accountType&quot;</span>: <span class="number">1</span>, <span class="comment">// 子账户类型 1 币币账户 3 合约账户</span></span><br><span class="line">        <span class="string">&quot;accountIndex&quot;</span>: <span class="number">1</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&quot;accountId&quot;</span>: <span class="string">&quot;422446415267060992&quot;</span>,</span><br><span class="line">        <span class="string">&quot;accountName&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;accountType&quot;</span>: <span class="number">3</span>,</span><br><span class="line">        <span class="string">&quot;accountIndex&quot;</span>: <span class="number">0</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&quot;accountId&quot;</span>: <span class="string">&quot;482711469199298816&quot;</span>,</span><br><span class="line">        <span class="string">&quot;accountName&quot;</span>: <span class="string">&quot;createSubAccountByCurl&quot;</span>,</span><br><span class="line">        <span class="string">&quot;accountType&quot;</span>: <span class="number">3</span>,</span><br><span class="line">        <span class="string">&quot;accountIndex&quot;</span>: <span class="number">1</span></span><br><span class="line">    &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="账户内转账-ACCOUNT-TRANSFER"><a href="#账户内转账-ACCOUNT-TRANSFER" class="headerlink" title="账户内转账 (ACCOUNT_TRANSFER)"></a>账户内转账 (ACCOUNT_TRANSFER)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST /openapi/v1/transfer</span><br></pre></td></tr></table></figure>
+
+<p>转账</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>fromAccountType</td>
+<td>int</td>
+<td>YES</td>
+<td>源账户类型, 1 钱包(币币)账户 2 期权账户 3 合约账户</td>
+</tr>
+<tr>
+<td>fromAccountIndex</td>
+<td>int</td>
+<td>YES</td>
+<td>子账户index, 主账户Api调用时候有用，从子账户列表接口获取</td>
+</tr>
+<tr>
+<td>toAccountType</td>
+<td>int</td>
+<td>YES</td>
+<td>目标账户类型, 1 钱包(币币)账户 2 期权账户 3 合约账户</td>
+</tr>
+<tr>
+<td>toAccountIndex</td>
+<td>int</td>
+<td>YES</td>
+<td>子账户index, 主账户Api调用时候有用，从子账户列表接口获取</td>
+</tr>
+<tr>
+<td>tokenId</td>
+<td>STRING</td>
+<td>YES</td>
+<td>tokenID</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>STRING</td>
+<td>YES</td>
+<td>转账数量</td>
+</tr>
+</tbody></table>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;success&quot;</span>:<span class="string">&quot;true&quot;</span> <span class="comment">// 0成功</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>说明</strong></p>
+<p>1、转账账户和收款账户的其中一方，必须是主账户(钱包账户)</p>
+<p>2、主账户Api可以从钱包账户向其他账户(包括子账户)转账，也可以从其他账户向钱包账户转账</p>
+<p>3、<strong>子账户Api调用的时候只能从当前子账户向主账户(钱包账户)转账，所以fromAccountType\fromAccountIndex\toAccountType\toAccountIndex不用填</strong></p>
+<h4 id="查询流水-BALANCE-FLOW"><a href="#查询流水-BALANCE-FLOW" class="headerlink" title="查询流水 (BALANCE_FLOW)"></a>查询流水 (BALANCE_FLOW)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST /openapi/v1/balance_flow</span><br></pre></td></tr></table></figure>
+
+<p>查询账户流水</p>
+<p><strong>Weight:</strong><br>5</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>accountType</td>
+<td>int</td>
+<td>否</td>
+<td>账户对应的account_type</td>
+</tr>
+<tr>
+<td>accountIndex</td>
+<td>int</td>
+<td>否</td>
+<td>账户对应的account_index</td>
+</tr>
+<tr>
+<td>tokenId</td>
+<td>string</td>
+<td>否</td>
+<td>token_id</td>
+</tr>
+<tr>
+<td>fromFlowId</td>
+<td>long</td>
+<td>否</td>
+<td>顺向查询数据</td>
+</tr>
+<tr>
+<td>endFlowId</td>
+<td>long</td>
+<td>否</td>
+<td>反向查询数据</td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>long</td>
+<td>否</td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>long</td>
+<td>否</td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>integer</td>
+<td>否</td>
+<td>每页记录数</td>
+</tr>
+</tbody></table>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&quot;id&quot;</span>: <span class="string">&quot;539870570957903104&quot;</span>,</span><br><span class="line">        <span class="string">&quot;accountId&quot;</span>: <span class="string">&quot;122216245228131&quot;</span>,</span><br><span class="line">        <span class="string">&quot;tokenId&quot;</span>: <span class="string">&quot;BTC&quot;</span>,</span><br><span class="line">        <span class="string">&quot;tokenName&quot;</span>: <span class="string">&quot;BTC&quot;</span>,</span><br><span class="line">        <span class="string">&quot;flowTypeValue&quot;</span>: <span class="number">51</span>, <span class="comment">// 流水类型</span></span><br><span class="line">        <span class="string">&quot;flowType&quot;</span>: <span class="string">&quot;USER_ACCOUNT_TRANSFER&quot;</span>, <span class="comment">// 流水类型名称</span></span><br><span class="line">        <span class="string">&quot;flowName&quot;</span>: <span class="string">&quot;Transfer&quot;</span>, <span class="comment">// 流水类型说明</span></span><br><span class="line">        <span class="string">&quot;change&quot;</span>: <span class="string">&quot;-12.5&quot;</span>, <span class="comment">// 变动值</span></span><br><span class="line">        <span class="string">&quot;total&quot;</span>: <span class="string">&quot;379.624059937852365&quot;</span>, <span class="comment">// 变动后当前tokenId总资产</span></span><br><span class="line">        <span class="string">&quot;created&quot;</span>: <span class="string">&quot;1579093587214&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&quot;id&quot;</span>: <span class="string">&quot;536072393645448960&quot;</span>,</span><br><span class="line">        <span class="string">&quot;accountId&quot;</span>: <span class="string">&quot;122216245228131&quot;</span>,</span><br><span class="line">        <span class="string">&quot;tokenId&quot;</span>: <span class="string">&quot;USDT&quot;</span>,</span><br><span class="line">        <span class="string">&quot;tokenName&quot;</span>: <span class="string">&quot;USDT&quot;</span>,</span><br><span class="line">        <span class="string">&quot;flowTypeValue&quot;</span>: <span class="number">7</span>,</span><br><span class="line">        <span class="string">&quot;flowType&quot;</span>: <span class="string">&quot;AIRDROP&quot;</span>,</span><br><span class="line">        <span class="string">&quot;flowName&quot;</span>: <span class="string">&quot;Airdrop&quot;</span>,</span><br><span class="line">        <span class="string">&quot;change&quot;</span>: <span class="string">&quot;-2000&quot;</span>,</span><br><span class="line">        <span class="string">&quot;total&quot;</span>: <span class="string">&quot;918662.0917630848&quot;</span>,</span><br><span class="line">        <span class="string">&quot;created&quot;</span>: <span class="string">&quot;1578640809195&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h4 id="提现"><a href="#提现" class="headerlink" title="提现"></a>提现</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST /openapi/v1/withdraw</span><br></pre></td></tr></table></figure>
+
+<p>提现</p>
+<p><strong>Weight:</strong><br>1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否强制</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tokenId</td>
+<td>string</td>
+<td>必填</td>
+<td>tokenId</td>
+</tr>
+<tr>
+<td>clientOrderId</td>
+<td>long</td>
+<td>必填</td>
+<td>券商端生成的订单id， 防止重复提币</td>
+</tr>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>必填</td>
+<td>提币地址(注意：提现地址必须是在PC端或者APP端维护在常用地址列表里面的地址)</td>
+</tr>
+<tr>
+<td>addressExt</td>
+<td>string</td>
+<td>选填</td>
+<td>EOS tag</td>
+</tr>
+<tr>
+<td>withdrawQuantity</td>
+<td>string</td>
+<td>必填</td>
+<td>提币数量</td>
+</tr>
+<tr>
+<td>chainType</td>
+<td>string</td>
+<td>非必填</td>
+<td>chain type, USDT的chainType分别是OMNI ERC20 TRC20，默认OMNI</td>
+</tr>
+</tbody></table>
+<p><strong>Response:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;status&quot;</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;success&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;needBrokerAudit&quot;</span>: <span class="literal">false</span>, <span class="comment">// 是否需要券商审核</span></span><br><span class="line">    <span class="string">&quot;orderId&quot;</span>: <span class="string">&quot;423885103582776064&quot;</span> <span class="comment">// 提币成功订单id</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>说明</strong></p>
+<p>1、主账户Api可以查询钱包账户或者其他账户(包括子账户，指定accountType和accountIndex)的流水’</p>
+<p>2、子账户Api只能查询当前子账户的流水，所以不用指定accountType和accountIndex</p>
+<p><strong>流水类型说明请见如下</strong></p>
+<table>
+<thead>
+<tr>
+<th>归类</th>
+<th>类型参数名</th>
+<th>类型参数代号</th>
+<th>解释说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>通用流水类</td>
+<td>TRADE</td>
+<td>1</td>
+<td>交易</td>
+</tr>
+<tr>
+<td>通用流水类</td>
+<td>FEE</td>
+<td>2</td>
+<td>交易手续费</td>
+</tr>
+<tr>
+<td>通用流水类</td>
+<td>TRANSFER</td>
+<td>3</td>
+<td>转账</td>
+</tr>
+<tr>
+<td>通用流水类</td>
+<td>DEPOSIT</td>
+<td>4</td>
+<td>充值</td>
+</tr>
+<tr>
+<td>衍生品业务</td>
+<td>MAKER_REWARD</td>
+<td>27</td>
+<td>maker奖励</td>
+</tr>
+<tr>
+<td>衍生品业务</td>
+<td>PNL</td>
+<td>28</td>
+<td>期货等的盈亏</td>
+</tr>
+<tr>
+<td>衍生品业务</td>
+<td>SETTLEMENT</td>
+<td>30</td>
+<td>交割</td>
+</tr>
+<tr>
+<td>衍生品业务</td>
+<td>LIQUIDATION</td>
+<td>31</td>
+<td>强平</td>
+</tr>
+<tr>
+<td>衍生品业务</td>
+<td>FUNDING_SETTLEMENT</td>
+<td>32</td>
+<td>期货等的资金费率结算</td>
+</tr>
+<tr>
+<td>用户子账户之间内部转账</td>
+<td>USER_ACCOUNT_TRANSFER</td>
+<td>51</td>
+<td>userAccountTransfer 专用，流水没有subjectExtId</td>
+</tr>
+<tr>
+<td>OTC</td>
+<td>OTC_BUY_COIN</td>
+<td>65</td>
+<td>OTC 买入coin</td>
+</tr>
+<tr>
+<td>OTC</td>
+<td>OTC_SELL_COIN</td>
+<td>66</td>
+<td>OTC 卖出coin</td>
+</tr>
+<tr>
+<td>OTC</td>
+<td>OTC_FEE</td>
+<td>73</td>
+<td>OTC 手续费</td>
+</tr>
+<tr>
+<td>OTC</td>
+<td>OTC_TRADE</td>
+<td>200</td>
+<td>旧版 OTC 流水</td>
+</tr>
+<tr>
+<td>活动</td>
+<td>ACTIVITY_AWARD</td>
+<td>67</td>
+<td>活动奖励</td>
+</tr>
+<tr>
+<td>活动</td>
+<td>INVITATION_REFERRAL_BONUS</td>
+<td>68</td>
+<td>邀请返佣</td>
+</tr>
+<tr>
+<td>活动</td>
+<td>REGISTER_BONUS</td>
+<td>69</td>
+<td>注册送礼</td>
+</tr>
+<tr>
+<td>活动</td>
+<td>AIRDROP</td>
+<td>70</td>
+<td>空投</td>
+</tr>
+<tr>
+<td>活动</td>
+<td>MINE_REWARD</td>
+<td>71</td>
+<td>挖矿奖励</td>
+</tr>
+</tbody></table>
+<h3 id="过滤层"><a href="#过滤层" class="headerlink" title="过滤层"></a>过滤层</h3><p>过滤层（filter）定义某个broker的某个symbol的交易规则<br>过滤层（filter）有两个大类：<code>symbol filters</code> 和 <code>broker filters</code></p>
+<h4 id="Symbol过滤层"><a href="#Symbol过滤层" class="headerlink" title="Symbol过滤层"></a>Symbol过滤层</h4><h5 id="PRICE-FILTER"><a href="#PRICE-FILTER" class="headerlink" title="PRICE_FILTER"></a>PRICE_FILTER</h5><p><code>PRICE_FILTER</code> 定义某个symbol的<code>price</code> 精度. 一共有3个部分：</p>
+<ul>
+<li><code>minPrice</code> 定义最小允许的 <code>price</code>&#x2F;<code>stopPrice</code></li>
+<li><code>maxPrice</code> 定义最大允许的 <code>price</code>&#x2F;<code>stopPrice</code>.</li>
+<li><code>tickSize</code> 定义<code>price</code>&#x2F;<code>stopPrice</code> 可以增加和减少的间隔。</li>
+</ul>
+<p>如果要通过<code>price filter</code>要求，<code>price</code>&#x2F;<code>stopPrice</code>必须满足：</p>
+<ul>
+<li><code>price</code> &gt;&#x3D; <code>minPrice</code></li>
+<li><code>price</code> &lt;&#x3D; <code>maxPrice</code></li>
+<li>(<code>price</code>-<code>minPrice</code>) % <code>tickSize</code> &#x3D;&#x3D; 0</li>
+</ul>
+<p><strong>&#x2F;brokerInfo格式:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;filterType&quot;</span>: <span class="string">&quot;PRICE_FILTER&quot;</span>,</span><br><span class="line">  <span class="string">&quot;minPrice&quot;</span>: <span class="string">&quot;0.00000100&quot;</span>,</span><br><span class="line">  <span class="string">&quot;maxPrice&quot;</span>: <span class="string">&quot;100000.00000000&quot;</span>,</span><br><span class="line">  <span class="string">&quot;tickSize&quot;</span>: <span class="string">&quot;0.00000100&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="LOT-SIZE"><a href="#LOT-SIZE" class="headerlink" title="LOT_SIZE"></a>LOT_SIZE</h5><p><code>LOT_SIZE</code> 过滤层定义某个symbol <code>quantity</code>(在拍卖行里又称为”lots”）的精度。 一共有三个部分：</p>
+<ul>
+<li><code>minQty</code> 定义最小允许的  <code>quantity</code>&#x2F;<code>icebergQty</code></li>
+<li><code>maxQty</code> 定义最大允许的  <code>quantity</code>&#x2F;<code>icebergQty</code></li>
+<li><code>stepSize</code>定义<code>quantity</code>&#x2F;<code>icebergQty</code>可以增加和减少的间隔。</li>
+</ul>
+<p>如果要通过<code>lot size</code>要求，<code>quantity</code>&#x2F;<code>icebergQty</code>必须满足:</p>
+<ul>
+<li><code>quantity</code> &gt;&#x3D; <code>minQty</code></li>
+<li><code>quantity</code> &lt;&#x3D; <code>maxQty</code></li>
+<li>(<code>quantity</code>-<code>minQty</code>) % <code>stepSize</code> &#x3D;&#x3D; 0</li>
+</ul>
+<p><strong>&#x2F;brokerInfo格式:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;filterType&quot;</span>: <span class="string">&quot;LOT_SIZE&quot;</span>,</span><br><span class="line">  <span class="string">&quot;minQty&quot;</span>: <span class="string">&quot;0.00100000&quot;</span>,</span><br><span class="line">  <span class="string">&quot;maxQty&quot;</span>: <span class="string">&quot;100000.00000000&quot;</span>,</span><br><span class="line">  <span class="string">&quot;stepSize&quot;</span>: <span class="string">&quot;0.00100000&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="MIN-NOTIONAL"><a href="#MIN-NOTIONAL" class="headerlink" title="MIN_NOTIONAL"></a>MIN_NOTIONAL</h5><p><code>MIN_NOTIONAL</code> 过滤层定义某个symbol的名义金额精度。一个订单的名义金额为 <code>price</code> * <code>quantity</code>.</p>
+<p><strong>&#x2F;brokerInfo format:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;filterType&quot;</span>: <span class="string">&quot;MIN_NOTIONAL&quot;</span>,</span><br><span class="line">  <span class="string">&quot;minNotional&quot;</span>: <span class="string">&quot;0.00100000&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2024/01/14/UserDataStream/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  UserDataStream
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2024/01/14/OptiontsOpen/">
+                Options Open API CN
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©<span id="footerYear-start"></span>-<span id="footerYear-end"></span>
+
+	
+	    <a href="/">ceex</a>
+	
+	
+	
+	<br>
+	Powered by <a href="//hexo.io" target="_blank">ceex</a>
+	</p>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById('footerYear-start').innerHTML = new Date().getFullYear() + '';
+</script>
+
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>

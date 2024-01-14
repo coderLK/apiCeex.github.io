@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		Finance | 
+	 
+	Ceex
+	</title>
+	
+	<!-- keywords,description -->
+	
+	
+
+	<!-- favicon -->
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+
+	
+	
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">Ceex</a>
+
+	<ul id="menu">
+    
+
+    
+
+    
+
+    
+  
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="Press Enter to search">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Cloud/">
+                     
+										    Cloud
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Contract/">
+                     
+										    Contract
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Endpoint/">
+                     
+										    Endpoint
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Errors/">
+                     
+										    Errors
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2024/01/14/Finance/">
+                     
+										    Finance
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/Margin/">
+                     
+										    Margin
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/OptiontsOpen/">
+                     
+										    OptiontsOpen
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/RESTAPI/">
+                     
+										    RESTAPI
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/UserDataStream/">
+                     
+										    UserDataStream
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/01/14/WebsocketStream/">
+                     
+										    WebsocketStream
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content" class="content">
+		<h1 id="article-title">
+	Finance
+</h1>
+
+<!-- meta -->
+<div class="article-meta">
+	
+
+	<span>ceex</span>
+	<span>2024-01-14 15:25:58</span>
+
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+    
+
+    
+		    <span>Tags：</span>
+        
+    
+  </div>
+
+</div>
+
+<!-- content -->
+<div id="article-content">
+	<h2 id="下单"><a href="#下单" class="headerlink" title="下单"></a>下单</h2><h3 id="接口地址"><a href="#接口地址" class="headerlink" title="接口地址"></a>接口地址</h3><pre><code>POST /openapi/finance_support/v1/order
+</code></pre>
+<h3 id="请求参数"><a href="#请求参数" class="headerlink" title="请求参数"></a>请求参数</h3><table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">类型</th>
+<th align="left">是否必填</th>
+<th align="left">描述</th>
+<th align="left">示例值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">symbol</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">交易币对</td>
+<td align="left">BTC</td>
+</tr>
+<tr>
+<td align="left">orgId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">券商机构ID</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">accountId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">账户ID</td>
+<td align="left">430831063768557312</td>
+</tr>
+<tr>
+<td align="left">side</td>
+<td align="left">string</td>
+<td align="left">必填</td>
+<td align="left">买卖方向  BUY&#x3D;买单 SELL&#x3D;卖单</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="left">string</td>
+<td align="left">必填</td>
+<td align="left">订单类型 LIMIT&#x3D;限价单 MARKET&#x3D;市价单</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">quantity</td>
+<td align="left">string</td>
+<td align="left">必填</td>
+<td align="left">下单数量</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">price</td>
+<td align="left">string</td>
+<td align="left">必填</td>
+<td align="left">下单价格</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">clientOrderId</td>
+<td align="left">string</td>
+<td align="left">必填</td>
+<td align="left">客户端订单ID</td>
+<td align="left">6001</td>
+</tr>
+</tbody></table>
+<h3 id="响应参数"><a href="#响应参数" class="headerlink" title="响应参数"></a>响应参数</h3><p>参考<a href="REST%20API%20CN.md">REST API</a> 中的下单接口返回字段</p>
+<h3 id="响应示例"><a href="#响应示例" class="headerlink" title="响应示例"></a>响应示例</h3><p>略</p>
+<h2 id="查询订单"><a href="#查询订单" class="headerlink" title="查询订单"></a>查询订单</h2><h3 id="接口地址-1"><a href="#接口地址-1" class="headerlink" title="接口地址"></a>接口地址</h3><pre><code>GET /openapi/finance_support/v1/order
+</code></pre>
+<h3 id="请求参数-1"><a href="#请求参数-1" class="headerlink" title="请求参数"></a>请求参数</h3><table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">类型</th>
+<th align="left">是否必填</th>
+<th align="left">描述</th>
+<th align="left">示例值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">orgId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">券商机构ID</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">accountId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">账户ID</td>
+<td align="left">430831063768557312</td>
+</tr>
+<tr>
+<td align="left">orderId</td>
+<td align="left">string</td>
+<td align="left">选填</td>
+<td align="left">订单ID</td>
+<td align="left">478799682544402176</td>
+</tr>
+<tr>
+<td align="left">clientOrderId</td>
+<td align="left">string</td>
+<td align="left">选填</td>
+<td align="left">客户端订单ID</td>
+<td align="left">1570987398733</td>
+</tr>
+</tbody></table>
+<h3 id="响应参数-1"><a href="#响应参数-1" class="headerlink" title="响应参数"></a>响应参数</h3><p>参考<a href="REST%20API%20CN.md">REST API</a> 中的查询订单接口返回字段</p>
+<h3 id="响应示例-1"><a href="#响应示例-1" class="headerlink" title="响应示例"></a>响应示例</h3><p>略</p>
+<h2 id="撤单"><a href="#撤单" class="headerlink" title="撤单"></a>撤单</h2><h3 id="接口地址-2"><a href="#接口地址-2" class="headerlink" title="接口地址"></a>接口地址</h3><pre><code>DELETE /openapi/finance_support/v1/order
+</code></pre>
+<h3 id="请求参数-2"><a href="#请求参数-2" class="headerlink" title="请求参数"></a>请求参数</h3><table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">类型</th>
+<th align="left">是否必填</th>
+<th align="left">描述</th>
+<th align="left">示例值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">orgId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">券商机构ID</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">accountId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">账户ID</td>
+<td align="left">430831063768557312</td>
+</tr>
+<tr>
+<td align="left">orderId</td>
+<td align="left">string</td>
+<td align="left">选填</td>
+<td align="left">订单ID</td>
+<td align="left">478799682544402176</td>
+</tr>
+<tr>
+<td align="left">clientOrderId</td>
+<td align="left">string</td>
+<td align="left">选填</td>
+<td align="left">客户端订单ID</td>
+<td align="left">1570987398733</td>
+</tr>
+</tbody></table>
+<h3 id="响应参数-2"><a href="#响应参数-2" class="headerlink" title="响应参数"></a>响应参数</h3><p>参考<a href="REST%20API%20CN.md">REST API</a> 中的撤单接口返回字段</p>
+<h3 id="响应示例-2"><a href="#响应示例-2" class="headerlink" title="响应示例"></a>响应示例</h3><p>略</p>
+<h2 id="查询未成交委托"><a href="#查询未成交委托" class="headerlink" title="查询未成交委托"></a>查询未成交委托</h2><h3 id="接口地址-3"><a href="#接口地址-3" class="headerlink" title="接口地址"></a>接口地址</h3><pre><code>GET /openapi/finance_support/v1/openOrders
+</code></pre>
+<h3 id="请求参数-3"><a href="#请求参数-3" class="headerlink" title="请求参数"></a>请求参数</h3><table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">类型</th>
+<th align="left">是否必填</th>
+<th align="left">描述</th>
+<th align="left">示例值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">orgId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">券商机构ID</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">accountId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">账户ID</td>
+<td align="left">430831063768557312</td>
+</tr>
+<tr>
+<td align="left">symbol</td>
+<td align="left">string</td>
+<td align="left">选填</td>
+<td align="left">币对ID</td>
+<td align="left">BTCUSDT</td>
+</tr>
+<tr>
+<td align="left">orderId</td>
+<td align="left">string</td>
+<td align="left">选填</td>
+<td align="left">查询起始订单ID 默认为0</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="left">integer</td>
+<td align="left">选填</td>
+<td align="left">查询每页条数 默认为20</td>
+<td align="left">20</td>
+</tr>
+</tbody></table>
+<h3 id="响应参数-3"><a href="#响应参数-3" class="headerlink" title="响应参数"></a>响应参数</h3><p>参考<a href="REST%20API%20CN.md">REST API</a> 中的未成交委托接口返回字段</p>
+<h3 id="响应示例-3"><a href="#响应示例-3" class="headerlink" title="响应示例"></a>响应示例</h3><p>略</p>
+<h2 id="创建财务账户"><a href="#创建财务账户" class="headerlink" title="创建财务账户"></a>创建财务账户</h2><h3 id="接口地址-4"><a href="#接口地址-4" class="headerlink" title="接口地址"></a>接口地址</h3><pre><code>POST /openapi/finance_support/v1/account
+</code></pre>
+<h3 id="请求参数-4"><a href="#请求参数-4" class="headerlink" title="请求参数"></a>请求参数</h3><table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">类型</th>
+<th align="left">是否必填</th>
+<th align="left">描述</th>
+<th align="left">示例值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">orgId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">券商机构ID</td>
+<td align="left">6001</td>
+</tr>
+</tbody></table>
+<h3 id="响应参数-4"><a href="#响应参数-4" class="headerlink" title="响应参数"></a>响应参数</h3><table>
+<thead>
+<tr>
+<th align="left">字段名</th>
+<th align="left">字段类型</th>
+<th align="left">是否必填</th>
+<th align="left">字段描述</th>
+<th align="left">示例值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">id</td>
+<td align="left">string</td>
+<td align="left">是</td>
+<td align="left">唯一ID</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left">orgId</td>
+<td align="left">string</td>
+<td align="left">是</td>
+<td align="left">券商机构ID</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">userId</td>
+<td align="left">string</td>
+<td align="left">是</td>
+<td align="left">财务用户ID（目前是定死的）</td>
+<td align="left">10000</td>
+</tr>
+<tr>
+<td align="left">accountId</td>
+<td align="left">string</td>
+<td align="left">是</td>
+<td align="left">财务用户在该券商下的账户ID（一个券商只有一个）</td>
+<td align="left">430831063768557312</td>
+</tr>
+<tr>
+<td align="left">accountType</td>
+<td align="left">string</td>
+<td align="left">是</td>
+<td align="left">账户类型 0主账户 1期权账户 2期货账户</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">accountIndex</td>
+<td align="left">string</td>
+<td align="left">否</td>
+<td align="left">账户索引</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">createType</td>
+<td align="left">string</td>
+<td align="left">否</td>
+<td align="left">创建类型 0系统创建 1手动创建</td>
+<td align="left">0</td>
+</tr>
+</tbody></table>
+<h3 id="响应示例-4"><a href="#响应示例-4" class="headerlink" title="响应示例"></a>响应示例</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;orgId&quot;</span><span class="punctuation">:</span> <span class="number">6001</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;userId&quot;</span><span class="punctuation">:</span> <span class="number">10000</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;accountId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;430831063768557312&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;accountType&quot;</span><span class="punctuation">:</span> <span class="number">0</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;accountIndex&quot;</span><span class="punctuation">:</span> <span class="number">0</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;createType&quot;</span><span class="punctuation">:</span> <span class="number">0</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="获取所有财务账户列表"><a href="#获取所有财务账户列表" class="headerlink" title="获取所有财务账户列表"></a>获取所有财务账户列表</h2><h3 id="接口地址-5"><a href="#接口地址-5" class="headerlink" title="接口地址"></a>接口地址</h3><pre><code>GET /openapi/finance_support/v1/accounts
+</code></pre>
+<h3 id="请求参数-5"><a href="#请求参数-5" class="headerlink" title="请求参数"></a>请求参数</h3><table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">类型</th>
+<th align="left">是否必填</th>
+<th align="left">描述</th>
+<th align="left">示例值</th>
+</tr>
+</thead>
+</table>
+<h3 id="响应参数-5"><a href="#响应参数-5" class="headerlink" title="响应参数"></a>响应参数</h3><table>
+<thead>
+<tr>
+<th align="left">字段名</th>
+<th align="left">字段类型</th>
+<th align="left">是否必填</th>
+<th align="left">字段描述</th>
+<th align="left">示例值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">id</td>
+<td align="left">string</td>
+<td align="left">是</td>
+<td align="left">唯一ID</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left">orgId</td>
+<td align="left">string</td>
+<td align="left">是</td>
+<td align="left">券商机构ID</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">userId</td>
+<td align="left">string</td>
+<td align="left">是</td>
+<td align="left">财务用户ID（目前是定死的）</td>
+<td align="left">10000</td>
+</tr>
+<tr>
+<td align="left">accountId</td>
+<td align="left">string</td>
+<td align="left">是</td>
+<td align="left">财务用户在该券商下的账户ID（一个券商只有一个）</td>
+<td align="left">430831063768557312</td>
+</tr>
+<tr>
+<td align="left">accountType</td>
+<td align="left">string</td>
+<td align="left">是</td>
+<td align="left">账户类型 0-系统自动创建 1-手工创建</td>
+<td align="left">0</td>
+</tr>
+</tbody></table>
+<h3 id="响应示例-5"><a href="#响应示例-5" class="headerlink" title="响应示例"></a>响应示例</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;orgId&quot;</span><span class="punctuation">:</span> <span class="number">6001</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;userId&quot;</span><span class="punctuation">:</span> <span class="number">10000</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;accountId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;430831063768557312&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;accountType&quot;</span><span class="punctuation">:</span> <span class="number">0</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="查询账户信息"><a href="#查询账户信息" class="headerlink" title="查询账户信息"></a>查询账户信息</h2><h3 id="接口地址-6"><a href="#接口地址-6" class="headerlink" title="接口地址"></a>接口地址</h3><pre><code>GET /openapi/finance_support/v1/account
+</code></pre>
+<h3 id="请求参数-6"><a href="#请求参数-6" class="headerlink" title="请求参数"></a>请求参数</h3><table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">类型</th>
+<th align="left">是否必填</th>
+<th align="left">描述</th>
+<th align="left">示例值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">orgId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">券商机构ID</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">accountId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">账户ID</td>
+<td align="left">430831063768557312</td>
+</tr>
+</tbody></table>
+<h3 id="响应参数-6"><a href="#响应参数-6" class="headerlink" title="响应参数"></a>响应参数</h3><p>参考<a href="REST%20API%20CN.md">REST API</a> 中的查询账户接口返回字段</p>
+<h3 id="响应示例-6"><a href="#响应示例-6" class="headerlink" title="响应示例"></a>响应示例</h3><p>略</p>
+<h2 id="财务账户互转"><a href="#财务账户互转" class="headerlink" title="财务账户互转"></a>财务账户互转</h2><h3 id="接口地址-7"><a href="#接口地址-7" class="headerlink" title="接口地址"></a>接口地址</h3><pre><code>GET /openapi/finance_support/v1/transfer
+</code></pre>
+<h3 id="请求参数-7"><a href="#请求参数-7" class="headerlink" title="请求参数"></a>请求参数</h3><table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">类型</th>
+<th align="left">是否必填</th>
+<th align="left">描述</th>
+<th align="left">示例值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">sourceAccountId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">转账源账户ID</td>
+<td align="left">430831063768557312</td>
+</tr>
+<tr>
+<td align="left">sourceOrgId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">转账源券商机构ID</td>
+<td align="left">6001</td>
+</tr>
+<tr>
+<td align="left">targetAccountId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">转账目标账户ID</td>
+<td align="left">478799768536022784</td>
+</tr>
+<tr>
+<td align="left">targetOrgId</td>
+<td align="left">long</td>
+<td align="left">必填</td>
+<td align="left">转账目标券商机构ID</td>
+<td align="left">6002</td>
+</tr>
+<tr>
+<td align="left">amount</td>
+<td align="left">string</td>
+<td align="left">必填</td>
+<td align="left">转账金额</td>
+<td align="left">0.25</td>
+</tr>
+<tr>
+<td align="left">tokenId</td>
+<td align="left">string</td>
+<td align="left">必填</td>
+<td align="left">转账的币种</td>
+<td align="left">USDT</td>
+</tr>
+</tbody></table>
+<h3 id="响应参数-7"><a href="#响应参数-7" class="headerlink" title="响应参数"></a>响应参数</h3><table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">类型</th>
+<th align="left">是否必填</th>
+<th align="left">描述</th>
+<th align="left">示例值</th>
+</tr>
+</thead>
+</table>
+<h3 id="响应示例-7"><a href="#响应示例-7" class="headerlink" title="响应示例"></a>响应示例</h3><p>略</p>
+
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2024/01/14/Margin/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  Margin
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2024/01/14/Errors/">
+                Errors
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©<span id="footerYear-start"></span>-<span id="footerYear-end"></span>
+
+	
+	    <a href="/">ceex</a>
+	
+	
+	
+	<br>
+	Powered by <a href="//hexo.io" target="_blank">ceex</a>
+	</p>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById('footerYear-start').innerHTML = new Date().getFullYear() + '';
+</script>
+
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
